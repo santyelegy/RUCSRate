@@ -1,0 +1,44 @@
+[
+    {
+        "Dcode": "198",
+        "name": "Computer Science",
+        "cources": [
+            {
+                "code": "16:198:512",
+                "name": "INTRODUCTION TO DATA STRUCTURES AND ALGORITHMS"
+            },
+            {
+                "code": "16:198:513",
+                "name": "INTRODUCTION TO DATA STRUCTURES AND ALGORITHMS II"
+            }
+        ]
+    },
+    {
+        "Dcode": "332",
+        "name": "Electrical and Computer Engineering",
+        "cources": [
+            {
+                "code": "16:332:505",
+                "name": "CONTROL SYSTEM THEORY"
+            },
+            {
+                "code": "16:332:506",
+                "name": "CONTROL SYSTEM THEORY II"
+            }
+        ]
+    },
+    {
+        "Dcode": "333",
+        "name": "DS",
+        "cources": [
+            {
+                "code": "16:198:512",
+                "name": "INTRODUCTION TO DATA STRUCTURES AND ALGORITHMS"
+            },
+            {
+                "code": "16:198:513",
+                "name": "INTRODUCTION TO DATA STRUCTURES AND ALGORITHMS II"
+            }
+        ]
+    }
+]
