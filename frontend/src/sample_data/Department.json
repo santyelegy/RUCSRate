@@ -1,14 +1,14 @@
 [
     {
         "name": "Computer Science",
-        "url": "url1"
+        "num":20
     },
     {
         "name": "Data Science",
-        "url": "url2"
+        "num":15
     },
     {
         "name": "Electrical and Computer Engineering",
-        "url": "url3"
+        "num":18
     }
 ]

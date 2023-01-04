@@ -2,47 +2,41 @@
     {
         "code": "16:198:512",
         "name": "INTRODUCTION TO DATA STRUCTURES AND ALGORITHMS",
-        "prof":{
-            "prof_name": "Mr.A",
-            "prof_url": "url11"
-        },
-        "score": "4.5/5(api of Display of average score)",
-        "review":{
-            "review_1":{
+        "prof": "Mr.A",
+        "score": "4.5/5",
+        "review":[
+            {
                 "r1content":"XXX",
-                "r1url":"url12"
+                "r1score":"X/5"
             },
-            "review_2":{
+            {
                 "r2content":"XXX",
-                "r2url":"url13"
+                "r2score":"X/5"
             },
-            "review_3":{
+            {
                 "r3content":"XXX",
-                "r3url":"url14"
+                "r3score":"X/5"
             }
-        }
+        ]
     },
     {
         "code": "16:198:513",
         "name": "INTRODUCTION TO DATA STRUCTURES AND ALGORITHMS II",
-        "prof":{
-            "prof_name": "Mr.B",
-            "prof_url": "url21"
-        },
-        "score": "1.5/5(api of Display of average score)",
-        "review":{
-            "review_1":{
+        "prof": "Mr.B",
+        "score": "1.5/5",
+        "review":[
+            {
                 "r1content":"XXX",
-                "r1url":"url22"
+                "r1score":"X/5"
             },
-            "review_2":{
+            {
                 "r2content":"XXX",
-                "r2url":"url23"
+                "r2score":"X/5"
             },
-            "review_3":{
+            {
                 "r3content":"XXX",
-                "r3url":"url24"
+                "r3score":"X/5"
             }
-        }
+        ]
     }
 ]

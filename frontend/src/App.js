@@ -18,7 +18,6 @@ export default function App() {
   return (
     <Router>
       <div>
-        {/*
         <nav>
           <ul>
             <li>
@@ -44,7 +43,6 @@ export default function App() {
             </li>
           </ul>
         </nav>
-  */}
         <Routes>
           <Route path="/announcement" element={<Announcement />}/>
           <Route path="/courselist" element={<CourseList />}/>
