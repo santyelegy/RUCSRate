@@ -6,16 +6,16 @@
         "score": 2,
         "review":[
             {
-                "r1content":"XXX",
-                "r1score":3
+                "content":"XXX",
+                "score":3
             },
             {
-                "r2content":"XXX",
-                "r2score":2
+                "content":"XXX",
+                "score":2
             },
             {
-                "r3content":"XXX",
-                "r3score":1
+                "content":"XXX",
+                "score":1
             }
         ]
     },
@@ -26,16 +26,16 @@
         "score": 3,
         "review":[
             {
-                "r1content":"XXX",
-                "r1score":5
+                "content":"XXX",
+                "score":5
             },
             {
-                "r2content":"XXX",
-                "r2score":0
+                "content":"XXX",
+                "score":0
             },
             {
-                "r3content":"XXX",
-                "r3score":3
+                "content":"XXX",
+                "score":3
             }
         ]
     }

@@ -14,9 +14,22 @@ import Home from "./Pages/Home";
 import Professor from "./Pages/Professor";
 import Review from "./Pages/Review";
 
+import AppLayout from '../src/Components/layout/AppLayout';
+
 export default function App() {
   return (
     <Router>
+      <Routes>
+        <Route path='/' element={<AppLayout />}>
+          <Route index element={<Home />} />
+          <Route path='/announcement' element={<Announcement />} />
+          <Route path='/department' element={<Department />} />
+          <Route path='/courselist' element={<CourseList />} />
+          <Route path='/course' element={<Course />} />
+          <Route path='/professor' element={<Professor />} />
+          <Route path='/review' element={<Review />} />
+        </Route>
+      </Routes>
       <div>
         <nav>
           <ul>
@@ -43,15 +56,6 @@ export default function App() {
             </li>
           </ul>
         </nav>
-        <Routes>
-          <Route path="/announcement" element={<Announcement />}/>
-          <Route path="/courselist" element={<CourseList />}/>
-          <Route path="/course" element={<Course />}/>
-          <Route path="/department" element={<Department />} />
-          <Route path="/professor" element={<Professor />} />
-          <Route path="/review" element={<Review />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
       </div>
     </Router>
   );
