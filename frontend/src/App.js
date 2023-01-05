@@ -46,10 +46,10 @@ export default function App() {
         <Routes>
           <Route path="/announcement" element={<Announcement />}/>
           <Route path="/courselist" element={<CourseList />}/>
-          <Route path="/course" element={<Course />}/>
+          <Route path="/course/:id" element={<Course />}/>
           <Route path="/department" element={<Department />} />
-          <Route path="/professor" element={<Professor />} />
-          <Route path="/review" element={<Review />} />
+          <Route path="/professor/:id" element={<Professor />} />
+          <Route path="/review/:id" element={<Review />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>

@@ -1,5 +1,8 @@
 import review from '../sample_data/Review.json'
+import { useParams } from 'react-router-dom';
 function Review(){
+    const { id } = useParams();
+    console.log(id);
     return(
         <>
         <div>Review</div>
