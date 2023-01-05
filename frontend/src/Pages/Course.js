@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+import { useParams } from 'react-router-dom';
 import course from '../sample_data/Course.json'
 
 function Course() {
+    const { id } = useParams();
     return (
         <>
             <div>{course[0].code}</div>
@@ -12,13 +13,6 @@ function Course() {
             <div>{course[0].review[0].content}</div>
             <div>{course[0].review[0].score}</div>
         </>
-=======
-import { useParams } from 'react-router-dom';
-function Course(){
-    const { id } = useParams();
-    return(
-        <div>Course</div>
->>>>>>> 4af6340552ba7243e5f260a4d6ff46b0b05d95e5
     );
 }
 
