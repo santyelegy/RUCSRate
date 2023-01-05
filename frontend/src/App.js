@@ -56,6 +56,18 @@ export default function App() {
             </li>
           </ul>
         </nav>
+<<<<<<< HEAD
+=======
+        <Routes>
+          <Route path="/announcement" element={<Announcement />}/>
+          <Route path="/courselist" element={<CourseList />}/>
+          <Route path="/course/:id" element={<Course />}/>
+          <Route path="/department" element={<Department />} />
+          <Route path="/professor/:id" element={<Professor />} />
+          <Route path="/review/:id" element={<Review />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+>>>>>>> 4af6340552ba7243e5f260a4d6ff46b0b05d95e5
       </div>
     </Router>
   );
