@@ -1,5 +1,6 @@
 import professor from '../sample_data/Professor.json'
 import { useParams,Link } from 'react-router-dom';
+import ReviewForm from './ReviewForm';
 function Professor() {
     const { id } = useParams();
     //console.log(id);
@@ -16,6 +17,7 @@ function Professor() {
         <div>{professor.name}</div>
         <div>{professor.email}</div>
         <div>{professor.score}</div>
+        <ReviewForm/>
         {reviews}
         </>
     );

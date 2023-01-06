@@ -26,8 +26,8 @@ export default function App() {
           <Route path='/department' element={<Department />} />
           <Route path='/courselist' element={<CourseList />} />
           <Route path='/course' element={<Course />} />
-          <Route path='/professor' element={<Professor />} />
-          <Route path='/review' element={<Review />} />
+          <Route path='/professor/:id' element={<Professor />} />
+          <Route path='/review/:id' element={<Review />} />
         </Route>
       </Routes>
       <div>
@@ -47,12 +47,6 @@ export default function App() {
             </li>
             <li>
               <Link to="/department">Department</Link>
-            </li>
-            <li>
-              <Link to="/professor">Professor</Link>
-            </li>
-            <li>
-              <Link to="/review">Review</Link>
             </li>
           </ul>
         </nav>

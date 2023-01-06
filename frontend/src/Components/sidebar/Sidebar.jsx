@@ -36,13 +36,13 @@ const sidebarNavItems = [
     {
         display: 'Professors',
         icon: <i className='bx bx-professor'></i>,
-        to: '/professor',
+        to: '/professor/0',
         section: 'professor'
     },
     {
         display: 'Reviews',
         icon: <i className='bx bx-review'></i>,
-        to: '/review',
+        to: '/review/0',
         section: 'review'
     },
 ]
