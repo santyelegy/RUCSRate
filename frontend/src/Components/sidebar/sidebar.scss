@@ -3,16 +3,17 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: 320px;
-    background-color: #fff;
+    width: 280px;
+    background-color: #F08080;
 
     &__logo {
         display: grid;
         place-items: center;
         height: 120px;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 700;
         font-family: 'Mochiy Pop P one', sans-serif;
+        color: #BF0000;
     }
 
     &__menu {
@@ -46,8 +47,8 @@
             top: 0;
             left: 50%;
             width: calc(100% - 40px);
-            border-radius: 10px;
-            background-color: #308efe;
+            border-radius: 100px;
+            background-color: #FF2400;
             z-index: -1;
             transform: translateX(-50%);
             transition: 0.3s ease-in-out;

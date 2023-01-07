@@ -27,12 +27,14 @@ const sidebarNavItems = [
         to: '/courselist',
         section: 'courselist'
     },
+    /* 
     {
         display: 'Courses',
         icon: <i className='bx bx-course'></i>,
         to: '/course',
         section: 'course'
     },
+    */
     {
         display: 'Professors',
         icon: <i className='bx bx-professor'></i>,
@@ -44,6 +46,12 @@ const sidebarNavItems = [
         icon: <i className='bx bx-review'></i>,
         to: '/review/0',
         section: 'review'
+    },    
+    {
+        display: 'About Us',
+        icon: <i className='bx bx-contributor'></i>,
+        to: '/aboutus',
+        section: 'aboutus'
     },
 ]
 

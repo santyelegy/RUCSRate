@@ -1,18 +1,25 @@
 import dept_course from '../sample_data/CourseList.json'
+import { useParams,Link } from 'react-router-dom';
 
 function CourseList() {
-
+    const { id } = useParams();
+    const course = dept_course[0].cources.map((cources, index) => {
+        return (
+            <div>
+                <Link to={"/courselist".concat("/",index.toString())}>{dept_course[0].cources[0].code + " " + dept_course[0].cources[0].name}</Link></div>
+        );
+    })
     return (
         <>
             <div><div>
                 Department: {dept_course[0].Dcode + " " + dept_course[0].name}</div>
                 <div>
-                    {dept_course[0].cources[0].code} {dept_course[0].cources[0].name}</div>
+                    {course}</div>
                 <div>
                     {dept_course[0].cources[0].prof}</div>
 
                 <div>
-                    {dept_course[0].cources[1].code} {dept_course[0].cources[1].name}</div>
+                    {course}</div>
                 <div>
                     {dept_course[0].cources[1].prof}</div>
             </div>
