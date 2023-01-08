@@ -5,11 +5,25 @@ function ReviewForm() {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
     const [score, setScore] = useState(0);
+    let callapi = async () => {
+        const returnObject={'title':title,'content':content,'score':score}
+        fetch(`http://127.0.0.1:8000/api/createReview/`, {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(returnObject)
+        }).then(response => {
+            return response.json();
+        }).then(jsonResponse => {
+            console.log(jsonResponse);
+        }).catch(error => {
+            console.log(error)
+        })
+    }
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(title);
-        console.log(content);
-        console.log(score);
+        callapi();
     }
     const scorelist = [0, 1, 2, 3, 4, 5].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
