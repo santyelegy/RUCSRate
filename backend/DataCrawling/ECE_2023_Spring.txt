@@ -1,0 +1,133 @@
+ 16:332:505CONTROL SYSTEM THEORY3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+0111933
+Monday10:20 AM - 11:40 AMBuschSEC-211
+Thursday10:20 AM - 11:40 AMBuschSEC-211
+ABURBANO LOMBANABooksRegister
+ 16:332:509CONVEX OPTIMIZATION FOR ENGINEERING APPLICATIONS3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+0111934
+Monday5:40 PM - 7:00 PMBuschSEC-212
+Wednesday5:40 PM - 7:00 PMBuschSEC-212
+AJALALI, SHIRINBooksRegister
+ 16:332:519ADV TOPICS SYS ENGG3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 05 Subtitle: RECENT ADVANCES IN HIGH-PERFORMANCE COMP
+Section 05 Notes: KNOWLEDGE OF DATA STRUCTURES ANDCOMPUTER ARCHITECTURE IS NEEDED
+Section 05 Comments: Go to http://canvas.rutgers.edu
+Section 05 Open To: UNIT/MAJOR: 16/332 (The School of Graduate Studies - New Brunswick / MAJ: Electrical and Computer Engineering)
+Section 05 Cross-Listed With: 14:332:445:05 (19493)
+0519494
+Monday3:50 PM - 6:50 PMBuschCOR-538
+CLIU, HANGBooksRegister
+ 16:332:525OPTIMUM SIGNAL PROCESSING:SIGNAL PROCESSING MACHINE LEA..3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Subtitle: SIG. PROC. AND ML FOR ENG.
+Section 01 Open To: UNIT/MAJOR: 16/332 (The School of Graduate Studies - New Brunswick / MAJ: Electrical and Computer Engineering)
+0119142
+Monday2:00 PM - 3:20 PMBuschSEC-216
+Wednesday2:00 PM - 3:20 PMBuschSEC-216
+CPETROPULUBooksRegister
+ 16:332:539ADV TOPICS IN DSP3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Subtitle: HIGH-DIMENSIONAL MODELS IN DSP AND ML
+Section 01 Special Permission: INSTRUCTOR
+0111935
+Monday12:10 PM - 1:30 PMBuschARC-207
+Thursday12:10 PM - 1:30 PMBuschARC-207
+ASARWATE, ANANDBooksRegister
+ 16:332:544COMMUNICATION NET II3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://Sakai.rutgers.edu
+Section 01 Cross-Listed With: 14:332:423:01 (10317)
+0110318
+Friday2:00 PM - 5:00 PMBuschCOR-101
+ARAYCHAUDHURIBooksRegister
+ 16:332:568SOFTWR ENGG WEB APPL3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Open To: UNIT/MAJOR: 16/332 (The School of Graduate Studies - New Brunswick / MAJ: Electrical and Computer Engineering)
+0111936
+Friday8:30 AM - 11:30 AMBuschSEC-118
+ALIANG, YINGLUNGBooksRegister
+ 16:332:571VR TECHNOLOGY3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Cross-Listed With: 14:332:376:01 (10310)
+0110311
+Tuesday3:50 PM - 5:10 PMBuschSEC-212
+Thursday3:50 PM - 5:10 PMBuschSEC-212
+ALIU, YAOBooksRegister
+ 16:332:573DATA STRUCT & ALGS3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+0111937
+Wednesday7:30 PM - 10:30 PMBuschSEC-118
+ALI, JIEBooksRegister
+ 16:332:586BIOSENSING AND BIOELECTRONICS3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Cross-Listed With: 14:332:435:03 (10321)
+0110322
+Tuesday8:30 AM - 11:30 AMBuschARC-206
+AJAVANMARDBooksRegister
+ 16:332:589RF INTEGRATED CIRCUIT DESIGN3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://Sakai.rutgers.edu
+Section 01 Cross-Listed With: 14:332:464:01 (10368)
+0110369
+Tuesday5:40 PM - 8:40 PMBuschEE-203
+APEPE, RUSSELLBooksRegister
+ 16:332:590SOCIALLY COGNIZANT ROBOTICS3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Cross-Listed With: 16:198:590:01 (11529), 34:816:641:01 (11531), 16:185:600:01 (11310)
+0111530
+Tuesday12:10 PM - 1:30 PMBuschSEC-117
+Friday12:10 PM - 1:30 PMBuschSEC-117
+ABEKRIS, KOSTASBooksRegister
+ 16:332:599ADV TOPICS SS ELECT3 creditsSections: 2 / 2PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Subtitle: MICROELECTRONICS PROCESSING
+Section 01 Cross-Listed With: 14:332:467:01 (10370)
+0110371
+Tuesday3:50 PM - 5:10 PMLivingstonLSH-A121
+Thursday3:50 PM - 5:10 PMLivingstonLSH-A121
+ARAMANATHANBooksRegister
+ 16:332:599ADV TOPICS SS ELECT3 creditsSections: 2 / 2PrereqsSynopsis
+Section 02 Subtitle: SMART GRID: FUNDAMENTAL ELEMENTS OF DESI
+Section 02 Cross-Listed With: 14:332:494:01 (10375)
+0210376
+Tuesday2:00 PM - 3:20 PMBuschSEC-203
+Thursday2:00 PM - 3:20 PMBuschSEC-203
+CCAGGIANOBooksRegister
+ 16:332:579ADV TPCS COMPUTR ENG3 creditsSections: 4 / 4PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Subtitle: INTRO TO COMPUTER SYSTEMS
+Section 01 Comments: Go to http://Sakai.rutgers.edu
+Section 01 Cross-Listed With: 14:332:434:01 (10319)
+0110320
+Monday2:00 PM - 3:20 PMBuschHLL-114
+Wednesday2:00 PM - 3:20 PMBuschHLL-114
+ASTRIKI, MARIABooksRegister
+ 16:332:579ADV TPCS COMPUTR ENG3 creditsSections: 4 / 4PrereqsSynopsis
+Section 04 Subtitle: HARDWARE AND SYSTEM SECURITY
+Section 04 Comments: Go to http://Sakai.rutgers.edu
+Section 04 Cross-Listed With: 14:332:446:04 (10325)
+0410326
+Thursday10:20 AM - 1:20 PMBuschSEC-208
+AWEI, SHENGBooksRegister
+ 16:332:579ADV TPCS COMPUTR ENG3 creditsSections: 4 / 4PrereqsSynopsis
+Section 05 Subtitle: EMBEDDED SYSTEMS III
+Section 05 Cross-Listed With: 14:332:493:03 (10373)
+0510374
+Thursday5:40 PM - 7:00 PMBuschCOR-538
+Thursday7:30 PM - 8:50 PMBuschEE-103
+ADIAZ-MUNOZBooksRegister
+ 16:332:579ADV TPCS COMPUTR ENG3 creditsSections: 4 / 4PrereqsSynopsis
+Section 06 Subtitle: INTRODUCTION TO DEEP LEARNING
+Section 06 Comments: Go to http://Sakai.rutgers.edu
+Section 06 Cross-Listed With: 14:332:435:04 (10323)
+0610324
+Friday10:20 AM - 1:20 PMBuschBME-102
+AYUAN, BOBooksRegister

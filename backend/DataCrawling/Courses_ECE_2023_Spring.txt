@@ -1,0 +1,90 @@
+16:332:505
+CONTROL SYSTEM THEORY
+Electrical and Computer Engineering
+BURBANO LOMBANA
+
+16:332:509
+CONVEX OPTIMIZATION FOR ENGINEERING APPLICATIONS
+Electrical and Computer Engineering
+JALALI SHIRIN
+
+16:332:519
+ADV TOPICS SYS ENGG
+Electrical and Computer Engineering
+LIU HANG
+
+16:332:525
+OPTIMUM SIGNAL PROCESSING:SIGNAL PROCESSING MACHINE LEA..
+Electrical and Computer Engineering
+PETROPULU
+
+16:332:539
+ADV TOPICS IN DSP
+Electrical and Computer Engineering
+SARWATE ANAND
+
+16:332:544
+COMMUNICATION NET II
+Electrical and Computer Engineering
+RAYCHAUDHURI
+
+16:332:568
+SOFTWR ENGG WEB APPL
+Electrical and Computer Engineering
+LIANG YINGLUNG
+
+16:332:571
+VR TECHNOLOGY
+Electrical and Computer Engineering
+LIU YAO
+
+16:332:573
+DATA STRUCT & ALGS
+Electrical and Computer Engineering
+LI JIE
+
+16:332:586
+BIOSENSING AND BIOELECTRONICS
+Electrical and Computer Engineering
+JAVANMARD
+
+16:332:589
+RF INTEGRATED CIRCUIT DESIGN
+Electrical and Computer Engineering
+PEPE RUSSELL
+
+16:332:590
+SOCIALLY COGNIZANT ROBOTICS
+Electrical and Computer Engineering
+BEKRIS KOSTAS
+
+16:332:599
+ADV TOPICS SS ELECT
+Electrical and Computer Engineering
+RAMANATHAN
+
+16:332:599
+ADV TOPICS SS ELECT
+Electrical and Computer Engineering
+CAGGIANO
+
+16:332:579
+ADV TPCS COMPUTR ENG
+Electrical and Computer Engineering
+STRIKI MARIA
+
+16:332:579
+ADV TPCS COMPUTR ENG
+Electrical and Computer Engineering
+WEI SHENG
+
+16:332:579
+ADV TPCS COMPUTR ENG
+Electrical and Computer Engineering
+DIAZ-MUNOZ
+
+16:332:579
+ADV TPCS COMPUTR ENG
+Electrical and Computer Engineering
+YUAN BO
+

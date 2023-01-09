@@ -1,0 +1,150 @@
+ 16:198:501MATHEMATICAL FOUNDATIONS OF DATA SCIENCE3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+0111502
+Monday10:20 AM - 1:20 PMLivingstonTIL-257
+ACOWAN, CHARLESBooksRegister
+ 16:198:509FDTNS COMPUTER SCI3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+0111503
+Monday12:10 PM - 1:30 PMBuschSEC-203
+Thursday12:10 PM - 1:30 PMBuschSEC-203
+ASZEGEDY, MARIOBooksRegister
+ 16:198:512INTRODUCTION TO DATA STRUCTURES AND ALGORITHMS3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111505
+Tuesday7:30 PM - 8:50 PMBuschCOR-101
+Thursday7:30 PM - 8:50 PMBuschCOR-101
+AMIRANDA GARCIABooksRegister
+ 16:198:513DESIGN AND ANALYSIS OF DATA STRUCTURES AND ALGORITHMS3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111506
+Monday2:00 PM - 5:00 PMLivingstonTIL-232
+ABERNSTEINBooksRegister
+ 16:198:514DSGN & ANAL DS&ALGR II3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+0111507
+Friday12:10 PM - 3:10 PMLivingstonLSH-B267
+AZHANG, PENGBooksRegister
+ 16:198:515PROGRAMMING LANGUAGES AND COMPILERS I3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+0111508
+Monday12:10 PM - 3:10 PMBuschHLL-009
+AZHANG, ZHENGBooksRegister
+ 16:198:518OPERATING SYSTEMS DESIGN3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+0111510
+Monday5:40 PM - 7:00 PMBuschRWH-105
+Wednesday5:40 PM - 7:00 PMBuschRWH-105
+CKANNANBooksRegister
+ 16:198:520INTRO TO ARTIF INTEL3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111511
+Wednesday3:50 PM - 6:50 PMCollege AvenueSC-135
+AYU, JINGJINBooksRegister
+ 16:198:525BRAIN INSPIRED COMPUTING3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111513
+Monday3:50 PM - 5:10 PMBuschSEC-118
+Wednesday3:50 PM - 5:10 PMBuschSEC-118
+OMICHMIZOSBooksRegister
+ 16:198:526DATA INTERACTION AND VISUAL ANALYTICS3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111514
+Tuesday12:10 PM - 1:30 PMBuschSEC-203
+Friday12:10 PM - 1:30 PMBuschSEC-203
+OABELLO MONEDEROBooksRegister
+ 16:198:527DATABASE SYSTEMS FOR DATA SCIENCE3 creditsSections: 1 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111515
+Tuesday3:50 PM - 5:10 PMLivingstonLSH-AUD
+Thursday3:50 PM - 5:10 PMLivingstonLSH-AUD
+AMIRANDA GARCIABooksRegister
+ 16:198:530PRINCIPLES OF ARTIFICIAL INTELLIGENCE3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+0111516
+Monday3:50 PM - 5:10 PMBuschARC-206
+Wednesday3:50 PM - 5:10 PMBuschARC-206
+AKULIKOWSKIBooksRegister
+ 16:198:533NATURAL LANGUAGE3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111517
+Tuesday2:00 PM - 5:00 PMBuschFBO-EHA
+ASTRATOS, KARLBooksRegister
+ 16:198:534COMPUTER VISION3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111518
+Monday6:00 PM - 9:00 PMBuschSEC-118
+AELGAMMAL, AHMEDBooksRegister
+ 16:198:536MACHINE LEARNING II3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: See online schedule for prereqs, Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111519
+Friday12:10 PM - 3:10 PMBuschFBO-EHA
+AWANG, HAOBooksRegister
+ 16:198:546COMPUTER SYSTEM SECURITY3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+0111524
+Wednesday8:30 AM - 11:30 AMBuschHLL-009
+AMA, SHIQINGBooksRegister
+ 16:198:550MASSIVE DATA MINING3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111525
+Tuesday2:00 PM - 3:20 PMBuschARC-107
+Thursday2:00 PM - 3:20 PMBuschARC-107
+AZHANG, YONGFENGBooksRegister
+ 16:198:553DESIGN OF INTERNET SERVICES3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Comments: Go to http://canvas.rutgers.edu
+Section 01 Open To: UNIT/MAJOR: 16/198 (The School of Graduate Studies - New Brunswick / MAJ: Computer Science)
+0111526
+Wednesday8:30 AM - 11:30 AMBuschHLL-116
+ANARAYANA GANAPABooksRegister
+ 16:198:590SOCIALLY COGNIZANT ROBOTICS3 creditsSections: 0 / 1PrereqsSynopsis
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 01 Cross-Listed With: 34:816:641:01 (11531), 16:185:600:01 (11310), 16:332:590:01 (11530)
+0111529
+Tuesday12:10 PM - 1:30 PMBuschSEC-117
+Friday12:10 PM - 1:30 PMBuschSEC-117
+ABEKRIS, KOSTASBooksRegister
+ 22:198:660BUSINESS ANALYTICS PROGRAMMING3 creditsSections: 0 / 1Prereqs
+Course Supplement Code: NB
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 60 Subtitle: INTRO TO BUS ANALYTICS PROGRAMMING
+Section 60 Comments: Go to http://canvas.rutgers.edu, Hybrid
+Section 60 Open To: MAJ: 135 (Business Administration)
+Section 60 Cross-Listed With: 22:544:660:60 (14608)
+6014607
+Tuesday6:00 PM - 7:20 PMLivingstonTIL-105
+Asynchronous contentOnline
+AGILANI, WAJAHATBooksRegister
+ 22:198:670INFORMATION TECHNOLOGY STRATEGY3 creditsSections: 1 / 1Prereqs
+Course Supplement Code: NB
+SECINDEXMEETING TIMES / LOCATIONSEXAMINSTRUCTORSBOOKSREGISTER
+Section 61 Comments: Go to http://canvas.rutgers.edu
+Section 61 Open To: MAJ: 135 (Business Administration)
+Section 61 Cross-Listed With: 22:544:670:61 (18551)
+6118549
+Tuesday6:00 PM - 9:00 PMLivingstonBRR-4087
+AALEMAYEHUBooksRegister
