@@ -4,32 +4,32 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("Professor")
 public class Professor {
-    String name;
-    String email;
-    Double score;
+    String Name;
+    String Email;
+    Double Score;
 
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.Name = name;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.Email = email;
     }
 
     public Double getScore() {
-        return score;
+        return Score;
     }
 
     public void setScore(Double score) {
-        this.score = score;
+        this.Score = score;
     }
 }

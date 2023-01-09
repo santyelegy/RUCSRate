@@ -4,59 +4,59 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("Review")
 public class Review {
-    Course course_id;
-    Double preference;
-    Double difficulty;
-    Double prof;
-    Double helpfulness;
-    String content;
-    
+    Course Course_id;
+    Double Preference;
+    Double Difficulty;
+    Double Prof;
+    Double Helpfulness;
+    String Content;
+
 
     public Course getCourse_id() {
-        return course_id;
+        return Course_id;
     }
 
     public void setCourse_id(Course course_id) {
-        this.course_id = course_id;
+        this.Course_id = course_id;
     }
 
     public Double getPreference() {
-        return preference;
+        return Preference;
     }
 
     public void setPreference(Double preference) {
-        this.preference = preference;
+        this.Preference = preference;
     }
 
     public Double getDifficulty() {
-        return difficulty;
+        return Difficulty;
     }
 
     public void setDifficulty(Double difficulty) {
-        this.difficulty = difficulty;
+        this.Difficulty = difficulty;
     }
 
     public Double getProf() {
-        return prof;
+        return Prof;
     }
 
     public void setProf(Double prof) {
-        this.prof = prof;
+        this.Prof = prof;
     }
 
     public Double getHelpfulness() {
-        return helpfulness;
+        return Helpfulness;
     }
 
     public void setHelpfulness(Double helpfulness) {
-        this.helpfulness = helpfulness;
+        this.Helpfulness = helpfulness;
     }
 
     public String getContent() {
-        return content;
+        return Content;
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.Content = content;
     }
 }
