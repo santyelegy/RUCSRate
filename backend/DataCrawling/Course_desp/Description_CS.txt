@@ -1,0 +1,250 @@
+16-198-500-proseminar-in-computer-science
+ Required for all new full-time students in Ph.D program. 
+ Several sections are offered each term, introducing students to research activities inside the department. Full-time students in the Ph.D. program are required to register for one credit of 01:198:500 during each of their first four semesters.
+
+
+16-198-501-mathematical-foundations-of-data-science
+ Focus on the use of linear algebra and statistical conceptual tools in machine learning and data mining practice. Topics include Matrix Factorizations, Bayesian approaches to Hypothesis testing - Parameter Estimation, Kernels, Density Estimation, Gradient Descent, and Neural Networks. 
+
+
+16-198-503-computational-thinking
+ Note: This course may not be taken for credit toward the MS and Ph.D. degrees in computer science.  It is primarily intended for cognitive science students who do not have undergraduate degrees in computer science. By taking this course, you will learn how to participate in interdisciplinary collaborations that depend on the techniques and results of computer science. Over the course, we will develop three important kinds of programs through hands-on case studies: an interpreter for a programming language; a web interface to a database; and a reinforcement-learning agent capable of perception, deliberation and action. We'll also present some of the theoretical background computer scientists use to understand such programs precisely - including representation, complexity, and computability - and introduce the history and culture of the field. 
+
+
+16-198-504-computational-modeling
+ Note: This course may not be taken for credit toward the MS and Ph.D. degrees in computer science.  It is primarily intended for cognitive science students who do not have undergraduate degrees in computer science. This course offers a hands-on introduction to computational modeling as a methodology for explaining the behavior of complex and intelligent systems. The course aims for a broad audience of graduate students who need to master computational ideas and tools for their research practice. 
+
+
+16-198-505-computer-structures
+ Hardware subsystems. Computer organization, memory systems, arithmatic, I/O, control, data communications, parallel processors, RISC architectures, and other topics of current interest.   
+
+
+16-198-507-advanced-computer-architecture
+ Advanced Topics in computer architecture, including advancedprocessor design, models and workload charachteristics for multiprocessor systems, memory and cache coherence and consistency, multiprocessor architecture, and I/O. 
+
+
+16-198-508-formal-language-and-automata
+ To provide a rigorous mathematical framework for two general areas: that of language description and that of computation; to examine the relation between the two and to consider practical applications from Computer Science and Linguistics.  Computability theory and complexity theory are also introduced This course counts as category A for M.Sc. degree requirement. This course does NOT count as category A for Ph.D. students 
+
+
+16-198-509-foundations-of-computer-science
+ Introduction to first-order logic, emphasizing methods used in computer science. Introduction to mathematical models of computation, especially deterministic and non-deterministic Turing machines, computability theory, and space ant time complexity theory.P and NP 
+
+
+16-198-510-numerical-analysis
+ Derivation, analysis, and application of methods used to solve numerical problems with computers; solution of equations by iteration, approximation of functions, differentiation and quadrature, differential equations, linear equations and matrices, least squares. 
+
+
+16-198-512-introduction-to-data-structures-and-algorithms
+ This course is required for all students joining the Computer Science M.Sc. program. Students from other departments can request special permission numbers provided they meet the prerequisites as stated below. The course studies a variety of useful algorithms and analyze their complexity; students will gain insight into principles and data-structures useful in algorithm design. This course counts as category A for the M.Sc. degree requirement. This course does NOT count as category A for Ph.D. students.
+
+
+16-198-513-design-and-analysis-of-data-structures-and-algorithms
+ Core material for Computer Science degree candidates. Discussion of representative algorithms and data structures encountered in applications. 
+
+
+16-198-514-design-and-analysis-of-data-structures-and-algorithms-ii
+ This course goes beyond 16:198:513 in introducing the student to new concepts and techniques used in the study of algorithms. It is intended to serve students specializing in a number of different areas within computer science.
+
+
+16-198-515-programming-languages-and-compilers-i
+ This course covers concepts and techniques used in the description and definition of programming languages, and in the construction of their translators. 
+
+
+16-198-516-programming-languages-and-compilers-ii
+ This course covers advanced aspects of compilation of modern programming languages and architectures, especially global optimization transformations and compile-time analyses. 
+
+
+16-198-518-operating-systems-design
+ To convey a thorough understanding of the basics of an operating system by studying techniques and algorithms for providing services in a computer system, and to understand implementation aspects of popular systems by means of case studies. This course counts as category B for M.Sc. degree requirement. This course does NOT count as category B for Ph.D. students 
+
+
+16-198-519-operating-system-theory
+This course constitutes the second level in the operating systems course sequence 01:198:416 -- 01:198:519. While 01:198:416 takes a descriptive approach to convey a thorough understanding of the various operating system tasks and their interactions, this course stresses advanced concepts in operating system design including interactions with networking, and evaluation of design options for the implementation of those concepts. Its principal purpose is to present the concepts and the algorithms for providing distributed services in a computer system. Thus, the course is intended for computer science students.
+
+16-198-520-introduction-to-artificial-intelligence
+ Overview of artificial intelligence. Basic problems and methods; deductive inference, declarative programming, heuristic search; reasoning and representation in perception, planning, and learning. This course is a pre-requisite for several machine learning and AI courses. Credits for this course can not be combined with 440. Students cannot get credit for both courses counting towards their MS/Ph.D. degrees. 
+
+
+16-198-521-linear-programming
+ This course introduces modeling concepts, theory, algorithms, computational strategies, and applications of linear programming (LP). The course is intended for computer science students, and students from other disciplines, such as mathematics, statistics, operations research, engineering, business administration, and economics. The material covered in this course provides the background required for reading the literature in this field. 
+
+
+16-198-522-network-and-combinatorial-optimization-algorithms
+ This semester, 522 will examine new topics and will be taught in a graduate seminar-like format.  A natural question that comes up is: How to design heuristics with provable approximation guarantees (error bounds) for specific NP-hard combinatorial optimization problems one often encounters in practice?  To this end, following a review of fundamental results, the course will briefly review fast approximation schemes for large structured packing and covering LPs, and then proceed through the list of specific topics (see 2015 Class URL), starting from the simpler paradigms of greedy, local search, dynamic programming, along with appropriate rounding procedures, to the more elaborate LP-based strategies, semidefinite programming, primal-dual methods, followed by deterministic or randomized rounding schemes.   The insight one gains by studying these topics often points ways to design high quality algorithms for new problems and applications. The course is intended for students in computer science and in other disciplines such as mathematics, statistics, operations research, engineering, and bioinformatics. 
+
+
+16-198-523-computer-graphics
+ Introduction to computer image synthesis: modeling, animation, rendering, and geometric techniques. Topics include geometric transformations, modeling hierarchies, viewing and visibility, animation techniques, curve and surface design, lighting, shading, and ray tracing. For Spring 2009: <br />This course will survey state-of-the-art shape modeling research that aims at broadening our knowledge and understanding of shapes to create better digital modeling tools, and explores ways to communicate the human intentions of shape manipulation to the computer in a natural and effective manner. The course will begin by covering some introductory topics in geometric modeling, with an emphasis on discrete geometry processing: digital shape representations and related data structures, shape acquisition and reconstruction, smoothing and denoising, parameterization and remeshing. We will then concentrate on recent shape creation and manipulation research, touching on variational modeling techniques, space deformations, sketch-based modeling interfaces, shape interpolation and skeleton-skin animation of articulated bodies. The necessary mathematical tools will be presented along the way (these include topics in linear algebra, differential geometry and optimization). 
+
+
+16-198-525-brain-inspired-computing
+ The course explores how computation in the human brain can be effectively modeled across the main levels of abstraction (from a single neuron to biological neural networks and system; introduces a time-sensitive computational formalization of brain function based on the model of neuron as a Spike Processing Machine – Spike Neural Networks (SNNs); and employs neuro-mimetic or neuro-inspired SNNs to tackle a problem in a term-wide project. The aim of this course is to provide the student with a solid foundation in the field. 
+
+
+16-198-526-data-interaction-and-visual-analytics
+ This class is a foundational class for the newly created Professional Master in Data Science within the Computer Science Department.
+
+
+16-198-527-database-systems-for-data-science
+ Much of the world's data resides in databases. The purpose of this course is to introduce relational and NoSQL database concepts with emphasis on both theoretical and practical learning. This course helps students learn and apply knowledge of the SQL language and implementing components of relational and NoSQL database systems (DBMS). Students will create database instances in the cloud for both relational and NoSQL database systems such as MySQL, SQL Server, Amazon Redshift, Google BigQuery and MongoDB. Through a couple of hands-on projects students will practice building and running advanced SQL scripts and Python/Java codes. 
+
+
+16-198-529-computational-geometry
+ Computational geometry addresses geometric questions using ideas from algorithms, data structures, complexity theory, and combinatorics. As such, it provides a nice set of applications from these disciplines and also contains features that are interesting and useful in their own right. The aim of this course is to provide the student with a solid foundation in the field. 
+
+
+16-198-530-principles-of-artificial-intelligence
+ To provide a comprehensive introduction to current research methods in artificial intelligence. The course is appropriate both for nonspecialists who wish to acquire a strong grounding in the engineering aspects of computing with real-world data, and as a prerequisite to more advanced courses in artificial intelligence. 
+
+
+16-198-532-foundations-of-knowledge-representation
+ A course on the knowledge representation problem in AI, with an emphasis on the use of logical techniques. One foundation of the course is ``computational logic,'' as represented, for example, by the current work on logic programming and its extensions. The course considers various modal logics that have been proposed as representations of our ``common sense categories'': e.g., time, action, knowledge, belief. Both the semantics and the proof theory of these logics will be studied, and the feasibilty of selectively incorporating modal proof procedures into an automated reasoning system will be investigated. Finally, the course will consider several forms of nondeductive inference that have been analyzed with the use of logical techniques, such as nonmonotonic reasoning and abductive reasoning. The extent to which these ``common sense inferences'' can be accommodated within a logical framework will be a major point of discussion. Additional topics, possibly dealing with the complexity of reasoning, may be added at the discretion of the instructor. 
+
+
+16-198-533-natural-language-processing
+ An in-depth study of the ideas and techniques underlying the development of a computational theory of human language use, which is necessary both for practical interactive dialogue applications, as well as for the scientific study of human communication. The course is intended for computer science graduate students, as well as students in allied areas (information science, linguistics, philosophy, psychology, computer engineering) who have interests in artificial intelligence and computational linguistics. 
+
+
+16-198-534-computer-vision
+ The course provides an understanding of the processes involved in the formation of images of visual scenes, of how computational approaches for transforming, estimating or recognizing such images are formulated and implemented, and of where these methods can and have been applied. The course will also teach implementation and practical use of a wide variety of vision algorithms. This course is intended for computer science graduate students, as well as students in allied areas (such as psychology or biomedical engineering) who have interests in computational vision and its applications. 
+
+
+16-198-535-pattern-recognition-theory-and-applications
+ The principal purpose of this course is to introduce the student to the problems of pattern recognition through a comparative presentation of methodology and practical examples. The course is intended for computer science students with an applied mathematics orientation, and also for students in other programs (computer and electrical engineering, statistics, mathematics, psychology) who are interested in this area of research. It is also recommended for students who plan to work in the area of biomedical applications of computers. 
+
+
+16-198-536-machine-learning
+ An in-depth study of machine learning, to impart an understanding of the major topics in this area, the capabilities and limitations of existing methods, and research topics in this field. 
+
+
+16-198-538-complexity-of-computation
+ The course presents the main results of computational complexity theory, including complexity classes, reducibilities, and complete sets. Relationships between time and space complexity, between serial and parallel computation, and among deterministic, probabilistic, and nondeterministic computation. Complexity theoretic notions of randomness. 
+
+
+16-198-539-database-systems-implementation
+ Implementing components of relational database systems (DBMS): record storage, indexing structures, query evaluation, joins algorithms, query optimization. Understanding and administering a DBMS: security, concurrency control and crash recovery. Tuning DBMS for performance. Recent advances in data management : text-based information retrieval, web search, cloud computing, column store systems. This class focuses on data management from a database administrator's, or implementer's, perspective. This course is suitable for entry level M.Sc. Students who has not taken a solid undergraduate database courses.<br />This course counts as category B for M.Sc. degree requirement. This course does NOT count as category B for Ph.D. students 
+
+
+16-198-540-combinatorial-methods-in-complexity-theory
+ This course investigates problems in computational complexity that can be solved using ideas and techniques from combinatorial analysis. 
+
+
+16-198-541-database-systems
+ This course focuses on advanced topics in Database Management Systems and Web Data. 
+
+
+16-198-543-massive-data-storage-retrieval-and-deep-learning
+ In today's world of massive amounts of data, new methods and techniques are needed to dive deeper into such data including hands-on practical work on real data sets. This course covers the major existing algorithmic primitives necessary for the processing of "massive" data sets in external memory and data streaming settings. It also introduces various deep learning frameworks and corresponding neural methods in a variety of application areas. Students have the opportunity to gain experience with major platforms for storage and retrieval, including Hadoop Distributed File Systems and Data Streaming with Apache Spark. The focus of one "large data" project is on techniques for information retrieval, natural language processing, and the necessary indexing methods for the retrieval of semantically relevant information. A second "large data" project focuses on the application of a deep learning framework to an application area of each student's choice.  
+This class is related to CS541 (graduate databases) and to CS539 (physical databases) – but it is much systems oriented and focused on practical hands on aspects of storing, processing, and managing massive amounts of structured and unstructured data. 
+
+
+16-198-544-computer-security
+ This is an entry level course for M.Sc. Students.<br />This course counts as category B for M.Sc. degree requirement. This course does NOT count as category B for Ph.D. students. 
+
+
+16-198-545-distributed-systems
+ This course will cover the basic mechanisms for building distributed systems (e.g., RPC, synchronization, transactions, etc.), a number of relevant subsystems of distributed operating systems (e.g., distributed file systems, distributed shared-memory systems, etc.), and issues in wide-area distributed systems (e.g., security, wide-area clustering, etc.). 
+
+
+16-198-546-computer-system-security
+ This course will cover both classic, foundational topics in computer security as well as recent developments.  A key goal of the course will be to educate students to think both as an attacker and as a defender.  The focus of the course will be security of computer systems, and will complement CS537, which focuses on distributed systems security. 
+
+
+16-198-547-the-security-and-dependability-of-distributed-systems
+ This course will cover the twin issues of security and dependability of distributed systems. Here are some of the questions we will explore: 
+ (1) How can the actors of a multi-agent system collaborate effectively, without having any trust in each other? 
+ (2) How can one create an effective social network without a Facebook like central mediator? 
+ (3) Can one protect large organization (like Rutgers, or like a defense establishment) from DDoS attacks? 
+
+
+16-198-549-artificial-intelligence-for-visual-computing
+ This course will introduce students to recent trends in Artificial Intelligence for applications to visual computing. Visual computing is a sub-field of Computer Science which broadly encompasses areas including but not limited to: Computer Graphics, Computer Vision, Virtual and Augmented Reality, and Interactive Techniques. As part of this course, students will therefore be exposed to concepts in Artificial Intelligence which directly apply to one or more of these topic areas. 
+
+
+16-198-550-massive-data-mining
+ This class is recommended for students interested in pursuing a concentration in Massive Data Analytics or Machine Learning. Students will learn algorithms to store, process, mine, analyze, and synthesize streaming data, or data at rest that does not fit in Random Access Memory. The material covered here equips students with the main backend algorithms and infrastructure necessary for the completion of the required Capstone Project for MS graduation with a Massive Data Analytics concentration. 
+
+
+16-198-552-computer-networks
+ This course provides students with a thorough understanding of the basic principles of computer networks, the design philosophy of scalable internetworks, and the details of computer network protocols. Students who complete this course will learn not only how network protocols work but why they are designed the way they are. They will also learn how to implement an event-driven computer network simulator and use it as a tool to study the behavior and performance of network protocols. 
+
+
+16-198-553-design-of-internet-services
+ The course introduces students to advanced topics in Internet services , especially those that relate to application layer services and  infrastructure services. The course will enable students to understand  tools required to deploy Internet scale services, in terms of their operations and management requirements. It will also enable them to design new Internet services in a manner that is scalable, available and efficient.  Topics to be covered include: Serverless architectures, Scaling and Elasticity,  Storage services, KEY Value stores, Virtualization services and containers, Cluster management and Coordination services , monitoring and analytics services. 
+
+
+16-198-560-introduction-to-computational-robotics
+ This course provides a general introduction to robotics from a computational perspective with a focus on mobile robots. This includes the use of popular software for interacting with and simulating robots,<br />such as the Robot Operation System (ROS). It will provide a view of robots as autonomous agents with a mechanical embodiment, which must observe and act upon their surroundings through the iterative<br />execution of a sensing-planning- actuation loop. On the sensing and perception side, the course will cover state estimation challenges, such as robot localization, simultaneous localization and mapping<br />(SLAM), as well as Bayesian solutions to these problems, such as Kalman and particle filters. For planning and decision making purposes, the course will introduce basic planning and replanning methods, such as<br />A* and D*-like algorithms, the configuration space abstraction, sampling-based planners, and a toolbox of algorithms that solve problems by utilizing these principles. Extensions to multi-robot systems, online<br />planning and handling uncertainty will be touched upon as well. On the control side, the course will offer an introductory coverage of robot kinematics and dynamics, as well as foundational algorithms for<br />trajectory following (e.g., PID). 
+
+
+16-198-562-advanced-robotics
+ 198:562 provides comprehensive coverage of mathematical and algorithmic foundations of robotics, particularly motion planning, grasping and manipulation with an emphasis on data-driven and machine learning tools used in modern robotics. The focus will be on how robots can acquire new behaviors and adapt to their environment through learning. 
+
+
+16-198-580-topics-in-computers-in-biomedicine
+ This course surveys computational methods in biology or medicine: topics vary from instructor to instructor and may include computational molecular biology, medical reasoning, and imaging. See semester-specific web pages for details. 
+
+
+16-198-583-topics-in-software-design
+ This course is intended to lead into research in the areas of distributed systems and software engineering. The seminar deals with various issues concerning the design, construction and evolution of large scale software systems, covering both sequential as well as distributed and parallel systems. Among the issues to be discussed are:     * Modern programming paradigms, especially Object-Oriented Programming.<br />    * Programming Environments.<br />    * The (locally developed) concept of Law-Governed architectures.<br />    * Open distributed systems.<br />    * Various topics in operating systems.  Other topics may be included, depending on the interest of the participants. The seminar will include talks by the instructor, by several guests and by the students. 
+
+
+16:198:590-socially-cognizant-robotics
+ Students of the “Socially Cognizant Robotics” course will learn basic principles and state-of-the-art developments of robotics so as to learn the expected trajectory of this technology and its impact on individuals and society. The course is designed for both STEM students as well as computationally-oriented cognitive and social science students.  The interdisciplinary curriculum has seven underlying disciplines spanning STEM fields to social and behavioral sciences. It includes traditionally technical disciplines, such as robot embodiment and control, and extends to areas which support human interaction, such as visual learning and language processing, to cognitive modeling, which enables more high level human-robot cooperation, and finally to areas such as behavioral research and public policy. The course will utilize open-source software libraries in robotics, computer vision,  and deep learning. Recent innovations at the intersection of deep reinforcement learning and human behavior modeling will be explored in the context of optimizing collaborative robot action.
+
+
+16-198-607-problems-in-numerical-methods
+ (Note: This course has not been offered for several years.)   This course is intended for advanced graduate students (Computer Science majors as well as students from other disciplines) who wish to advance their knowledge in specific areas of the application of numerical methods. This may be taken by interested students in conjunction with&nbsp 198:527 (Computer Methods for Partial Differential Equations).
+
+
+16-198-608-problems-in-numerical-methods
+ This course is intended for advanced graduate students (Computer Science majors as well as students from other disciplines) who wish to advance their knowledge in specific areas of the application of numerical methods. This may be taken by interested students in conjunction with 198:527 (Computer Methods for Partial Differential Equations).
+
+
+16-198-671-seminar-in-computer-science
+ Special topics in computer science. 
+
+
+16-198-672-seminar-in-computer-science
+ Special topics in computer science. 
+
+
+16-198-673-seminar-in-computer-science
+ Special topics in computer science. 
+
+
+16-198-701-research-in-computer-science
+ The course numbers 701, 702 and 703 are used by graduate students for their Ph.D. thesis research work.  There is one section of 701/702/703 for each member of the graduate faculty. A Ph.D. student must have a least 24 credits of 701-2-3 taken toward writing a Ph.D. thesis.  Ph.D. students should not register for 701-2-3 until they have passed their qualifying exams. Students receive a "grade" of S or U for their research credits.\ 
+ Open only to PhD Students 
+
+
+16-198-702-research-in-computer-science
+ The course numbers 701, 702 and 703 are used by graduate students for their Ph.D. thesis research work.  There is one section of 701/702/703 for each member of the graduate faculty. A Ph.D. student must have a least 24 credits of 701-2-3 taken toward writing a Ph.D. thesis.  Ph.D. students should not register for 701-2-3 until they have passed their qualifying exams. Students receive a "grade" of S or U for their research credits. 
+ ᵅ Open Only to PhD Students 
+
+
+16-198-703-research-in-computer-science
+ The course numbers 701, 702 and 703 are used by graduate students for their Ph.D. thesis research work.  There is one section of 701/702/703 for each member of the graduate faculty. A Ph.D. student must have a least 24 credits of 701-2-3 taken toward writing a Ph.D. thesis.  Ph.D. students should not register for 701-2-3 until they have passed their qualifying exams. Students receive a "grade" of S or U for their research credits. 
+ ᵅ Open Only to PhD Students 
+
+
+16-198-704-research-in-computer-science
+ The course numbers 704, 705 and 706 are used by graduate students for their MS thesis research work.  There is one section of 704/705/706 for each member of the graduate faculty. A master’s student takes a total of 6 credits of 704, 705, 706 for preparing a Master’s thesis (not essay).  Apart from this situation, a student cannot count any 704, 705, 706 credits towards a Master’s degree. Students receive a "grade" of S or U for their research credits. 
+ ᵞ Open Only to MS Thesis Students 
+
+
+16-198-705-research-in-computer-science
+ The course numbers 704, 705 and 706 are used by graduate students for their MS thesis research work.  There is one section of 704/705/706 for each member of the graduate faculty. A master’s student takes a total of 6 credits of 704, 705, 706 for preparing a Master’s thesis (not essay).  Apart from this situation, a student cannot count any 704, 705, 706 credits towards a Master’s degree. Students receive a "grade" of S or U for their research credits. 
+ ᵞ Open Only to MS Thesis Students 
+
+
+16-198-706-research-in-computer-science
+ The course numbers 704, 705 and 706 are used by graduate students for their MS thesis research work.  There is one section of 704/705/706 for each member of the graduate faculty. A master’s student takes a total of 6 credits of 704, 705, 706 for preparing a Master’s thesis (not essay).  Apart from this situation, a student cannot count any 704, 705, 706 credits towards a Master’s degree. Students receive a "grade" of S or U for their research credits. 
+ ᵞ Open Only to MS Thesis Students 
+
+
+16-198-800-matriculation-continued
+ This makes it possible for a student to take a semester's leave of absence. The student must make a formal request to the Director of the Program by filling out a form. Permission will almost never be granted for more than two semesters. Once the student has obtained departmental approval, he must register for 198:800. The Graduate School does not allow students who have passed the Ph.D. qualifying exam to take Matriculation Continued. Such students must be registered for at least 1 credit of thesis research (701-2) each semester.
+
+

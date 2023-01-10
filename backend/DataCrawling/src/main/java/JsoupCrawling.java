@@ -12,8 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class JsoupCrawling {
-
-    public static final String WEBSITE = "https://www.cs.rutgers.edu/academics/graduate/m-s-program/course-synopses/course-details/16-198-512-introduction-to-data-structures-and-algorithms";
+    public static final String WEBSITE = "https://www.cs.rutgers.edu/academics/graduate/m-s-program/course-synopses/course-details/16-198-514-design-and-analysis-of-data-structures-and-algorithms-ii";
     // 站点URL，注意要加上协议(http://)
 
     public static Map<String, String> cookies = new HashMap<String, String>(); // cookie

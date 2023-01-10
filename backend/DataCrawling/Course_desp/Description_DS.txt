@@ -1,0 +1,42 @@
+16:198:512 Introduction to Data Structures and Algorithms (3)
+An introduction for students in other degree programs on Data Structures and Algorithms. The course studies a variety of useful algorithms and analyzes their complexity; students will gain insight into principles and data structures useful in algorithm design.
+
+16:198:521 Linear Programming (3)
+This course introduces modeling concepts, theory, algorithms, computational strategies, and applications of linear programming (LP). The course is intended for computer science students, and students from other disciplines, such as mathematics, statistics, operations research, engineering, business administration, and economics. The material covered in this course provides the background required for reading the literature in this field.
+
+16:198:539 Database Management Systems (3)
+Implementing components of relational database systems (DBMS): record storage, indexing structures, query evaluation, joins algorithms, query optimization. Understanding and administering a DBMS: security, concurrency control, and crash recovery. Tuning DBMS for performance. Recent advances in data management: text-based information retrieval, web search, cloud computing, column store systems. This class focuses on data management from a database administrator's, or implementer's, perspective.
+
+16:198:541 Advanced Database Management (3)
+This course focuses on advanced topics in Database Management Systems and Web Data.
+
+16:332:509 Convex Optimization for Engineering Applications (3)
+The course develops the necessary theory, algorithms and tools to formulate and solve convex optimization problems that seek to minimize cost function subject to constraints. The emphasis of the course is on applications in engineering applications such as control systems, computer vision, machine learning, pattern recognition, financial engineering, communication and networks.
+
+16:954:534 Statistical Learning for Data Science (3)
+Advanced statistical learning methods are essential for applications in data science. The course covers optimization, supervised and unsupervised learning, trees and random forest, deep learning, graphical models, and others.
+
+16:954:567 Statistical Models and Computing (3)
+This course is about advanced statistical models and computing methods essential for applications in data science. The topics include advanced topics in linear regression, causal inference, logistic regression, discrete choice models, generalized linear models, mixed-effects models, bootstrap, EM-algorithm, Bayesian analysis and MCMC method.
+
+16:954:577 Advanced Analytics using Statistical Software (3)
+Modeling and analysis of data, usually very large datasets, for decision making. Review and comparison of software packages used for Analytics Modeling. Multiple and logistic regression, multi-stage models, decision trees, network models, and clustering algorithms. Investigate data sets, identify and fit appropriate data analytics models, interpret statistical models in context, distinguish between data analytics problems involving forecasting and classification, and assess analytics models for usefulness, predictive value, and financial gain.
+
+16:954:581 Probability and Statistical Inference for Data Science (3)
+The study of probabilistic and inferential tools is important for applications in data science. Topics covered: Probability distributions; decision theory, Bayesian inference, classification, prediction; law of large numbers, central limit theorem; point and interval estimation; multiple testing, false-discovery rates.
+
+16:954:596 Regression and Time Series Analysis for Data Science (3)
+This course introduces regression methods, state-space modeling, linear time series models, and volatility models, which are important tools for data analysis, and are foundations for developing more specialized methods.
+
+16:954:597 Data Wrangling and Husbandry (3)
+This course provides an introduction to the principles and tools to retrieve, “tidy,” clean, and visualize data in preparation for statistical analysis. Principles of reproducibility and reusability are emphasized. It teaches techniques to wrangle and explore data. The emphasis is on the preparation of data to ease the analysis rather than sophisticated analyses. Topics include methods to convert data from diverse sources into a suitable form for data visualization and analysis; methods to scrape data from websites; data visualization; elementary database operations such as SQL’s join; construction of web-based analysis apps; and principles of reproducibility and reusability, including literate programming, unit tests, and source code management.
+
+16:958:587 Advanced Simulation Methods (3)
+The emphasis of this course will be on Modern simulation methods and advanced statistical computing techniques for financial applications.
+
+16:958:588 Financial Data Mining (3)
+Databases and data warehousing, exploratory data analysis and visualization, an overview of data mining algorithms, modeling for data mining, descriptive modeling, predictive modeling, pattern and rule discovery, text mining, Bayesian data mining, observational studies. Emphasis on the use of data mining techniques in finance and risk management. Prerequisites: 16:958:563, and 16:198:443 or equivalent C++ course or permission of instructor.
+
+16:958:589 Advanced Programming for Financial Statistics and Risk Management (3)
+This course covers the basic concepts of object-oriented programming and the syntax of the Python language.  The course objectives include learning how to go from the different stages of designing a program (algorithm) to its actual implementation. This class lays the foundation for applying Python for interactive financial analytics and financial application building.
+

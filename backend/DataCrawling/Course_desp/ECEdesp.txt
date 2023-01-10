@@ -1,0 +1,450 @@
+16:332:501 (F) SYSTEMS ANALYSIS (3)
+Fundamentals of linear system concepts via solution of linear differential and difference equations. State space approach for multi-input multi-output (MIMO) linear systems. Introduction to concepts of linear system stability, controllability, observability, and minimal realization.
+
+16:332:502 (F) TECHNOLOGY ENTREPRENEURSHIP (3)
+Structure and framework of entrepreneurial endeavors. Phases of a startup, business organization.
+intellectual property, financing, financial modeling, and business plan writing.
+
+16:332:503 (F) PROGRAMMING METHODOLOGY FOR NUMERICAL COMPUTING AND COMPUTATIONAL FINANCE (3)
+Fundamentals of object-oriented programming ad C++ with an emphasis in numerical computing and
+computational finance. Design Oriented. Topics include: C++ basics, objected oriented concepts, data
+structures, algorithm analysis and applications.
+
+16:332:504 (F) SENSOR-BASED SYSTEMS AND APPPLICATIONS (3)
+Corequisite: 16:332:543
+Syllabus: 16:332:504 syllabus
+The course will develop skills in designing, programming, and testing self-configurable communication
+protocols and distributed algorithms for wireless sensor networks enabling environmental, health, and
+seismic monitoring, surveillance, reconnaissance, and targeting.
+
+16:332:505 (S) CONTROL SYSTEM THEORY (3) 
+Prerequisite: 16:332:501.
+Review of basic feedback concepts and basic controllers. State space and transfer function approaches
+for linear control systems. Concepts of stability, controllability, and observability for time-invariant and
+time-varying linear control systems. Pole placement technique. Full and reduced-order observer designs.
+Introduction to linear discrete-time systems.
+
+16:332:506 (F) APPLIED CONTROLS (3)
+Prerequisite: 16:332:505.
+Review of state space techniques; transfer function matrices; concepts of controllability, observability and
+identifiability. Identification algorithms for multivariable systems; minimal realization of a system and its
+construction from experimental data. State space theory of digital systems. Design of a three mode
+controller via spectral factorization.
+
+16:332:507 (S) SECURITY ENGINEERING (3)
+Syllabus: 16:332:507 syllabus
+Essential principles, techniques, tools, and methods for systems security engineering. Students work in
+small collaborative design teams to propose, build, and document a project focused on securing systems.
+Students document their work through a series of written and oral proposals, progress reports, and final
+reports. Basics of security engineering, usability and psychology, human factors in securing systems,
+mobile systems security, intersection of security and privacy, security protocols, access control, password
+security, biometrics, and topical approaches such as gesture--based authentication
+
+16:332:508 (S) DIGITAL CONTROL SYSTEMS (3)
+Prerequisite: 16:332:505.
+Review of linear discrete-time systems and the Z-transform. Sampling of continuous-time liner systems
+and sampled-data linear systems. Quantization effects and implementation issues. Computer controlled
+continuous-time linear systems. Analysis and design of digital controllers via the transfer function and
+state space techniques. Linear-quadratic optimal control and Kalman filtering for deterministic and
+stochastic discrete-time systems.
+
+16:332:509 (S) Convex Optimization for Engineering Applications (3)
+The course develops the necessary theory, algorithms and tools to formulate and solve convex optimization problems that seek to minimize cost function subject to constraints. The emphasis of the course is on applications in engineering applications such as control systems, computer vision, machine learning, pattern recognition, financial engineering, communication and networks.
+
+16:332:510 (S) OPTIMUM CONTROL SYSTEMS (3)
+Prerequisites: 16:332:505 and 16:332:506.
+Formulation of both deterministic and stochastic optimal control problems. Various performance indices;
+calculus of variations; derivation of Euler-Lagrange and Hamilton-Jacobi equations and their connection
+to two-point boundary value problems, linear regulator and the Riccati equations. Pontryagin's maximum
+principle, its application to minimum time, minimum fuel and "bang-bang" control. Numerical techniques
+for Hamiltonian minimization. Bellman dynamic programming; maximum principle.
+
+16:332:512 (S) NONLINEAR AND ADAPTIVE CONTROL THEORY (3)
+Nonlinear servo systems; general nonlinearities; describing function and other linearization methods;
+phase plane analysis and Poincare's theorem. Liapunov's method of stability; Popov criterion; circle
+criterion for stability. Adaptive and learning systems; identification algorithms and observer theory; input
+adaptive, model reference adaptive and self-optimizing systems. Estimation and adaptive algorithms via
+stochastic approximation. Multivariable systems under uncertain environment.
+
+16:332:514 (S) STOCHASTIC CONTROL SYSTEMS (3)
+Prerequisite: 16:332:505.
+Response of linear and nonlinear systems to random inputs. Determination of statistical character of linear
+and nonlinear filter outputs. Correlation functions; performance indices for stochastic systems; design of
+optimal physically realizable transfer functions. Wiener-Hopf equations; formulation of the filtering and
+estimation problems; Wiener-Kalman filter. Instabilities of Kalman filter and appropriate modifications
+for stable mechanization. System identification and modeling in presence of measurement noise.
+
+16:332:519:01 (F) Information and Network Security (3) 
+Prerequisite: see syllabus
+Syllabus: 16:332:519 syllabus 
+This course is an advanced graduate course that will cover a diverse set of topics related
+to information and network security. The class will cover a mix of mathematics and programming, covering
+aspects of security from theory to practice. This course is primarily aimed at giving graduate students
+the resources needed to follow the state of the art in security research. This class will involve a research
+component, and advanced levels of independent study is required.
+
+16:332:519:02 (F) Personalized Biosensors for Global Health (3) 
+Prerequisite: see syllabus
+Syllabus: 16:332:519:02_syllabus
+This course provides a detailed background on the engineering principles used for biosensing
+applications in disease diagnosticsfor global health applications. Fabrication and characterization
+of the point-of-care biosensors will be taught. The course will also introduce students to the
+microfluidics principles, on-chip sample processing, surface functionalization techniques and
+label-free detection of biomolecules. Course will highlight the development of personalized
+predictive systems for global health care using machine learning techniques. Course will also
+include case studies of POC sensors for global health-care. Finally, students will work in groups
+of 2-3 and will do a project on a personalized biosensor design for a specific global health
+application. 
+
+16:332:521 (F) DIGITAL SIGNALS AND FILTERS (3)
+Corequisite: 16:332:501.
+Sampling and quantization of analog signals; Z-transforms; digital filter structures and hardware
+realizations; digital filter design methods; DFT and FFT and methods and their application to fast
+convolution and spectrum estimation; introduction to discrete time random signals.
+ 
+16:332:525 (F) OPTIMUM SIGNAL PROCESSING (3)
+Prerequisites: 16:332:521 or Permission of instructor.
+Block processing and adaptive signal processing techniques for optimum filtering, linear prediction,
+signal modeling, and high resolution spectral analysis. Lattice filters for linear prediction and Wiener
+filtering. Levinson and Schur algorithms and their split versions. Fast Cholesky factorizations.
+Periodogram and parametric spectrum estimation and superresolution array processing. LMS, RLS, and
+lattice adaptive filters and their applications. Adaptation algorithms for multilayer neural nets.
+
+16:332:526 (S) ROBOTIC SYSTEMS ENGINEERING (3)
+Introduction to robotics; robot kinematics and dynamics. Trajectory planning and control. Systems with
+force, touch and vision sensors. Telemanipulation. Programming languages for industrial robots. Robotic
+simulation examples.
+
+16:332:527 (S) DIGITAL SPEECH PROCESSING (3)
+Prerequisite: 16:332:521.
+Acoustics of speech generation; perceptual criteria for digital representation of audio signals; signal
+processing methods for speech analysis; waveform coders; vocoders; linear prediction; differential coders
+(DPCM, delta modulation); speech synthesis; automatic speech recognition; voice-interactive information
+systems.
+
+16:332:529 (S) IMAGE CODING AND PROCESSING (3)
+Prerequisites: 16:332:521, 16:642:550, (16:332:535 recommended).
+Visual information, image restoration, coding for compression and error control, motion compensation,
+advanced television.
+
+16:332:533 (S) COMPUTATIONAL METHODS FOR SIGNAL RECOVERY (3)
+Prerequisites: 16:332:521 and 16:332:541.
+Computational methods for estimating signals in noise, for forecasting trends in noisy data, for clustering
+data for the recognition and detection of patterns in data. Kalman filtering, neural networks, support vector
+machines, and hidden Markov models. Applications in financial engineering and bioinformatics as well as
+in more traditional signal processing areas such as speech, image, and array processing, face recognition.
+
+16:332:535 (F) MULTIRESOLUTION SIGNAL PROCESSING ALGORITHMS (3)
+Prerequisites: 16:332:521 or Permission of instructor. Corequisite: 16:642:550.
+Wavelets and subband coding with applications to audio, image, and video processing. Compression and
+communications issues including low-bit-rate video systems. Design of digital filters for systems with 2
+or more channels. Matlab and matrix algorithms for analysis, design, and implementation.
+
+16:332:539 ADVANCED TOPICS IN DIGITAL SIGNAL PROCESSING: INTRODUCTION TO FUNCTIONAL NEUROIMAGING, METHODS AND DATA ANALYSIS (3)
+Prerequisites: Knowledge of DSP, Matlab Programming and Fundamental Physics
+Syllabus: 16:332:539 syllabus
+This graduate-level course will offer an introduction to the theoretical and practical aspects of existing functional neuroimaging techniques, with special focus on Electroencephalography (EEG) and optical imaging modalities. The course will also demonstrate how advanced signal processing techniques are being employed to study and interpret brain functionality. The aim of this course is to familiarize students with the applications of engineering concepts in the field of functional brain imaging, and prepare them to pursue research in neruoscience-related fields.
+
+16:332:541 (F) STOCHASTIC SIGNALS AND SYSTEMS (3)
+Corequisite: 16:332:501 and 16:642:550
+Axioms of probability; conditional probability and independence; random variables and functions
+thereof; mathematical expectation; characteristic functions; conditional expectation; Gaussian random
+vectors; mean square estimation; convergence of a sequence of random variables; laws of large numbers
+and Central Limit Theorem; stochastic processes, stationarity, autocorrelation and power spectral density;
+linear systems with stochastic inputs; linear estimation; independent increment, Markov, Wiener, and
+Poisson processes.
+
+16:332:542 (S) INFORMATION THEORY AND CODING (3)
+Prerequisite: 16:332:541
+Syllabus: 16:332:542 syllabus
+Noiseless channels and channel capacity; entropy, mutual information, Kullback-Leibler distance and
+other measures of information; typical sequences, asymptotic equipartition theorem; prefix codes, block
+codes, data compression, optimal codes, Huffman, Shannon-Fano-Elias, Arithmetic coding; memoryless
+channel capacity, coding theorem and converse; Hamming, BCH, cyclic codes; Gaussian channels and
+capacity; coding for channels with input constraint; introduction to source coding with a fidelity criterion.
+
+16:332:543 (F) COMMUNICATION NETWORKS I (3)
+Syllabus: 16:332:543 syllabus 
+Prerequisite: 14:332:226 or equivalent or 16:332:541 or equivalent.
+Introduction to telephony and integrated networks. Multiplexing schematics. Circuit and packet
+switching networks. Telephone switches and fast packet switches. Teletraffic characterization.. Delay
+and blocking analysis. Queueing network analysis.
+
+16:332:544 (S) COMMUNICATION NETWORKS II (3)
+Prerequisite: 16:332:543
+Syllabus 16:332:544 syllabus 
+Network and protocol architectures. Layered connection management, including network design, path
+dimensioning, dynamic routing, flow control, and random access algorithms. Protocols for error control,
+signaling, addressing, fault management, and security control. This course is intended to provide an in-depth and practical understanding of modern computer networks that constitute the Internet. The scope includes network architecture, key technologies, layer 2 and layer 3 protocols, and examples of specific systems. Emphasis will be on network protocols and related software implementation. The course includes a hands-on “clean-slate” network prototyping project involving specification, standardization and software implementation.
+
+16:332:545 (S) DIGITAL COMMUNICATION SYSTEMS (3)
+Prerequisite: 16:332:541
+Syllabus: 16:332:545 syllabus
+Signal space and Orthonormal expansions, effect of additive noise in electrical communications vector
+channels, waveform channels, matched filters, bandwidth and dimensionality. Digital modulation
+techniques. Optimum receiver structures, probability of error, bit and block signaling, Intersymbol
+interference and its effects, equalization and optimization of baseband binary and M-ary signaling
+schemes; introduction to coding techniques.
+
+16:332:546 (S) WIRELESS COMMUNICATIONS TECHNOLOGIES (3)
+Syllabus 16:332:546 syllabus
+Propagation models and modulation techniques for wireless systems, receivers for optimum detection on wireless channels, effects of multiple access and intersymbol interference, channel estimation, TDMA and CDMA cellular systems, radio resource management, mobility models.
+
+16:332:548 (S) ERROR CONTROL CODING (3)
+Prerequisite: 16:332:545
+Syllabus 16:332:548 syllabus 
+Continuation of 16:332:545. Application of information-theoretic principles to communication system
+analysis and design. Source and channel coding considerations, rudiments of rate-distortion theory.
+Probabilistic error control coding impact on system performance. Introduction to various channel models
+of practical interest, spread spectrum communication fundamentals. Current practices in modern digital
+communication system design and operation.
+
+16:332:549 (S) DETECTION AND ESTIMATION THEORY (3)
+Prerequisite: 16:332:541
+Syllabus: 16:332:549 syllabus
+Statistical decision theory, hypothesis testing, detection of known signals and signals with unknown
+parameters in noise, receiver performance and error probability, applications to radar and
+communications. Statistical estimation theory, performance measures and bounds, efficient estimators.
+Estimation of unknown signal parameters, optimum demodulation, applications, linear estimation,
+Wiener filtering, Kalman filtering.
+
+16:332:553 (S) WIRELESS ACCESS TO INFORMATION NETWORKS (3)
+Prerequisites: 14:332:349 and 14:332:450 or equivalent.
+Cellular mobile radio; cordless telephones; systems architecture; network control; switching; channel
+assignment techniques; short range microwave radio propagation; wireless information transmission
+including multiple access techniques, modulation, source coding, and channel coding.
+
+16:332:556 (S) MICROWAVE COMMUNICATION SYSTEMS (3)
+Prerequisite: 16:332:580 or equivalent.
+Overview of modern microwave engineering including transmission lines, network analysis, integrated
+circuits, diodes, amplifier and oscillator design. Microwave subsystems including front-end and
+transmitter components, antennas, radar terrestrial communications, and satellites.
+
+16:332:559 Section 03 (F) ADVANCED TOPICS IN STOCHASTIC PROCESSES (3) 
+Prerequisite: see syllabus
+Syllabus 16:332:559 Section 03 syllabus 
+This course provides a graduate level introduction to systems and processes that are described by
+sequences of discrete events. Topics to be covered include Poisson processes, the renewal theorem,
+discrete and continuous Markov chains, semi-Markov processes, time reversibility, martingales and large
+deviations. Applications to queueing, networks, optimization and gambling would be discussec. Understanding
+of this subject has become useful for the study of networks. The material is applicable to traffic modeling,
+performance analysis, and a variety of network resource allocation problems.
+
+16:332:560 (F) COMPUTER GRAPHICS (3)
+Computer display systems, algorithms and languages for interactive graphics. Vector, curve, and surface
+generation algorithms. Hidden-line and hidden-surface elimination. Free-form curve and surface
+modeling. High-realism image rendering.
+
+16:332:561 (F) MACHINE VISION (3)
+Prerequisite: 16:332:501.
+Image processing and pattern recognition. Principles of image understanding. Image formation, boundary
+detection, region growing, texture and characterization of shape. Shape from monocular clues, stereo and
+motion. Representation and recognition of 3-D structures.
+
+16:332:562 (S) VISUALIZATION AND ADVANCED COMPUTER GRAPHICS (3)
+Prerequisite: 16:332:560 or permission of instructor.
+Advanced visualization techniques, including volume representation, volume rendering, ray tracing,
+composition, surface representation, advanced data structures. User interface design, parallel and object-
+oriented graphic techniques, advanced modeling techniques.
+
+16:332:563 (F) COMPUTER ARCHITECTURE I (3)
+Fundamentals of computer architecture using quantitative and qualitative principles. Instruction set design
+with examples and measurements of use, basic processor implementation: hardwired logic and microcode,
+pipelining; hazards and dynamic scheduling, vector processors, memory hierarchy; caching, main
+memory and virtual memory, input/output, and introduction to parallel processors; SIMD and MIMD
+organizations.
+
+16:332:564 (S) COMPUTER ARCHITECTURE II (3)
+Prerequisite: 16:332:563.
+Advanced hardware and software issues in main-stream computer architecture design and evaluation.
+Topics include register architecture and design, instruction sequencing and fetching, cross-branch
+fetching, advanced software pipelining, acyclic scheduling, execution efficiency, predication analysis,
+speculative execution, memory access ordering, prefetch and preloading, cache efficiency, low power
+architecture, and issues in multiprocessors.
+
+16:332:565 (F) NEUROCOMPUTER SYSTEM DESIGN (3)
+Prerequisites: 16:332:563.
+Principles of neural-based computers, data acquisition, hardware architectures for multilayer, tree and
+competitive learning neural networks, applications in speech recognition, machine vision, target
+identification and robotics.
+
+16:332:566 (S) INTRODUCTION TO PARALLEL AND DISTRIBUTED COMPUTING (3)
+Prerequisite: 16:332:563.
+Introduction to the fundamental of parallel and distributed computing including systems, architectures,
+algorithms, programming models, languages and software tools. Topics covered include parallelization
+and distribution models; parallel architectures; cluster and networked meta-computing systems;
+parallel/distributed programming; parallel/distributed algorithms, data-structures and programming
+methodologies, applications; and performance analysis. A "hands-on" course with programming
+assignments and a final project.
+
+16:332:567 (F) SOFTWARE ENGINEERING I (3)
+Syllabus: 16:332:567 syllabus
+Overview of software development process. Formal techniques for requirement analysis, system
+specification and system testing. Distributed systems. System security and system reliability. Software
+models and metrics. Case studies.
+
+16:332:568 (S) SOFTWARE ENGINEERING WEB APPLICATIONS (3)
+Prerequisite: 16:332:567.
+The course focus is on Web software design with particular emphasis on mobile wireless terminals. The
+first part of the course introduces tools; Software component (Java Beans), Application frameworks,
+Design patterns, XML, Communication protocols, Server technologies, and Intelligent agents. The
+second part of the course presents case studies of several Web applications. In addition, student teams will
+through course projects develop components for an XML-Based Web, such as browsers, applets, servers,
+and intelligent agents.
+
+16:332:569 (F) DATABASE SYSTEM ENGINEERING (3)
+Relational data model, relational database management system, relational query languages, parallel
+database systems, database computers, and distributed database systems.
+
+16:332:570 (S) ROBUST COMPUTER VISION (3)
+Prerequisite: 16:332:561
+Syllabus: 16:332:570 syllabus
+A toolbox of advanced methods for computer vision, using robust estimation, clustering, probabilistic
+techniques, invariance. Applications include feature extraction, image segmentation, object recognition,
+and 3-D recovery.
+
+16:332:571 (S) VIRTUAL REALITY TECHNOLOGY (3)
+Prerequisite: 16:332:560.
+Syllabus: 16:332:571 syllabus
+Introduction to Virtual Reality. Input/Output tools. Computing architectures. Modeling. Virtual Reality
+programming. Human factors. Applications and future systems.
+
+16:332:572 (S) PARALLEL AND DISTRIBUTED COMPUTING (3)
+Prerequisite: 16:332:563, 16:332:564 and 16:332:566.
+Study of the theory and practice of applied parallel/distributed computing. The course focuses on
+advanced topics in parallel computing including current and emerging architectures, programming models
+application development frameworks, runtime management, load-balancing and scheduling, as well as
+emerging areas such as autonomic computing, Grid computing, pervasive computing and sensor-based
+systems. A research-oriented course consisting of reading, reviewing and discussing papers, conducting
+literature surveys, and a final project.
+
+16:332:573 (S) DATA STRUCTURES AND ALGORITHM (3)
+The objective is to take graduate students in all graduate School of Engineering fields with a good
+undergraduate data structures and programming background and make them expert in programming the
+common algorithms and data structures, using the C and C++ programming languages. The students will
+perform laboratory exercises in programming the commonplace algorithms I C and C++. The students
+will also be exposed to computation models and computational complexity.
+
+16:332:574 (F) COMPUTER-AIDED DIGITAL VLSI DESIGN (3)
+Advanced computer-aided VLSI chip design, CMOS and technology, domino logic, pre-charged busses,
+case studies of chips, floor planning, layout synthesis, routing, compaction circuit extraction, multi-level
+circuit simulation, circuit modeling, fabrication processes and other computer-aided design tools.
+
+16:332:575 (S) VLSI ARRAY PROCESSORS (3)
+Prerequisite: 16:332:574
+VLSI technology and algorithms; systolic and wavefront-array architecture; bit-serial pipelined
+architecture; DSP architecture; transputer; interconnection networks; wafer-cscale integration; neural
+networks.
+
+16:332:576 (S) TESTING OF ULTRA LARGE SCALE CIRCUITS (3)
+Prerequisite: 16:332:563.
+Testing of Ultra Large Scale Integrated Circuits (of up to 50 million transistors) determines whether a
+manufactured circuit is defective. Algorithms for test-pattern generation for combinational, sequential,
+memory, and analog circuits. Design of circuits for easy testability. Design of built-in self-testing circuits.
+
+16:332:577 (S) ANALOG AND LOW-POWER DIGITAL VLSI DESIGN (3)
+Transistor design and chip layout of commonly-used analog circuits such as OPAMPS, A/D and D/A
+converters, sample-and-hold circuits, filters, modulators, phase-locked loops, and voltage-controlled
+oscillators. Low-power design techniques for VLSI digital circuits, and system-on-a-chip layout
+integration issues between analog and digital cores.
+
+16:332:578 (S) DEEP SUBMICRON VLSI DESIGN (3)
+Prerequisite: 14:332:574 CAD Digital VLSI Design
+Advanced topics in deep submicron and nanotechnology VLSI design and fabrication. Logic and state
+machine design for high performance and low power. Tree adders and Booth multipliers. Memory design.
+Timing testing for crosswalk faults. Design economics. Emergining nanotechnology devices.
+
+16:332:579 ADVANCED TOPICS IN COMPUTER ENGINEERING (3)
+Prerequisite: Permission of instructor.
+In-depth study of topics pertaining to computer engineering such as microprocessor system design; fault-
+tolerant computing; real-time system design. Subject areas may vary from year to year.
+
+16:332:580 (F) ELECTRIC WAVES AND RADIATION (3)
+Prerequisite: A course in elementary electromagnetics.
+Static boundary value problems, dielectrics, wave equations, propagation in lossless and lossy media,
+boundary problems, waveguides and resonators, radiation fields, antenna patterns and parameters, arrays,
+transmit-receive systems, antenna types.
+
+16:332:581 (F) INTRODUCTION TO SOLID STATE ELECTRONICS (3)
+Introduction to quantum mechanics; WKB method; perturbation theory; hydrogen atom; identical
+particles; chemical bonding; crystal structures; statistical mechanics; free-electron model; quantum theory
+of electrons in periodic lattices.
+
+16:332:583 (F) SEMICONDUCTOR DEVICES I (3)
+Syllabus: 16:332:583 syllabus
+Charge transport, diffusion and drift current, injection, lifetime, recombination and generation processes,
+p-n junction devices, transient behavior, FET's, I-V, and frequency characteristics, MOS devices C-V, C-f
+and I-V characteristics, operation of bipolar transistors.
+
+16:332:584 (S) SEMICONDUCTOR DEVICES II (3)
+Prerequisite: 16:332:583.
+Review of microwave devices, O and M-type devices, microwave diodes, Gunn, IMPATT, TRAPATT,
+etc., scattering parameters and microwave amplifiers, heterostructures and III-V compound based BJT's
+and FET's.
+
+16:332:585 (S) SUSTAINABLE ENERGY (3)
+Prerequisite: see syllabus
+Syllabus: 16:332:585 syllabus 
+This course is designed for the student interested in an overview of the technological methods for obtaining
+energy from non-renewable and renewable energy sources. The course is divided into three components:
+Energy Analysis Toolbox, Non-renewable (Fossil) Energy Sources and Renewable Energy Sources.
+
+16:332:587 (F) TRANSISTOR CIRCUIT DESIGN (3)
+Design of discrete transistor circuits; amplifiers for L.F., H.F., tuned and power applications biasing;
+computer-aided design; noise; switching applications; operational amplifiers; linear circuits.
+
+16:332:588 (S) INTEGRATED TRANSISTOR CIRCUIT DESIGN (3)
+Prerequisite: 16:332:587
+Syllabus: 16:332:588 syllabus
+Design of digital integrated circuits based on NMOS, CMOS, bipolar BiCMOS and GaAs FETs;
+fabrication and modeling; analysis of saturating and non-saturating digital circuits, sequential logic
+circuits, semiconductor memories, gate arrays, PLA and GaAs LSI circuits.
+
+16:332:589 (S) RF INTEGRATED CIRCUIT DESIGN (3) 
+Basic concepts in RF design, analysis of noise, transceiver architectures, analysis and design of RF
+integrated circuits for modern wireless communications systems: low noise amplifiers, mixers,
+oscillators, phase-locked loops.
+
+16:332:590 (S) SOCIALLY COGNIZANT ROBOTICS (3) 
+Students of the “Socially Cognizant Robotics” course will learn basic principles and state-of-the-art developments of robotics so as to learn the expected trajectory of this technology and its impact on individuals and society. The course is designed for both STEM students as well as computationally-oriented cognitive and social science students. The interdisciplinary curriculum has seven underlying disciplines spanning STEM fields to social and behavioral sciences. It includes traditionally technical disciplines, such as robot embodiment and control, and extends to areas which support human interaction, such as visual learning and language processing, to cognitive modeling, which enables more high level human-robot cooperation, and finally to areas such as behavioral research and public policy. The course will utilize open-source software libraries in robotics, computer vision, and deep learning. Recent innovations at the intersection of deep reinforcement learning and human behavior modeling will be explored in the context of optimizing collaborative robot action.
+
+16:332:591 (F) OPTOELECTRONICS I (3)
+Prerequisites: 16:332:580, and 581 or 583.
+Syllabus: 16:332:591 syllabus
+Waveguides and optical filters, optical resonators, principles of laser action, light emitting diodes,
+semiconductor lasers, optical amplifiers, optical modulators and switches, photodetectors, wavelength-
+division-multiplexing and related optical devices.
+
+16:332:592 (S) OPTOELECTRONICS II (3)
+Prerequisite: 16:332:591
+Photonic crystals: photonic bandgap, photonic crystal surfaces, fabrication, cavities, lasers, modulators
+and switches, superprism devices for communications, sensing and nonlinear optics, channel drop filters;
+advanced quantum theory of lasers: Ferim’s golden for laser transition, noise, quantum well lasers,
+quantum cascade lasers. Nonlinear optics: parametric amplification, stimulated Raman/Brillouin
+scattering, Q-switching, mode-locked lasers.
+
+16:332:594 (F) SOLAR CELLS (3)
+Prerequisite: 16:332:583 or equivalent.
+Photovoltaic material and devices, efficiency criteria, Schottky barrier, p-n diode, heterojunction and
+MOS devices, processing technology, concentrator systems, power system designs and storage.
+
+16:332:597 (S) MATERIAL ASPECTS OF SEMICONDUCTORS (3)
+Prerequisite: 16:332:581.
+Preparation of elemental and compound semiconductors. Bulk crystal growth techniques. Epitaxial
+growth techniques. Impurities and defects and their incorporation. Characterization techniques to study
+the structural, electrical and optical properties.
+
+16:332:599:01 ADVANCED TOPICS IN SOLID STATE ELECTRONICS: RF INTEGRATED CIRCUIT DESIGN
+Prerequisite: 14:332:463 (Analog Electronics)
+Syllabus: 16:332:599 Section 01 syllabus
+The objective of this course is to present the concepts of design and analysis of modern RF and wireless
+communications integrated circuits. Topics covered are : basic concepts in RF design, scattering parameters,
+modern integrated circuit technologies, fundamental limitations of speed of operation of transistors, physics of
+noise, impedance matching, low-noise amplifiers, mixers, oscillators, phase noise, and phase locked loops. It is
+expected that the students be apply to apply the concepts and design techniques presented in this course to a wide
+range of applications including high-speed wireless communications and biomedical electronics.
+
+16:332:599:02 ADVANCED TOPICS IN SOLID STATE ELECTRONICS: MOSFET TRANSISTORS
+Prerequisite: 16:332:583 Semiconductor Devices or 14:332:465 Physical Electronics or equivalent
+Syllabus: 16:332:599 Section 2 syllabus
+Overview of basic MOSFET theory and issues; advanced MOSFET physics; advanced transistor structures, and emerging research devices and applications.
