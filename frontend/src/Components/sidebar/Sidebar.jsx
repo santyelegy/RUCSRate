@@ -9,12 +9,14 @@ const sidebarNavItems = [
         to: '/',
         section: ''
     },
+    /*
     {
         display: 'Announcement',
         icon: <i className='bx bx-announcement'></i>,
         to: '/announcement',
         section: 'announcement'
     },
+    */
     {
         display: 'Departments',
         icon: <i className='bx bx-department'></i>,
@@ -41,12 +43,20 @@ const sidebarNavItems = [
         to: '/professor/0',
         section: 'professor'
     },
+    /*
     {
         display: 'Reviews',
         icon: <i className='bx bx-review'></i>,
         to: '/review/0',
         section: 'review'
-    },    
+    },
+    */
+    {
+        display: 'Add Reviews',
+        icon: <i className='bx bx-review'></i>,
+        to: '/review/0',
+        section: 'review'
+    },
     {
         display: 'About Us',
         icon: <i className='bx bx-contributor'></i>,
