@@ -52,10 +52,10 @@ const sidebarNavItems = [
     },
     */
     {
-        display: 'Add Reviews',
-        icon: <i className='bx bx-review'></i>,
-        to: '/review/0',
-        section: 'review'
+        display: 'Reviews',
+        icon: <i className='bx bx-reviews'></i>,
+        to: '/reviews',
+        section: 'reviews'
     },
     {
         display: 'About Us',
@@ -89,7 +89,7 @@ const Sidebar = () => {
 
     return <div className='sidebar'>
         <div className="sidebar__logo">
-            Rate in RU
+            RU Rate
         </div>
         <div ref={sidebarRef} className="sidebar__menu">
             <div

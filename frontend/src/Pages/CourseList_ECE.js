@@ -1,7 +1,7 @@
 import dept_course from '../sample_data/CourseList.json'
 import { useParams, Link } from 'react-router-dom';
 
-function CourseList() {
+function ECE() {
     const { id } = useParams();
     const course = dept_course[0].cources.map((cources, index) => {
         return (
@@ -12,9 +12,6 @@ function CourseList() {
     return (
         <>
             <div>
-                <div>
-                    <h1><Link to={"/courselist/cs"}>Department:{dept_course[0].Dcode + " " + dept_course[0].name}</Link></h1>
-                </div>
                 <div>
                     {course}</div>
                 <div>
@@ -29,4 +26,4 @@ function CourseList() {
     );
 }
 
-export default CourseList;
+export default ECE;

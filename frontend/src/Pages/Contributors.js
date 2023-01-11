@@ -1,7 +1,7 @@
-function Contributors(){
+function Contributors() {
     return (
         <>
-            Hello Worlds
+            Hello World!
         </>
     );
 }
