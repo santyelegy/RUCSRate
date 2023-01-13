@@ -3,10 +3,16 @@
 - [x] department beautify
 - [x] courselist combine
 - [x] Professor List
-- [ ] list search filter
-- [ ] user authorization
+
+- [ ] Course-pro search
 - [ ] Review Format
 - [ ] Create Review Format
-- [ ] Review upvote/ downvote
+
+Hard
+- [ ] list search filter
+- [ ] user authorization
+- [ ] Review upvote / downvote
+
+Small
 - [ ] align button
 - [ ] course submit button link
