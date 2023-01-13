@@ -40,7 +40,7 @@ const sidebarNavItems = [
     {
         display: 'Professors',
         icon: <i className='bx bx-professor'></i>,
-        to: '/professor/0',
+        to: '/professor',
         section: 'professor'
     },
     /*

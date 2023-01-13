@@ -26,7 +26,7 @@ function Home() {
         <li>
           <Link to="/courselist">Courselist</Link>
           <br></br>
-          <Link to="/courselist/:id">Detail Courses</Link>
+          <Link to="/courselist/course/:id">Detail Courses</Link>
           <br></br>
           <Link to="/courselist/cs">CourselistCS</Link>
           <Link to="/courselist/ece">CourselistECE</Link>

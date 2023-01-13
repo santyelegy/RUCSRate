@@ -1,0 +1,16 @@
+[{
+    "name":"P1",
+    "score":4,
+    "course":[
+        "course1",
+        "course2"
+    ]
+},
+{
+    "name":"P1",
+    "score":3,
+    "course":[
+        "course3",
+        "course4"
+    ]
+}]

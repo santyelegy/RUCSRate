@@ -15,10 +15,7 @@ import Review from "./Pages/Review";
 import Addreviews from "./Pages/Addreviews";
 import Contributors from "./Pages/Contributors";
 import AppLayout from '../src/Components/layout/AppLayout';
-
-import CS from './Pages/CourseList_CS';
-import ECE from './Pages/CourseList_ECE';
-import DS from './Pages/CourseList_DS';
+import ProfessorList from './Pages/ProfessorList';
 
 export default function App() {
   return (
@@ -28,12 +25,9 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path='/department' element={<Department />} />
           <Route path='/courselist' element={<CourseList />} />
-
-          <Route path='/courselist/cs' element={<CS />} />
-          <Route path='/courselist/ece' element={<ECE />} />
-          <Route path='/courselist/ds' element={<DS />} />
-
-          <Route path='/courselist/:id' element={<Course />} />
+          <Route path='/courselist/course/:id' element={<Course />} />
+          <Route path='/courselist/:department' element={<CourseList />} />
+          <Route path='/professor' element={<ProfessorList/>}/>
           <Route path='/professor/:id' element={<Professor />} />
           <Route path='/reviews/:id' element={<Review />} />
           <Route path='/reviews' element={<Addreviews />} />

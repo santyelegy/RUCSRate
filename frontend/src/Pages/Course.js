@@ -8,7 +8,7 @@ function Course() {
         return (
             <div><div>{review.content}</div>
                 <div>{review.score}</div>
-                <Link to={"/review".concat("/", index.toString())}>To review</Link></div>
+                <Link to={"/reviews".concat("/", index.toString())}>To review</Link></div>
         );
     })
     return (
