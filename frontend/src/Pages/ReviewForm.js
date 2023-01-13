@@ -1,8 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Course from '../sample_data/Course.json'
-import Prof from '../sample_data/Professor.json'
-import { useState } from 'react';
+import courselist from '../sample_data/CourseList.json'
+import proflist from '../sample_data/ProfessorList.json'
+import { Typeahead } from 'react-bootstrap-typeahead';
+import { useEffect, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
 function ReviewForm() {
@@ -16,6 +17,21 @@ function ReviewForm() {
     const [score1, setScore1] = useState(0);
     const [score2, setScore2] = useState(0);
     const [score3, setScore3] = useState(0);
+    const [course, setCourse] = useState([]);
+    const [professor, setProfessor] = useState("");
+
+    const [allcourses,setAllCourses]=useState([]);
+    useEffect(()=>{
+        if(allcourses.length===0){
+            let subarray=[]
+            for(let i=0;i<courselist.length;i++){
+                subarray.push(...courselist[i]["cources"]);
+            }
+            setAllCourses(subarray);
+        }
+    },[allcourses])
+    
+    
 
     let callapi = async () => {
 
@@ -41,20 +57,15 @@ function ReviewForm() {
         })
     }
 
-
-
-    /*const code = Course.code.map((val, index) => {
-        return (<option value={val} key={index}>{val}</option>);
-    })*/
-
-    const code = ["", "16:198:512", "16:198:513", "16:198:514"].map((val, index) => {
-        return (<option value={val} key={index}>{val}</option>);
+    const prof = proflist.map((val, index) => {
+        let find=false;
+        for(const c of val.course){
+            if(course.length>0&&c===course[0]["code"]){
+                find=true;
+            }
+        }
+        return find?(<option value={val.name} key={index}>{val.name}</option>):<></>
     })
-
-    const prof = ["", "A", "B", "C"].map((val, index) => {
-        return (<option value={val} key={index}>{val}</option>);
-    })
-
     const scorelist = ["", "5 (Strongly Recommended)", "4 (Recommended)", "3 (Good)", "2 (Below Average)", "1 (Awful Feeling)"].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
     })
@@ -72,26 +83,24 @@ function ReviewForm() {
     return (
         <>
             <Form onSubmit={handleSubmit}>
+                <Form.Label>Course</Form.Label>
+                <Typeahead
+                    id='course'
+                    labelKey="code"
+                    onChange={setCourse}
+                    selected={course}
+                    options={allcourses}
+                    placeholder="Choose a course..."
+                />
+                <Form.Label><h5>Professor</h5></Form.Label>
+                <Form.Control as="select" onChange={(e) => setProfessor(e.target.value)}>
+                    {prof}
+                </Form.Control>
 
-                {/*<Form.Group controlId="course">
-                    <Form.Label><h5>Course Code</h5></Form.Label>
-                    <Form.Control as="select" onChange={(e) => setScore(e.target.value)}>
-                        {code}
-                    </Form.Control>
-                    <Form.Label><h5>Professor</h5></Form.Label>
-                    <Form.Control as="select" onChange={(e) => setScore(e.target.value)}>
-                        {prof}
-                    </Form.Control>
-                    <br></br>
-                    <br></br>
-                </Form.Group>*/}
-
-                <Form.Group controlId="score0">
-                    <Form.Label><h5>Overall Quality</h5></Form.Label>
-                    <Form.Control as="select" onChange={(e) => setScore0(e.target.value)}>
-                        {scorelist}
-                    </Form.Control>
-                </Form.Group>
+                <Form.Label><h5>Overall Quality</h5></Form.Label>
+                <Form.Control as="select" onChange={(e) => setScore0(e.target.value)}>
+                    {scorelist}
+                </Form.Control>
 
                 <Form.Group controlId="score1">
                     <Form.Label><h5>Course Difficulty</h5></Form.Label>
