@@ -52,7 +52,6 @@ function ReviewForm() {
         let realscore3 = parseInt(score3.substring(0, 1));
 
         const returnObject = { 'content': content, 'score0': realscore0, 'score1': realscore1, 'score2': realscore2, 'score3': realscore3 }
-        console.log(returnObject)
         fetch(`http://127.0.0.1:8000/api/createReview/`, {
             method: "POST",
             headers: {
