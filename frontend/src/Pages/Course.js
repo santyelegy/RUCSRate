@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import course from '../sample_data/Course.json'
 import Button from 'react-bootstrap/Button';
+import SingleReview from '../Pages/SingleReview.js'
 
 function Course() {
     const { id } = useParams();
@@ -25,6 +26,8 @@ function Course() {
             <br></br>
             Here are the comments:
             <div>{courses}</div>
+            <SingleReview />
+            <SingleReview />
         </>
     );
 }

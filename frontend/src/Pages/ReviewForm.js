@@ -1,9 +1,11 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Course from '../sample_data/Course.json'
 import Prof from '../sample_data/Professor.json'
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function ReviewForm() {
 
@@ -16,6 +18,28 @@ function ReviewForm() {
     const [score1, setScore1] = useState(0);
     const [score2, setScore2] = useState(0);
     const [score3, setScore3] = useState(0);
+
+    /*const code = Course.code.map((val, index) => {
+        return (<option value={val} key={index}>{val}</option>);
+    })*/
+
+    const code = ["", "16:198:512", "16:198:513", "16:198:514"].map((val, index) => {
+        return (<option value={val} key={index}>{val}</option>);
+    })
+
+    const prof = ["", "A", "B", "C"].map((val, index) => {
+        return (<option value={val} key={index}>{val}</option>);
+    })
+
+    const scorelist0 = ["", "5 (Strongly Recommended)", "4 (Recommended)", "3 (Good)", "2 (Below Average)", "1 (Awful Feeling)"].map((val, index) => {
+        return (<option value={val} key={index}>{val}</option>);
+    })
+    const scorelist1 = ["", "5 (Very Easy)", "4 (Easy)", "3 (Acceptable)", "2 (Hard)", "1 (Extremely Hard)"].map((val, index) => {
+        return (<option value={val} key={index}>{val}</option>);
+    })
+    const scorelist2 = ["", "5 (Very Helpful)", "4 (Helpful)", "3 (Good)", "2 (Limited)", "1 (Useless)"].map((val, index) => {
+        return (<option value={val} key={index}>{val}</option>);
+    })
 
     let callapi = async () => {
 
@@ -40,24 +64,6 @@ function ReviewForm() {
             console.log(error)
         })
     }
-
-
-
-    /*const code = Course.code.map((val, index) => {
-        return (<option value={val} key={index}>{val}</option>);
-    })*/
-
-    const code = ["", "16:198:512", "16:198:513", "16:198:514"].map((val, index) => {
-        return (<option value={val} key={index}>{val}</option>);
-    })
-
-    const prof = ["", "A", "B", "C"].map((val, index) => {
-        return (<option value={val} key={index}>{val}</option>);
-    })
-
-    const scorelist = ["", "5 (Strongly Recommended)", "4 (Recommended)", "3 (Good)", "2 (Below Average)", "1 (Awful Feeling)"].map((val, index) => {
-        return (<option value={val} key={index}>{val}</option>);
-    })
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -86,41 +92,72 @@ function ReviewForm() {
                     <br></br>
                 </Form.Group>*/}
 
-                <Form.Group controlId="score0">
-                    <Form.Label><h5>Overall Quality</h5></Form.Label>
-                    <Form.Control as="select" onChange={(e) => setScore0(e.target.value)}>
-                        {scorelist}
-                    </Form.Control>
-                </Form.Group>
+                <Row>
+                    <Col>
+                        <Form.Group controlId="score0">
+                            <Form.Label><h5>Overall Quality</h5></Form.Label>
+                            <Form.Control as="select" onChange={(e) => setScore0(e.target.value)}>
+                                {scorelist0}
+                            </Form.Control>
+                            <Form.Text>
+                                Overall recommendation for this course.
+                            </Form.Text>
+                        </Form.Group>
+                    </Col>
 
-                <Form.Group controlId="score1">
-                    <Form.Label><h5>Course Difficulty</h5></Form.Label>
-                    <Form.Control as="select" onChange={(e) => setScore1(e.target.value)}>
-                        {scorelist}
-                    </Form.Control>
-                </Form.Group>
+                    <Col>
+                        <Form.Group controlId="score1">
+                            <Form.Label><h5>Professor</h5></Form.Label>
+                            <Form.Control as="select" onChange={(e) => setScore1(e.target.value)}>
+                                {scorelist0}
+                            </Form.Control>
+                            <Form.Text>
+                                Overall recommendation for this Professor.
+                            </Form.Text>
+                        </Form.Group>
+                    </Col>
+                </Row>
 
-                <Form.Group controlId="score2">
-                    <Form.Label><h5>Professor</h5></Form.Label>
-                    <Form.Control as="select" onChange={(e) => setScore2(e.target.value)}>
-                        {scorelist}
-                    </Form.Control>
-                </Form.Group>
+                <Row>
+                    <Col>
+                        <Form.Group controlId="score2">
+                            <Form.Label><h5>Course Difficulty</h5></Form.Label>
+                            <Form.Control as="select" onChange={(e) => setScore2(e.target.value)}>
+                                {scorelist1}
+                            </Form.Control>
+                            <Form.Text>
+                                Difficulty ratings for classes, assignments, and exams.
+                            </Form.Text>
+                        </Form.Group>
+                    </Col>
 
-                <Form.Group controlId="score3">
-                    <Form.Label><h5>Future Help</h5></Form.Label>
-                    <Form.Control as="select" onChange={(e) => setScore3(e.target.value)}>
-                        {scorelist}
-                    </Form.Control>
-                    <br></br>
-                </Form.Group>
+                    <Col>
+                        <Form.Group controlId="score3">
+                            <Form.Label><h5>Future Help</h5></Form.Label>
+                            <Form.Control as="select" onChange={(e) => setScore3(e.target.value)}>
+                                {scorelist2}
+                            </Form.Control>
+                            <Form.Text>
+                                How much it will help you in your future academic and career.
+                            </Form.Text>
+                        </Form.Group>
+                    </Col>
+                </Row>
+
+                <br></br>
 
                 <Form.Group controlId="content">
                     <Form.Label><h5>Review content</h5></Form.Label>
-                    <Form.Control type="text" placeholder="Enter content" onChange={(e) => setContent(e.target.value)} />
-                    <br></br>
+                    <Form.Control type="text" placeholder="Enter content"
+                        onChange={(e) => setContent(e.target.value)}
+                        as="textarea"
+                        style={{ height: '100px' }} />
+                    <Form.Text>
+                        Please respect RU community values in your comments.<br />
+                        Insults and personal attacks are not acceptable.
+                    </Form.Text>
                 </Form.Group>
-
+                <br></br>
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
@@ -137,6 +174,7 @@ function ReviewForm() {
                     </Button>
                 </Modal.Footer>
             </Modal>
+
         </>
     );
 }

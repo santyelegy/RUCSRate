@@ -1,7 +1,7 @@
 import review from '../sample_data/Review.json'
-import { useParams } from 'react-router-dom';
+import SingleReview from '../Pages/SingleReview.js'
+
 function Review() {
-    const { id } = useParams();
 
     return (
         <>
@@ -13,6 +13,8 @@ function Review() {
             <div>{review.score3}</div>
             <div>{review.score4}</div>
             <div>{review.content}</div>
+
+            <SingleReview />
         </>
     );
 }

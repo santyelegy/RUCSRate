@@ -41,7 +41,8 @@
 .mylink {
   color: white;
 }
-.DepartmentButton{
+
+.DepartmentButton {
   align-items: center;
   width: 200px;
   height: 150px;
@@ -53,10 +54,20 @@
   color: #fff;
   border-radius: 10px;
 }
-.DepartmentButton:hover{
+
+.DepartmentButton:hover {
   color: #fff;
   background-color: #0b5ed7;
 }
-.department-group{
+
+.department-group {
   align-items: stretch;
+}
+
+.Listgroup {
+  margin-left: 0px;
+}
+
+.Listitem {
+  width: 185px;
 }

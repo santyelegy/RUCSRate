@@ -5,8 +5,9 @@
 - [x] Professor List
 
 - [ ] Course-pro search
-- [ ] Review Format
-- [ ] Create Review Format
+- [x] Review Format
+- [x] Create Review Format
+- [ ] Review time can be counted
 
 Hard
 - [ ] list search filter

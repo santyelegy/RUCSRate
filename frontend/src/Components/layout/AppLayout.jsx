@@ -3,7 +3,7 @@ import Sidebar from "../sidebar/Sidebar";
 
 const AppLayout = () => {
     return <div style={{
-        padding: '90px 0px 0px 360px'
+        padding: '90px 40px 0px 320px'
     }}>
         <Sidebar />
         <Outlet />
