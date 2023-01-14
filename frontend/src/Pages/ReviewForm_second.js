@@ -1,8 +1,6 @@
 import courselist from '../sample_data/CourseList.json'
-import proflist from '../sample_data/ProfessorList.json'
 import { useEffect, useState } from 'react';
 
-import { Typeahead } from 'react-bootstrap-typeahead';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -20,8 +18,6 @@ function ReviewForm() {
     const [score1, setScore1] = useState(0);
     const [score2, setScore2] = useState(0);
     const [score3, setScore3] = useState(0);
-    const [course, setCourse] = useState([]);
-    const [professor, setProfessor] = useState("");
 
     const [allcourses, setAllCourses] = useState([]);
     useEffect(() => {
@@ -68,16 +64,6 @@ function ReviewForm() {
         })
     }
 
-    const prof = proflist.map((val, index) => {
-        let find = false;
-        for (const c of val.course) {
-            if (course.length > 0 && c === course[0]["code"]) {
-                find = true;
-            }
-        }
-        return find ? (<option value={val.name} key={index}>{val.name}</option>) : <></>
-    })
-
     function handleSubmit(event) {
         event.preventDefault();
 
@@ -91,19 +77,6 @@ function ReviewForm() {
     return (
         <>
             <Form onSubmit={handleSubmit}>
-                <Form.Label><h5>Course</h5></Form.Label>
-                <Typeahead
-                    id='course'
-                    labelKey="code"
-                    onChange={setCourse}
-                    selected={course}
-                    options={allcourses}
-                    placeholder="Choose a course..."
-                />
-                <Form.Label><h5>Professor</h5></Form.Label>
-                <Form.Control as="select" onChange={(e) => setProfessor(e.target.value)}>
-                    {prof}
-                </Form.Control>
 
                 <Row>
                     <Col>

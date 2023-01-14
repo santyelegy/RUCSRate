@@ -3,17 +3,23 @@
 - [x] department beautify
 - [x] courselist combine
 - [x] Professor List
-
-- [ ] Course-pro search
+- [x] Course-pro search
 - [x] Review Format
 - [x] Create Review Format
-- [ ] Review time can be counted
 
-Hard
-- [ ] list search filter
+W:
+- [ ] two list 
+C:
+- [x] two details
+- [x] align button
+- [x] course submit button link
+
+Hard:
 - [ ] user authorization
 - [ ] Review upvote / downvote
+- [ ] Review time can be counted
 
-Small
-- [ ] align button
-- [ ] course submit button link
+- [ ] Data of Prof
+- [ ] Can't fully control CustomToggle
+- [ ] Hook in review form has problem
+- [ ] According in course has problem

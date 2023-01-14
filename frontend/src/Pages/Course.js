@@ -1,33 +1,90 @@
-import { useParams, Link } from 'react-router-dom';
 import course from '../sample_data/Course.json'
-import Button from 'react-bootstrap/Button';
 import SingleReview from '../Pages/SingleReview.js'
+import ReviewForm_second from '../Pages/ReviewForm_second.js'
+
+import Accordion from 'react-bootstrap/Accordion';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+function CustomToggle({ children, eventKey }) {
+    const decoratedOnClick = useAccordionButton(eventKey, () =>
+        console.log('custom buttom'),
+    );
+
+    return (
+        <button
+            onClick={decoratedOnClick}
+
+            className='CustomToggle'
+        >
+            {children}
+        </button>
+    );
+}
 
 function Course() {
-    const { id } = useParams();
-    const courses = course[0].review.map((review, index) => {
-        return (
-            <div><div>{review.content}</div>
-                <div>{review.score}</div>
-                <Link to={"/reviews".concat("/", index.toString())}>To review</Link></div>
-        );
-    })
+
     return (
         <>
-            <div>{course[0].code}</div>
-            <div>{course[0].name}</div>
-            <div>{course[0].prof}</div>
-            <div>{course[0].score}</div>
+            <Card style={{ width: '72rem' }}>
+                <Card.Body>
 
-            <Button variant="primary" type="submit">
-                <Link to={"/reviews"}>Add Your Reviews</Link>
-            </Button>
+                    <div>
+                        <h4>Course Code: {course[0].code}</h4>
+                        <h4>Course Name: {course[0].name}</h4>
+                        <h4>Professor: {course[0].prof}</h4>
+                    </div>
 
-            <br></br>
-            Here are the comments:
-            <div>{courses}</div>
-            <SingleReview />
-            <SingleReview />
+                    <Accordion defaultActiveKey="0">
+                        <Card>
+                            <Card.Header >
+                                <Row>
+                                    <Col>
+                                        <CustomToggle eventKey="1">
+                                            Add your own review for this course!
+                                        </CustomToggle>
+                                    </Col>
+                                    <Col>
+                                        <Card>
+                                            <Row>
+                                                <Col align='center'>
+                                                    Course Code: {course[0].code}
+                                                </Col>
+                                                <Col align='center'>
+                                                    Professor: {course[0].prof}
+                                                </Col>
+                                            </Row>
+                                        </Card>
+                                    </Col>
+
+                                </Row>
+
+
+                            </Card.Header>
+                            <Accordion.Collapse eventKey="1">
+                                <Card.Body>
+                                    <ReviewForm_second />
+                                </Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
+
+                    <Card.Text>
+                        <br></br>
+                        <h3>
+                            Here are the comments:
+                        </h3>
+                    </Card.Text>
+
+
+                    <SingleReview />
+                </Card.Body>
+            </Card>
+
+
+
         </>
     );
 }

@@ -21,13 +21,6 @@ function SingleReview() {
 
                     <Card.Subtitle className="mb-2 text-muted">Code</Card.Subtitle>
 
-                    <Row>
-                        <Col></Col>
-                        <Col></Col>
-                        <Col></Col>
-                        <Col></Col>
-                    </Row>
-
                     <ListGroup horizontal className='Listgroup'>
                         <ListGroup.Item className='Listitem'>
                             Overall Quality: <b>{review.score0}</b>

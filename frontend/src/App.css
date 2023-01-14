@@ -43,16 +43,16 @@
 }
 
 .DepartmentButton {
-  align-items: center;
+  align-items: last baseline;
   width: 200px;
   height: 150px;
-  margin-left: 10px;
+  margin-left: 60px;
   margin-top: 0px;
   color: #fff;
   background-color: #0d6efd;
   border-color: #0d6efd;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .DepartmentButton:hover {
@@ -70,4 +70,11 @@
 
 .Listitem {
   width: 185px;
+}
+
+.CustomToggle {
+  color: 'pink';
+  width: '500px';
+  border-color: 'white';
+  background-color: 'white';
 }

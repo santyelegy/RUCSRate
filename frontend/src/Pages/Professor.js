@@ -1,30 +1,66 @@
 import professor from '../sample_data/Professor.json'
-import { useParams, Link } from 'react-router-dom';
-import ReviewForm from './ReviewForm';
-import Button from 'react-bootstrap/Button';
+import SingleReview from '../Pages/SingleReview.js'
+import ReviewForm from '../Pages/ReviewForm.js'
+
+import Accordion from 'react-bootstrap/Accordion';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+function CustomToggle({ children, eventKey }) {
+    const decoratedOnClick = useAccordionButton(eventKey, () =>
+        console.log('custom buttom'),
+    );
+
+    return (
+        <button
+            onClick={decoratedOnClick}
+
+            className='CustomToggle'
+        >
+            {children}
+        </button>
+    );
+}
 
 function Professor() {
-    const { id } = useParams();
 
-    const reviews = professor.reviews.map((review, index) => {
-        return (
-            <div><div>{review.course}</div>
-                <div>{review.content}</div>
-                <Link to={"/reviews".concat("/", index.toString())}>To review</Link></div>
-        );
-    })
     return (
         <>
-            <div>Professor</div>
-            <div>{professor.name}</div>
-            <div>{professor.email}</div>
-            <div>{professor.score}</div>
+            <Card style={{ width: '72rem' }}>
+                <Card.Body>
+                    <div>
+                        <h4>Professor: {professor.name}</h4>
+                        <h4>Overall Score: {professor.score}</h4>
+                    </div>
 
-            <Button variant="primary" type="submit">
-                <Link to={"/reviews"} className='mylink'>Add Your Reviews</Link>
-            </Button>
+                    <Accordion defaultActiveKey="0">
+                        <Card>
+                            <Card.Header >
+                                <CustomToggle eventKey="1">
+                                    Add your own review for this professor!
+                                </CustomToggle>
+                            </Card.Header>
+                            <Accordion.Collapse eventKey="1">
+                                <Card.Body>
+                                    <ReviewForm />
+                                </Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
 
-            {reviews}
+                    <Card.Text>
+                        <br></br>
+                        <h3>
+                            Here are the comments:
+                        </h3>
+                    </Card.Text>
+
+                    <SingleReview />
+                </Card.Body>
+            </Card>
+
         </>
     );
 }
