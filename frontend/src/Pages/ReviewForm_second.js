@@ -14,10 +14,10 @@ function ReviewForm() {
     const handleShow = () => setShow(true);
 
     const [content, setContent] = useState("");
-    const [score0, setScore0] = useState(0);
-    const [score1, setScore1] = useState(0);
-    const [score2, setScore2] = useState(0);
-    const [score3, setScore3] = useState(0);
+    const [score0, setScore0] = useState('');
+    const [score1, setScore1] = useState('');
+    const [score2, setScore2] = useState('');
+    const [score3, setScore3] = useState('');
 
     const [allcourses, setAllCourses] = useState([]);
     useEffect(() => {

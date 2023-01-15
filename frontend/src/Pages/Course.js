@@ -1,28 +1,12 @@
 import course from '../sample_data/Course.json'
 import SingleReview from '../Pages/SingleReview.js'
 import ReviewForm_second from '../Pages/ReviewForm_second.js'
+import CustomToggle from '../Pages/CustomToggle.js'
 
 import Accordion from 'react-bootstrap/Accordion';
-import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-function CustomToggle({ children, eventKey }) {
-    const decoratedOnClick = useAccordionButton(eventKey, () =>
-        console.log('custom buttom'),
-    );
-
-    return (
-        <button
-            onClick={decoratedOnClick}
-
-            className='CustomToggle'
-        >
-            {children}
-        </button>
-    );
-}
 
 function Course() {
 

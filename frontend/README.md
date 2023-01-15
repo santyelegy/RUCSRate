@@ -8,18 +8,16 @@
 - [x] Create Review Format
 
 W:
-- [ ] two list 
+- [x] two list 
 C:
 - [x] two details
 - [x] align button
 - [x] course submit button link
+- [x] According in course has problem
+- [ ] Data of Prof
+- [x] Can't fully control CustomToggle
 
 Hard:
 - [ ] user authorization
 - [ ] Review upvote / downvote
 - [ ] Review time can be counted
-
-- [ ] Data of Prof
-- [ ] Can't fully control CustomToggle
-- [ ] Hook in review form has problem
-- [ ] According in course has problem
