@@ -1,23 +1,36 @@
 package com.rucsrate.api.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document("Review")
 public class Review {
-    Course Course_id;
+    String id;
+
+    @Field("CourseId")
+    String courseId;
     Double Preference;
     Double Difficulty;
     Double Prof;
     Double Helpfulness;
     String Content;
 
-
-    public Course getCourse_id() {
-        return Course_id;
+    public String getId() {
+        return id;
     }
 
-    public void setCourse_id(Course course_id) {
-        this.Course_id = course_id;
+    public void setId(String id) {
+        this.id = id;
+    }
+    public String getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(String course_id) {
+        this.courseId = course_id;
     }
 
     public Double getPreference() {

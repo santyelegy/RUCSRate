@@ -4,15 +4,22 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("Courses")
 public class Course {
+    private String _id;
     private String Department;
     private String code;
     private String name;
     private String prof;
     private int score;
-    private String Topic;
+    private String Topics;
     private int Year;
     private String Season;
+    public String get_id() {
+        return _id;
+    }
 
+    public void set_id(String _id) {
+        this._id = _id;
+    }
     public String getDepartment() {
         return Department;
     }
@@ -53,12 +60,12 @@ public class Course {
         this.score = score;
     }
 
-    public String getTopic() {
-        return Topic;
+    public String getTopics() {
+        return Topics;
     }
 
-    public void setTopic(String topic) {
-        this.Topic = topic;
+    public void setTopics(String topics) {
+        this.Topics = topics;
     }
 
     public int getYear() {
