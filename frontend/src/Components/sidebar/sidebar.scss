@@ -54,4 +54,20 @@
             transition: 0.3s ease-in-out;
         }
     }
+
+    &__user {
+        display: grid;
+        position: absolute;
+        place-items: center;
+        //{height: 120px;}
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Mochiy Pop P one', sans-serif;
+        color: #555555;
+
+        left: 10vh;
+        bottom: 10vh;
+
+    }
+
 }

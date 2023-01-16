@@ -1,12 +1,17 @@
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './sidebar.scss';
+
+import Login from '../../Pages/Login.js';
+import Signup from '../../Pages/Signup.js';
+import { Offcanvas, Navbar, Container, ListGroup, Button, ListGroupItem } from 'react-bootstrap';
 
 const sidebarNavItems = [
     {
         display: 'Dashboard',
         icon: <i className='bx bx-home'></i>,
         to: '/',
+        too: '/sign',
         section: ''
     },
     /*
@@ -114,7 +119,25 @@ const Sidebar = () => {
                 ))
             }
         </div>
+
+        <div className='sidebar__user'>
+            <ListGroup>
+                <ListGroupItem align='center' style={{ backgroundColor: "#F08080", borderColor: "#F08080", color: '#0b5ed7' }}>
+                    Visitor
+                </ListGroupItem>
+                <ListGroupItem align='center' style={{ backgroundColor: "#F08080", borderColor: "#F08080", color: '#555555' }}>
+                    <Signup />
+                </ListGroupItem>
+                <ListGroupItem align='center' style={{ backgroundColor: "#F08080", borderColor: "#F08080", color: '#555555' }}>
+                    <Login />
+                </ListGroupItem>
+            </ListGroup>
+
+
+        </div>
+
     </div>;
+
 };
 
 export default Sidebar;

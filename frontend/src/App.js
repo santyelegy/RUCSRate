@@ -16,6 +16,7 @@ import Addreviews from "./Pages/Addreviews";
 import Contributors from "./Pages/Contributors";
 import AppLayout from '../src/Components/layout/AppLayout';
 import ProfessorList from './Pages/ProfessorList';
+import Login from './Pages/Login';
 
 export default function App() {
   return (
@@ -27,11 +28,12 @@ export default function App() {
           <Route path='/courselist' element={<CourseList />} />
           <Route path='/courselist/course/:id' element={<Course />} />
           <Route path='/courselist/:department' element={<CourseList />} />
-          <Route path='/professor' element={<ProfessorList/>}/>
+          <Route path='/professor' element={<ProfessorList />} />
           <Route path='/professor/:id' element={<Professor />} />
           <Route path='/reviews/:id' element={<Review />} />
           <Route path='/reviews' element={<Addreviews />} />
           <Route path='/aboutus' element={<Contributors />} />
+          <Route path='/login' element={<Login />} />
         </Route>
       </Routes>
     </Router>
