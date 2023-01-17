@@ -24,21 +24,22 @@ public class ProfessorServiceImp implements ProfessorService{
         ObjectMapper mapper = new ObjectMapper();
         Professor target = professorRepository.findByName(ProfessorName);
         ObjectNode returnObject = mapper.createObjectNode();
-        returnObject.put("code", target.getName());
-        returnObject.put("name",target.getEmail());
+        returnObject.put("name",target.getName());
+        returnObject.put("email",target.getEmail());
         returnObject.put("score",target.getScore());
-        /*
-        List<Review> reviews=reviewRepository.findAllByCourseId(new ObjectId(ProfessorName));
+        List<Review> reviews=reviewRepository.findAllByProfessor(ProfessorName);
         ArrayNode arrayNode = returnObject.putArray("review");
         for(Review review:reviews){
             ObjectNode jsonReview=mapper.createObjectNode();
-            jsonReview.put("content",review.getContent());
+            jsonReview.put("course",review.getCourse());
+            jsonReview.put("professor",review.getProfessor());
             jsonReview.put("preference",review.getPreference());
             jsonReview.put("difficulty",review.getDifficulty());
             jsonReview.put("prof",review.getProf());
             jsonReview.put("helpfulness",review.getHelpfulness());
+            jsonReview.put("content",review.getContent());
             arrayNode.add(jsonReview);
-        }*/
+        }
         return returnObject;
     }
 

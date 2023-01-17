@@ -1,6 +1,7 @@
 package com.rucsrate.api.repository;
 
 import com.rucsrate.api.model.Professor;
+import com.rucsrate.api.model.Review;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -13,4 +14,5 @@ public interface ProfessorRepository extends MongoRepository<Professor, String> 
     List<Professor> findAll();
 
     Professor findByName(String name);
+
 }

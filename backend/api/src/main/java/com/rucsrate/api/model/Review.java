@@ -19,6 +19,9 @@ public class Review {
     Double helpfulness;
     @Field("Content")
     String content;
+    @Field("Professor")
+    String professor;
+    String Course;
 
     public String getId() {
         return id;
@@ -73,5 +76,21 @@ public class Review {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(String professor) {
+        this.professor = professor;
+    }
+
+    public String getCourse() {
+        return Course;
+    }
+
+    public void setCourse(String course) {
+        Course = course;
     }
 }
