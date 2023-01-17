@@ -21,8 +21,13 @@ public class CourseController {
     public List<Course> getAllCourse(){
         return courseService.findAll();
     }
+
     @GetMapping(value = "/findid/{courseid}")
     public ObjectNode getCourseById(@PathVariable("courseid") String courseId){
         return courseService.findCourseById(courseId);
+    }
+    @GetMapping(value = "/department")
+    public ObjectNode getCourseByDepartment(){
+        return courseService.findCourseByDepartment();
     }
 }

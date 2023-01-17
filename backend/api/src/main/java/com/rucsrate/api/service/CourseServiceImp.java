@@ -12,7 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @Service
 public class CourseServiceImp implements CourseService {
     @Autowired
@@ -23,15 +26,15 @@ public class CourseServiceImp implements CourseService {
     public ObjectNode findCourseById(String CourseId){
         ObjectMapper mapper = new ObjectMapper();
         Course target=courseRepository.findBy_id(CourseId);
-        ObjectNode returnObject=mapper.createObjectNode();
+        ObjectNode returnObject = mapper.createObjectNode();
         returnObject.put("code", target.getCode());
         returnObject.put("name",target.getName());
         returnObject.put("prof",target.getProf());
         returnObject.put("score",target.getScore());
-        List<Review> reviews=reviewRepository.findAllByCourseId(new ObjectId(CourseId));
+        List<Review> reviews = reviewRepository.findAllByCourseId(new ObjectId(CourseId));
         ArrayNode arrayNode = returnObject.putArray("review");
         for(Review review:reviews){
-            ObjectNode jsonReview=mapper.createObjectNode();
+            ObjectNode jsonReview = mapper.createObjectNode();
             jsonReview.put("content",review.getContent());
             jsonReview.put("preference",review.getPreference());
             jsonReview.put("difficulty",review.getDifficulty());
@@ -44,5 +47,23 @@ public class CourseServiceImp implements CourseService {
     @Override
     public List<Course> findAll(){
         return courseRepository.findAll();
+    }
+
+    @Override
+    public ObjectNode findCourseByDepartment() {
+        List<Course> all_course = findAll();
+        Map<String, Integer> course_num = new HashMap<>();
+        // calculate the number of courses in the department
+        for (Course course:all_course){
+            int count = course_num.getOrDefault(course.getDepartment(), 0);
+            course_num.put(course.getDepartment(), count + 1);
+        }
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectNode returnObject = mapper.createObjectNode();
+        // put inside the return object
+        for (String course_name:course_num.keySet()){
+            returnObject.put(course_name, course_num.get(course_name));
+        }
+        return returnObject;
     }
 }
