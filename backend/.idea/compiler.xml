@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="DataCrawling" />
+        <module name="api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

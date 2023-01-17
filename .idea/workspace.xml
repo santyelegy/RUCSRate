@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="58bbafe9-2f9e-4ab5-ad82-0edc64d23d64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/DataCrawling/target/classes/CS_Description.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DataCrawling/target/classes/CS_Description.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/DataCrawling/target/classes/Course_CS.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DataCrawling/target/classes/Course_CS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/DataCrawling/target/classes/Course_DS.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DataCrawling/target/classes/Course_DS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/DataCrawling/target/classes/Course_ECE.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DataCrawling/target/classes/Course_ECE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/DataCrawling/target/classes/ECE_Description.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DataCrawling/target/classes/ECE_Description.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/DataCrawling/target/classes/JsoupCrawling.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/DataCrawling/target/classes/JsoupCrawling.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/controller/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/controller/ProfessorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/model/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/repository/ProfessorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/repository/ProfessorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/service/ProfessorServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/src/main/java/com/rucsrate/api/service/ProfessorServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,17 +16,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2KR1PTBYtpniMtAWxn8EtElpR3I" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -40,6 +41,19 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="RUCSRate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="RUCSRate" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
