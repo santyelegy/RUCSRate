@@ -16,9 +16,9 @@ function Course() {
                 <Card.Body>
 
                     <div>
-                        <h4>Course Code: {course[0].code}</h4>
-                        <h4>Course Name: {course[0].name}</h4>
-                        <h4>Professor: {course[0].prof}</h4>
+                        <h4>Course Code: {course.code}</h4>
+                        <h4>Course Name: {course.name}</h4>
+                        <h4>Professor: {course.prof}</h4>
                     </div>
 
                     <Accordion defaultActiveKey="0">
@@ -34,10 +34,10 @@ function Course() {
                                         <Card>
                                             <Row>
                                                 <Col align='center'>
-                                                    Course Code: {course[0].code}
+                                                    Course Code: {course.code}
                                                 </Col>
                                                 <Col align='center'>
-                                                    Professor: {course[0].prof}
+                                                    Professor: {course.prof}
                                                 </Col>
                                             </Row>
                                         </Card>

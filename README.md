@@ -7,4 +7,8 @@ Backend:
 - [ ] 平均分 完全没做
 
 Frontend:
+
+- [ ] react fetch data from api json
+
 待定
+

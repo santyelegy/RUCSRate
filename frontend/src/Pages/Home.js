@@ -34,7 +34,7 @@ function Home() {
             <Link to="/courselist/ds">CourselistDS</Link>
           </li>
           <li>
-            <Link to="/professor">Professor：缺</Link>
+            <Link to="/professor">ProfessorList</Link>
             <br></br>
             <Link to="/professor/:id">Detail Professor</Link>
           </li>
