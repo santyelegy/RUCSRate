@@ -25,7 +25,7 @@ public class ProfessorController {
         return professorRepository.findAll();
     }
 
-    @GetMapping(value = "/{professorname}")
+    @GetMapping(value = "/findname/{professorname}")
     public ObjectNode getProfessorByName(@PathVariable("professorname") String ProfessorName){
         return professorService.findProfessorByName(ProfessorName);
     }

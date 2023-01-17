@@ -1,82 +1,82 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
 
-  to {
-    transform: rotate(360deg);
-  }
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .mylink {
-  color: white;
+	color: white;
 }
 
 .DepartmentButton {
-  align-items: last baseline;
-  width: 200px;
-  height: 150px;
-  margin-left: 60px;
-  margin-top: 0px;
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-  color: #fff;
-  border-radius: 30px;
+	align-items: last baseline;
+	width: 200px;
+	height: 150px;
+	margin-left: 60px;
+	margin-top: 0px;
+	color: #fff;
+	background-color: #0d6efd;
+	border-color: #0d6efd;
+	color: #fff;
+	border-radius: 30px;
 }
 
 .DepartmentButton:hover {
-  color: #fff;
-  background-color: #0b5ed7;
+	color: #fff;
+	background-color: #0b5ed7;
 }
 
 .department-group {
-  align-items: stretch;
+	align-items: stretch;
 }
 
 .Listgroup {
-  margin-left: 0px;
+	margin-left: 0px;
 }
 
 .Listitem {
-  width: 185px;
+	width: 185px;
 }
 
 .Topbar {
 
-  color: #fff;
-  background-color: #F08080;
-  border-color: #F08080;
-  color: #fff;
-  border-radius: 10px;
+	color: #fff;
+	background-color: #F08080;
+	border-color: #F08080;
+	color: #fff;
+	border-radius: 10px;
 }

@@ -16,4 +16,6 @@ public interface ReviewRepository extends MongoRepository<Review, String> {
 
     List<Review> findAllByCourseId(ObjectId courseId);
 
+    List<Review> findAllByProfessor(String Professor);
+
 }

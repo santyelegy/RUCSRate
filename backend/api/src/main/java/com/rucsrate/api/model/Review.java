@@ -1,8 +1,5 @@
 package com.rucsrate.api.model;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
-import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -12,11 +9,19 @@ public class Review {
 
     @Field("CourseId")
     String courseId;
-    Double Preference;
-    Double Difficulty;
-    Double Prof;
-    Double Helpfulness;
-    String Content;
+    @Field("Preference")
+    Double preference;
+    @Field("Difficulty")
+    Double difficulty;
+    @Field("Prof")
+    Double prof;
+    @Field("Helpfulness")
+    Double helpfulness;
+    @Field("Content")
+    String content;
+    @Field("Professor")
+    String professor;
+    String Course;
 
     public String getId() {
         return id;
@@ -34,42 +39,58 @@ public class Review {
     }
 
     public Double getPreference() {
-        return Preference;
+        return preference;
     }
 
     public void setPreference(Double preference) {
-        this.Preference = preference;
+        this.preference = preference;
     }
 
     public Double getDifficulty() {
-        return Difficulty;
+        return difficulty;
     }
 
     public void setDifficulty(Double difficulty) {
-        this.Difficulty = difficulty;
+        this.difficulty = difficulty;
     }
 
     public Double getProf() {
-        return Prof;
+        return prof;
     }
 
     public void setProf(Double prof) {
-        this.Prof = prof;
+        this.prof = prof;
     }
 
     public Double getHelpfulness() {
-        return Helpfulness;
+        return helpfulness;
     }
 
     public void setHelpfulness(Double helpfulness) {
-        this.Helpfulness = helpfulness;
+        this.helpfulness = helpfulness;
     }
 
     public String getContent() {
-        return Content;
+        return content;
     }
 
     public void setContent(String content) {
-        this.Content = content;
+        this.content = content;
+    }
+
+    public String getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(String professor) {
+        this.professor = professor;
+    }
+
+    public String getCourse() {
+        return Course;
+    }
+
+    public void setCourse(String course) {
+        Course = course;
     }
 }

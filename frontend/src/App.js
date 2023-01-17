@@ -1,9 +1,9 @@
 import './App.css';
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route
+	BrowserRouter as Router,
+	Routes,
+	Route
 } from "react-router-dom";
 
 import Course from "./Pages/Course";
@@ -19,23 +19,23 @@ import ProfessorList from './Pages/ProfessorList';
 import Login from './Pages/Login';
 
 export default function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<AppLayout />}>
-          <Route index element={<Home />} />
-          <Route path='/department' element={<Department />} />
-          <Route path='/courselist' element={<CourseList />} />
-          <Route path='/courselist/course/:id' element={<Course />} />
-          <Route path='/courselist/:department' element={<CourseList />} />
-          <Route path='/professor' element={<ProfessorList />} />
-          <Route path='/professor/:id' element={<Professor />} />
-          <Route path='/reviews/:id' element={<Review />} />
-          <Route path='/reviews' element={<Addreviews />} />
-          <Route path='/aboutus' element={<Contributors />} />
-          <Route path='/login' element={<Login />} />
-        </Route>
-      </Routes>
-    </Router>
-  );
+	return (
+		<Router>
+			<Routes>
+				<Route path='/' element={<AppLayout />}>
+					<Route index element={<Home />} />
+					<Route path='/department' element={<Department />} />
+					<Route path='/courselist' element={<CourseList />} />
+					<Route path='/courselist/course/:id' element={<Course />} />
+					<Route path='/courselist/:department' element={<CourseList />} />
+					<Route path='/professor' element={<ProfessorList />} />
+					<Route path='/professor/:id' element={<Professor />} />
+					<Route path='/reviews/:id' element={<Review />} />
+					<Route path='/reviews' element={<Addreviews />} />
+					<Route path='/aboutus' element={<Contributors />} />
+					<Route path='/login' element={<Login />} />
+				</Route>
+			</Routes>
+		</Router>
+	);
 }
