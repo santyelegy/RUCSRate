@@ -3,6 +3,9 @@ package com.rucsrate.api.model;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
 @Document("Review")
 public class Review {
     String id;
@@ -22,7 +25,8 @@ public class Review {
     @Field("Professor")
     String professor;
     String Course;
-
+    @Field("Time")
+    LocalDateTime time;
     public String getId() {
         return id;
     }
@@ -91,6 +95,10 @@ public class Review {
     }
 
     public void setCourse(String course) {
-        Course = course;
+        this.Course = course;
     }
+
+    public LocalDateTime getTime() { return time; }
+
+    public void setTime(LocalDateTime time) { this.time = time;}
 }
