@@ -6,5 +6,5 @@ import org.springframework.util.MultiValueMap;
 import java.util.Map;
 
 public interface ReviewService {
-    public boolean save(Map review);
+    public boolean save(Map<String,String> review, String ip);
 }
