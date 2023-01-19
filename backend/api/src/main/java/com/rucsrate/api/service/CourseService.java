@@ -8,4 +8,5 @@ import java.util.List;
 public interface CourseService {
     ObjectNode findCourseById(String CourseId);
     List<Course> findAll();
+    ObjectNode findCourseByDepartment();
 }

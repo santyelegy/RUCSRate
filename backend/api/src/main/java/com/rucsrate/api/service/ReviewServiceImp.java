@@ -1,19 +1,22 @@
 package com.rucsrate.api.service;
 
 import com.rucsrate.api.model.Review;
+import com.rucsrate.api.repository.IpRepository;
 import com.rucsrate.api.repository.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 
+import java.time.LocalDateTime;
 import java.util.Map;
 
 @Service
 public class ReviewServiceImp implements ReviewService{
     @Autowired
     ReviewRepository reviewRepository;
+    @Autowired
+    IpRepository ipRepository;
     @Override
-    public boolean save(Map review){
+    public boolean save(Map<String,String> review, String ip){
         try{
             System.out.println(review);
             Review tosave=new Review();
@@ -23,7 +26,12 @@ public class ReviewServiceImp implements ReviewService{
             tosave.setDifficulty(Double.valueOf((String) review.get("difficulty")));
             tosave.setProf(Double.valueOf((String) review.get("prof")));
             tosave.setHelpfulness(Double.valueOf((String) review.get("helpfulness")));
-            reviewRepository.save(tosave);
+            tosave.setTime(LocalDateTime.now());
+            if(ipRepository.findByCourseIdAndIp(String.valueOf(review.get("courseId")),ip)!=null){
+                throw new Exception("Duplicate Ip address");
+            }else{
+                reviewRepository.save(tosave);
+            }
             return true;
         }catch (Exception e){
             System.out.println("Get my error");
