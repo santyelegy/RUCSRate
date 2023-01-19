@@ -16,7 +16,6 @@ import Addreviews from "./Pages/Addreviews";
 import Contributors from "./Pages/Contributors";
 import AppLayout from '../src/Components/layout/AppLayout';
 import ProfessorList from './Pages/ProfessorList';
-import Login from './Pages/Login';
 
 export default function App() {
 	return (
@@ -33,7 +32,6 @@ export default function App() {
 					<Route path='/reviews/:id' element={<Review />} />
 					<Route path='/reviews' element={<Addreviews />} />
 					<Route path='/aboutus' element={<Contributors />} />
-					<Route path='/login' element={<Login />} />
 				</Route>
 			</Routes>
 		</Router>

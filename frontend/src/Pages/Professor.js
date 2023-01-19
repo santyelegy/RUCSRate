@@ -1,14 +1,9 @@
 import professor from '../sample_data/Professor.json'
-import SingleReview from '../Pages/SingleReview.js'
-import ReviewForm from '../Pages/ReviewForm.js'
-import CustomToggle from '../Pages/CustomToggle.js'
+import SingleReview from '../Components/reviewform/SingleReview.js'
+import ReviewForm from '../Components/reviewform/ReviewForm.js'
+import CustomToggle from '../Components/CustomToggle.js'
 
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-
+import { Accordion, Card, Row, Col } from 'react-bootstrap';
 
 function Professor() {
 

@@ -1,7 +1,7 @@
 import dept_course from '../sample_data/CourseList.json'
 import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Form from 'react-bootstrap/Form';
+import { Form } from 'react-bootstrap';
 
 function CourseList() {
     const { department_id } = useParams();

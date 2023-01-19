@@ -1,4 +1,4 @@
-import ReviewForm from '../Pages/ReviewForm.js'
+import ReviewForm from '../Components/reviewform/ReviewForm.js'
 
 function Addreview() {
 

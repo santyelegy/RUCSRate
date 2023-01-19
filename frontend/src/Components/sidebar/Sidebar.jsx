@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './sidebar.scss';
 
-import Login from '../../Pages/Login.js';
-import Signup from '../../Pages/Signup.js';
 import { Offcanvas, Navbar, Container, ListGroup, Button, ListGroupItem } from 'react-bootstrap';
+
+import './sidebar.scss';
+import Login from '../user/Login.js';
+import Signup from '../user/Signup.js';
 
 const sidebarNavItems = [
     {

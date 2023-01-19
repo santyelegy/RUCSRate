@@ -1,11 +1,7 @@
-import courselist from '../sample_data/CourseList.json'
+import courselist from '../../sample_data/CourseList.json'
 import { useEffect, useState } from 'react';
 
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
 
 function ReviewForm() {
 

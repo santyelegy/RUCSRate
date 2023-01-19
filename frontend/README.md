@@ -1,23 +1,47 @@
 # Front End
 
-- [x] department beautify
-- [x] courselist combine
-- [x] Professor List
-- [x] Course-pro search
-- [x] Review Format
-- [x] Create Review Format
+- Addreviews.js
+- Contributors.js
+    
+    Picture and intorduction
+- Course.js
+    
+    need fetch, in SingleReview.js
+    
+    need all comments
+- CourseList.js full function
+- Department.js
+- Professor.js
 
-W:
-- [x] two list 
-C:
-- [x] two details
-- [x] align button
-- [x] course submit button link
-- [x] According in course has problem
-- [ ] Data of Prof
-- [x] Can't fully control CustomToggle
+    need fetch
 
-Hard:
-- [ ] user authorization
-- [ ] Review upvote / downvote
-- [ ] Review time can be counted
+    should Reviewform be changed?
+- ProfessorList.js
+
+    need fetch
+- Review.js
+
+user
+Maybe abondoned
+- Signup.js
+- Login.js
+
+components
+- CustomToggle.js
+
+reviewform
+- SingleReview.js
+
+    need fetch
+- ReviewForm.js
+
+    /Addreview
+    /Professor
+
+    need fetch
+    check?
+
+- R_second.js    
+    need fetch
+    course
+    check?

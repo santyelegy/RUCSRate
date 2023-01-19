@@ -1,4 +1,4 @@
-import SingleReview from '../Pages/SingleReview.js'
+import SingleReview from '../Components/reviewform/SingleReview.js'
 
 function Review() {
 

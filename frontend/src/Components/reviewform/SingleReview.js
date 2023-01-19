@@ -1,9 +1,6 @@
-import review from '../sample_data/Review.json'
+import review from '../../sample_data/Review.json'
 
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Card, ListGroup, Row, Col } from 'react-bootstrap';
 
 function SingleReview() {
     return (

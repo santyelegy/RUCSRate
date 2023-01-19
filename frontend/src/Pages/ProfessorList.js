@@ -1,8 +1,8 @@
 import professorlist from "../sample_data/ProfessorList.json"
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Accordion from 'react-bootstrap/Accordion';
-import Form from "react-bootstrap/Form";
+
+import { Accordion, Form } from 'react-bootstrap';
 
 function ProfessorList() {
   const [search, setSearch] = useState("");

@@ -4,7 +4,7 @@ const UsingFetch = (name, key, value) => {
     const [name, setName] = useState([])
 
     const fetchData = async () => {
-        const response = await fetch("https://jsonplaceholder.typicode.com/".contact(name))
+        const response = await fetch("http://127.0.0.1:8000/api/".contact(name))
         const data = await response.json()
         setName(data)
     }
@@ -17,7 +17,7 @@ const UsingFetch = (name, key, value) => {
         <div>
             {name.length > 0 && (
                 <ul>
-                    {name.map(user => (
+                    {name.map(name => (
                         <li key={name.key}>{name.value}</li>
                     ))}
                 </ul>
@@ -25,6 +25,5 @@ const UsingFetch = (name, key, value) => {
         </div>
     )
 }
-
 
 export default UsingFetch

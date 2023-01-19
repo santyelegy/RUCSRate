@@ -1,12 +1,9 @@
 import course from '../sample_data/Course.json'
-import SingleReview from '../Pages/SingleReview.js'
-import ReviewForm_second from '../Pages/ReviewForm_second.js'
-import CustomToggle from '../Pages/CustomToggle.js'
+import SingleReview from '../Components/reviewform/SingleReview.js'
+import ReviewForm_second from '../Components/reviewform/ReviewForm_second.js'
+import CustomToggle from '../Components/CustomToggle.js'
 
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Accordion, Card, Row, Col } from 'react-bootstrap';
 
 function Course() {
 
