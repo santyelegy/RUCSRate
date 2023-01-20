@@ -4,14 +4,12 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.rucsrate.api.model.Course;
 import com.rucsrate.api.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/course")
 public class CourseController {
     @Autowired
