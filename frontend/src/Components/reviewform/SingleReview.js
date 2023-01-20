@@ -1,8 +1,8 @@
-import review from '../../sample_data/Review.json'
-
+import React from 'react';
 import { Card, ListGroup, Row, Col } from 'react-bootstrap';
 
-function SingleReview() {
+function SingleReview(props) {
+    const review = props.review;
     return (
         <>
             <Card style={{ width: '48rem' }}>
@@ -16,20 +16,18 @@ function SingleReview() {
                         </Col>
                     </Row>
 
-                    <Card.Subtitle className="mb-2 text-muted">Code</Card.Subtitle>
-
                     <ListGroup horizontal className='Listgroup'>
                         <ListGroup.Item className='Listitem'>
-                            Overall Quality: <b>{review.score0}</b>
+                            Overall Quality: <b>{review.preference}</b>
                         </ListGroup.Item>
                         <ListGroup.Item className='Listitem'>
-                            Professor: <b>{review.score1}</b>
+                            Professor: <b>{review.prof}</b>
                         </ListGroup.Item>
                         <ListGroup.Item className='Listitem'>
-                            Course Difficulty: <b>{review.score2}</b>
+                            Course Difficulty: <b>{review.difficulty}</b>
                         </ListGroup.Item>
                         <ListGroup.Item className='Listitem'>
-                            Future Help: <b>{review.score3}</b>
+                            Future Help: <b>{review.helpfulness}</b>
                         </ListGroup.Item>
                     </ListGroup>
 
@@ -43,5 +41,4 @@ function SingleReview() {
         </>
     );
 }
-
 export default SingleReview;

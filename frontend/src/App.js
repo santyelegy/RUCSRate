@@ -26,7 +26,7 @@ export default function App() {
 					<Route path='/department' element={<Department />} />
 					<Route path='/courselist' element={<CourseList />} />
 					<Route path='/courselist/course/:id' element={<Course />} />
-					<Route path='/courselist/:department' element={<CourseList />} />
+					<Route path='/courselist/:department_id' element={<CourseList />} />
 					<Route path='/professor' element={<ProfessorList />} />
 					<Route path='/professor/:id' element={<Professor />} />
 					<Route path='/reviews/:id' element={<Review />} />

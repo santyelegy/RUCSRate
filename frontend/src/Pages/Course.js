@@ -1,12 +1,33 @@
-import course from '../sample_data/Course.json'
 import SingleReview from '../Components/reviewform/SingleReview.js'
 import ReviewForm_second from '../Components/reviewform/ReviewForm_second.js'
 import CustomToggle from '../Components/CustomToggle.js'
-
+import { useParams } from 'react-router-dom';
 import { Accordion, Card, Row, Col } from 'react-bootstrap';
+import { useState,useEffect } from 'react';
 
 function Course() {
-
+    const { id } = useParams();
+    const [course,setCourse]=useState([]);
+    //fetch data
+    let getCourse = async () => {
+        if(id===null){
+            return;
+        }
+        let response = await fetch('http://127.0.0.1:8080/course/findid/'+id)
+        let data = await response.json()
+        setCourse(data)
+    }
+    useEffect(()=>{
+        getCourse();
+    },[id])
+    let reviewList=<></>;
+    if(course.length!==0){
+        if(course.review.length!==0){
+            reviewList=course.review.map((reviewcontent,index)=>{
+                return <SingleReview key={index} review={reviewcontent}/>;
+            });
+        }
+    }
     return (
         <>
             <Card style={{ width: '72rem' }}>
@@ -58,9 +79,7 @@ function Course() {
                             Here are the comments:
                         </h3>
                     </Card.Text>
-
-
-                    <SingleReview />
+                    {reviewList}
                 </Card.Body>
             </Card>
 
