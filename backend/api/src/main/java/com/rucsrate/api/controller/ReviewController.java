@@ -24,14 +24,17 @@ public class ReviewController {
     private ReviewService reviewService;
     @Autowired
     private IpService ipService;
+
     @GetMapping(value = "/all")
     public List<Review> getAllReview(){
         return reviewRepository.findAll();
     }
+
     @GetMapping(value = "getByCourse/{courseid}")
     public List<Review> getAllByCouseId(@PathVariable("courseid") String courseId){
         return reviewRepository.findAllByCourseId(new ObjectId(courseId));
     }
+
     @PostMapping(value = "/save", consumes = MediaType.APPLICATION_JSON_VALUE)
     public boolean newReview(@RequestBody Map<String,String> paramMap, HttpServletRequest request)throws Exception {
         if(paramMap==null){

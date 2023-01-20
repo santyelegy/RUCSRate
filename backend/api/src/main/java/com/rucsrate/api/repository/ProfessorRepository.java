@@ -1,5 +1,6 @@
 package com.rucsrate.api.repository;
 
+import com.rucsrate.api.model.Course;
 import com.rucsrate.api.model.Professor;
 import com.rucsrate.api.model.Review;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -15,4 +16,5 @@ public interface ProfessorRepository extends MongoRepository<Professor, String> 
 
     Professor findByName(String name);
 
+    Professor findBy_id(String id);
 }
