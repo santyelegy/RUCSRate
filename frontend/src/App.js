@@ -29,7 +29,7 @@ export default function App() {
 					<Route path='/courselist/:department_id' element={<CourseList />} />
 					<Route path='/professor' element={<ProfessorList />} />
 					<Route path='/professor/:id' element={<Professor />} />
-					<Route path='/reviews/:id' element={<Review />} />
+					{/*<Route path='/reviews/:id' element={<Review />} /> */}
 					<Route path='/reviews' element={<Addreviews />} />
 					<Route path='/aboutus' element={<Contributors />} />
 				</Route>
