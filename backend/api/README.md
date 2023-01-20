@@ -88,6 +88,22 @@ run `curl http:/localhost:8080/announcement/` in command line to get sample data
 ```json
 {"name":"Mr.A","email":"","score":0.0,"review":[]}
 ```
+- `professor/findId/{professorId}` find professor by objectId
+```json
+{
+  "name":"Steven E. Kreutzer",
+  "email":"",
+  "score":0.0,
+  "review":
+  [{
+    "course":"16:198:512",
+    "professor":"Steven E. Kreutzer",
+    "preference":5.0,
+    "difficulty":4.0,
+    "prof":4.5,
+    "helpfulness":5.0,
+    "content":"This course is the most difficult to get high scores of the three courses in the first semester of the Data Science Department. The questions in each exam and quiz are very tricky, but there will be a curve in the final exam, and the final grade will also have a curve. The professors are nice and good at motivating students and he is very happy to solve everyone's problems during class or after class, and also hopes that students can use emails to ask questions after class or during office hours. All emails will be replied to within one working day, even if students encounter homework problems that they do not know. There is no possibility of escaping this course as a compulsory course. The course itself is very important as the foundation of computer science."},{"course":"16:198:512","professor":"Steven E. Kreutzer","preference":4.5,"difficulty":4.0,"prof":5.0,"helpfulness":5.0,"content":"This course is the most difficult to get high scores of the three courses in the first semester of the Data Science Department. The questions in each exam and quiz are very tricky, but there will be a curve in the final exam, and the final grade will also have a curve. The professors are nice and good at motivating students and he is very happy to solve everyone's problems during class or after class, and also hopes that students can use emails to ask questions after class or during office hours. All emails will be replied to within one working day, even if students encounter homework problems that they do not know. There is no possibility of escaping this course as a compulsory course. The course itself is very important as the foundation of computer science."},{"course":"16:198:512","professor":"Steven E. Kreutzer","preference":4.0,"difficulty":4.5,"prof":4.0,"helpfulness":4.0,"content":"This course is the most difficult to get high scores of the three courses in the first semester of the Data Science Department. The questions in each exam and quiz are very tricky, but there will be a curve in the final exam, and the final grade will also have a curve. The professors are nice and good at motivating students and he is very happy to solve everyone's problems during class or after class, and also hopes that students can use emails to ask questions after class or during office hours. All emails will be replied to within one working day, even if students encounter homework problems that they do not know. There is no possibility of escaping this course as a compulsory course. The course itself is very important as the foundation of computer science."}]}
+```
 ## ReviewController
 - `/review/all` get all review
 ```json
