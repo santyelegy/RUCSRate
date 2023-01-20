@@ -7,5 +7,9 @@ import java.util.List;
 
 public interface ProfessorService {
     ObjectNode findProfessorByName(String ProfessorName);
+
+    ObjectNode findProfessorById(String ProfessorId);
     List<Course> findAll();
+
+    ObjectNode findProfessorPerformance(String professorName);
 }

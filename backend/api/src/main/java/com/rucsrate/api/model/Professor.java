@@ -9,6 +9,7 @@ public class Professor {
     String name;
     String Email;
     Double Score;
+    private String _id;
 
 
     public String getName() {
@@ -33,5 +34,13 @@ public class Professor {
 
     public void setScore(Double score) {
         this.Score = score;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public void set_id(String _id) {
+        this._id = _id;
     }
 }

@@ -27,4 +27,14 @@ public class ProfessorController {
     public ObjectNode getProfessorByName(@PathVariable("professorname") String ProfessorName){
         return professorService.findProfessorByName(ProfessorName);
     }
+
+    @GetMapping(value = "/findId/{professorId}")
+    public ObjectNode getProfessorById(@PathVariable("professorId") String ProfessorId){
+        return professorService.findProfessorById(ProfessorId);
+    }
+
+    @GetMapping(value = "/findname/{professorname}/average_score")
+    public ObjectNode getProfessorPerformance(@PathVariable("professorname") String ProfessorName){
+        return professorService.findProfessorPerformance(ProfessorName);
+    }
 }
