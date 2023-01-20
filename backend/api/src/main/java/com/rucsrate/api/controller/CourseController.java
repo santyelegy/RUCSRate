@@ -28,4 +28,9 @@ public class CourseController {
     public ObjectNode getCourseByDepartment(){
         return courseService.findCourseByDepartment();
     }
+
+    @GetMapping(value = "/findname/{professorname}")
+    public ObjectNode getCourseByProf(@PathVariable("professorname") String ProfessorName){
+        return courseService.findCourseByProf(ProfessorName);
+    }
 }

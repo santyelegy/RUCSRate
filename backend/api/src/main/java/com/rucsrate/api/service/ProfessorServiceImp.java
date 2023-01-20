@@ -73,29 +73,29 @@ public class ProfessorServiceImp implements ProfessorService{
     }
 
     @Override
-    public ObjectNode findProfessorPerformance(String professorName) {
+    public ObjectNode findProfessorPerformance(String professorId) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode returnObject = mapper.createObjectNode();
-        ObjectNode professor_info = this.findProfessorByName(professorName);
-        double avg_preference = 0;
-        double avg_difficulty = 0;
+        ObjectNode professor_info = this.findProfessorById(professorId);
+        // double avg_preference = 0;
+        // double avg_difficulty = 0;
         double avg_prof = 0;
-        double avg_helpfulness = 0;
+        // double avg_helpfulness = 0;
         int cnt = 0;
         ArrayNode reviews = (ArrayNode) professor_info.get("review");
         for (JsonNode review:reviews){
-            avg_preference += Double.parseDouble(String.valueOf(review.get("preference")));
-            avg_difficulty += Double.parseDouble(String.valueOf(review.get("difficulty")));
+            // avg_preference += Double.parseDouble(String.valueOf(review.get("preference")));
+            // avg_difficulty += Double.parseDouble(String.valueOf(review.get("difficulty")));
             avg_prof += Double.parseDouble(String.valueOf(review.get("prof")));
-            avg_helpfulness += Double.parseDouble(String.valueOf(review.get("helpfulness")));
+            // avg_helpfulness += Double.parseDouble(String.valueOf(review.get("helpfulness")));
             cnt++;
         }
         returnObject.put("name", String.valueOf(professor_info.get("name")));
         returnObject.put("email", String.valueOf(professor_info.get("email")));
-        returnObject.put("avg_preference", avg_preference/cnt);
-        returnObject.put("avg_difficulty", avg_difficulty/cnt);
+        // returnObject.put("avg_preference", avg_preference/cnt);
+        // returnObject.put("avg_difficulty", avg_difficulty/cnt);
         returnObject.put("avg_prof", avg_prof/cnt);
-        returnObject.put("avg_helpfulness", avg_helpfulness/cnt);
+        // returnObject.put("avg_helpfulness", avg_helpfulness/cnt);
         return returnObject;
     }
 }

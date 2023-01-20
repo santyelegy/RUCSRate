@@ -66,4 +66,20 @@ public class CourseServiceImp implements CourseService {
         }
         return returnObject;
     }
+
+    @Override
+    public ObjectNode findCourseByProf(String ProfessorName) {
+        ObjectMapper mapper = new ObjectMapper();
+        List<Course> all_course = courseRepository.findAllByProf(ProfessorName);
+        ObjectNode returnObject = mapper.createObjectNode();
+        returnObject.put("name",ProfessorName);
+        ArrayNode arrayNode = returnObject.putArray("course");
+        for (Course course:all_course){
+            ObjectNode jsonCourse = mapper.createObjectNode();
+            jsonCourse.put("course_code",course.getCode());
+            jsonCourse.put("course_id", course.get_id());
+            arrayNode.add(jsonCourse);
+        }
+        return returnObject;
+    }
 }

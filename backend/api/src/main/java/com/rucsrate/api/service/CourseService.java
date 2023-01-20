@@ -9,4 +9,6 @@ public interface CourseService {
     ObjectNode findCourseById(String CourseId);
     List<Course> findAll();
     ObjectNode findCourseByDepartment();
+
+    ObjectNode findCourseByProf(String ProfessorName);
 }
