@@ -7,7 +7,18 @@ function CourseList() {
     const { department_id } = useParams();
     const [allcourses, setAllCourses] = useState([]);
     const [search, setSearch] = useState("");
+
     let [department, setDepartment] = useState([true, true, true]);
+    useEffect(() => {
+        if (department_id === "Computer Science") {
+            setDepartment([true, false, false]);
+        } else if (department_id === "Electrical and Computer Engineering") {
+            setDepartment([false, true, false]);
+        } else if (department_id === "Data Science") {
+            setDepartment([false, false, true]);
+        }
+    }, [department_id])
+
 
     useEffect(() => {
         let subarray = []
@@ -52,21 +63,21 @@ function CourseList() {
                         inline
                         label="CS"
                         type='checkbox'
-                        defaultChecked={department[0]}
+                        checked={department[0]}
                         onChange={(e) => handleBoxChange(e, 0)}
                     />
                     <Form.Check
                         inline
                         label="ECE"
                         type='checkbox'
-                        defaultChecked={department[1]}
+                        checked={department[1]}
                         onChange={(e) => handleBoxChange(e, 1)}
                     />
                     <Form.Check
                         inline
                         label="DS"
                         type='checkbox'
-                        defaultChecked={department[2]}
+                        checked={department[2]}
                         onChange={(e) => handleBoxChange(e, 2)}
                     />
                 </Form>

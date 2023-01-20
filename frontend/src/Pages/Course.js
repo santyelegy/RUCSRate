@@ -60,7 +60,7 @@ function Course() {
                     </Card.Text>
 
 
-                    <SingleReview />
+                    <SingleReview cid={"abc"} />
                 </Card.Body>
             </Card>
 
