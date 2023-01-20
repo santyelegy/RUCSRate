@@ -1,5 +1,6 @@
 package com.rucsrate.api.controller;
 
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.rucsrate.api.model.Review;
 import com.rucsrate.api.repository.ReviewRepository;
 import com.rucsrate.api.service.IpService;
@@ -31,9 +32,15 @@ public class ReviewController {
     }
 
     @GetMapping(value = "getByCourse/{courseid}")
-    public List<Review> getAllByCouseId(@PathVariable("courseid") String courseId){
+    public List<Review> getAllByCourseId(@PathVariable("courseid") String courseId){
         return reviewRepository.findAllByCourseId(new ObjectId(courseId));
     }
+
+    @GetMapping(value = "getByCourse/{courseid}/average_score")
+    public ObjectNode getCourseScore(@PathVariable("courseid") String courseId){
+        return reviewService.findCourseScore(courseId);
+    }
+
 
     @PostMapping(value = "/save", consumes = MediaType.APPLICATION_JSON_VALUE)
     public boolean newReview(@RequestBody Map<String,String> paramMap, HttpServletRequest request)throws Exception {

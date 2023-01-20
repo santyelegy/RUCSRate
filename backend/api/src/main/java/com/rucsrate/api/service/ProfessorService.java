@@ -11,5 +11,5 @@ public interface ProfessorService {
     ObjectNode findProfessorById(String ProfessorId);
     List<Course> findAll();
 
-    ObjectNode findProfessorPerformance(String professorName);
+    ObjectNode findProfessorPerformance(String professorId);
 }
