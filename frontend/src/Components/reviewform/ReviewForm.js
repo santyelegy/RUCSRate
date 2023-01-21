@@ -1,54 +1,82 @@
-import courselist from '../../sample_data/CourseList.json'
-import proflist from '../../sample_data/ProfessorList.json'
 import { useEffect, useState } from 'react';
-
 import { Typeahead } from 'react-bootstrap-typeahead';
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
 
-function ReviewForm() {
-
+function ReviewForm(props) {
+    //fetch data
+    const [courseList, setCourseList] = useState([]);
+    const [professorList, setProfessorList] = useState([]);
+    //form data
+    const [content, setContent] = useState("");
+    //four scores
+    const [preference, setPreference] = useState('');
+    const [difficulty, setDifficulty] = useState('');
+    //this is the professor score, not professor
+    const [prof, setProf] = useState('');
+    const [helpfulness, setHelpfulness] = useState('');
+    //course and professor
+    const [course, setCourse] = useState([]);
+    const [professor, setProfessor] = useState("");
+    //popout modal
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const [content, setContent] = useState("");
-    const [score0, setScore0] = useState('');
-    const [score1, setScore1] = useState('');
-    const [score2, setScore2] = useState('');
-    const [score3, setScore3] = useState('');
-    const [course, setCourse] = useState([]);
-    const [professor, setProfessor] = useState("");
-
-    const [allcourses, setAllCourses] = useState([]);
+    //do not allow course and professor select when enter from course page
+    //fetch data if no course and professor selected
+    const fixedCourse = ("course" in props);
     useEffect(() => {
-        if (allcourses.length === 0) {
-            let subarray = []
-            for (let i = 0; i < courselist.length; i++) {
-                subarray.push(...courselist[i]["cources"]);
+        if (fixedCourse) {
+            //set Course and Professor
+            setProfessor(props.course.prof);
+            setCourse([{ "_id": props.courseId, "code": props.course.code }]);
+        } else {
+            //fetch data 
+            let getCourseList = async () => {
+                let response = await fetch('http://127.0.0.1:8080/course/all');
+                let data = await response.json();
+                setCourseList(data);
             }
-            setAllCourses(subarray);
+            let getProfessorList = async () => {
+                const response = await fetch("http://127.0.0.1:8080/professor/all");
+                const data = await response.json();
+                setProfessorList(data);
+            }
+            getCourseList();
+            getProfessorList();
         }
-    }, [allcourses])
+    }, [fixedCourse,props])
 
-    const scorelist0 = ["", "5 (Strongly Recommended)", "4 (Recommended)", "3 (Good)", "2 (Below Average)", "1 (Awful Feeling)"].map((val, index) => {
+    //filter professor by course
+    const professorFiltered = professorList.length === 0 ? <></> : professorList.map((subprofessor, index) => {
+        let find = false;
+        for (const professorCourse of subprofessor.course) {
+            if (course.length > 0 && professorCourse["course_code"] === course[0]["code"]) {
+                find = true;
+            }
+        }
+        return find ? (<option value={subprofessor} key={index}>{subprofessor.name}</option>) : <></>
+    })
+
+    const preferencelist = ["", "5 (Strongly Recommended)", "4 (Recommended)", "3 (Good)", "2 (Below Average)", "1 (Awful Feeling)"].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
     })
-    const scorelist1 = ["", "5 (Very Easy)", "4 (Easy)", "3 (Acceptable)", "2 (Hard)", "1 (Extremely Hard)"].map((val, index) => {
+    const difficultylist = ["", "5 (Very Easy)", "4 (Easy)", "3 (Acceptable)", "2 (Hard)", "1 (Extremely Hard)"].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
     })
-    const scorelist2 = ["", "5 (Very Helpful)", "4 (Helpful)", "3 (Good)", "2 (Limited)", "1 (Useless)"].map((val, index) => {
+    const helpfulnesslist = ["", "5 (Very Helpful)", "4 (Helpful)", "3 (Good)", "2 (Limited)", "1 (Useless)"].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
     })
 
-    let callapi = async () => {
+    //post form data to backend
+    let postData = async () => {
 
-        let realscore0 = parseInt(score0.substring(0, 1));
-        let realscore1 = parseInt(score1.substring(0, 1));
-        let realscore2 = parseInt(score2.substring(0, 1));
-        let realscore3 = parseInt(score3.substring(0, 1));
-
-        const returnObject = { 'content': content, 'score0': realscore0, 'score1': realscore1, 'score2': realscore2, 'score3': realscore3 }
-        fetch(`http://127.0.0.1:8000/api/createReview/`, {
+        let preferenceScore = parseInt(preference.substring(0, 1));
+        let difficultyScore = parseInt(difficulty.substring(0, 1));
+        let profScore = parseInt(prof.substring(0, 1));
+        let helpfulnessScore = parseInt(helpfulness.substring(0, 1));
+        const returnObject = { 'content': content, 'courseId': course[0]._id, 'preference': preferenceScore, 'difficulty': difficultyScore, 'prof': profScore, 'helpfulness': helpfulnessScore }
+        fetch(`http://127.0.0.1:8080/review/save`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -59,53 +87,47 @@ function ReviewForm() {
         }).then(jsonResponse => {
             console.log(jsonResponse);
         }).catch(error => {
-            console.log(error)
+            console.log(error);
         })
     }
-
-    const prof = proflist.map((val, index) => {
-        let find = false;
-        for (const c of val.course) {
-            if (course.length > 0 && c === course[0]["code"]) {
-                find = true;
-            }
-        }
-        return find ? (<option value={val.name} key={index}>{val.name}</option>) : <></>
-    })
-
     function handleSubmit(event) {
         event.preventDefault();
 
-        if (score0.length < 1 || score1.length < 1 || score2.length < 1 || score3.length < 1) {
+        if (course.length<1||preference.length < 1 || difficulty.length < 1 || prof.length < 1 || helpfulness.length < 1) {
             handleShow();
         } else {
-            callapi();
+            postData();
         }
     }
+    // show / not show data base on entry point
+    const professorAndCourseForm = fixedCourse ? <></> : (
+        <Form.Group controlId='course&prof'>
+            <Form.Label><h5>Course</h5></Form.Label>
+            <Typeahead
+                id='course'
+                labelKey="code"
+                onChange={setCourse}
+                selected={course}
+                options={courseList}
+                placeholder="Choose a course..."
+            />
+            <Form.Label><h5>Professor</h5></Form.Label>
+            <Form.Control as="select" onChange={(e) => setProfessor(e.target.value)}>
+                {professorFiltered}
+            </Form.Control>
+        </Form.Group>
+    );
 
     return (
         <>
             <Form onSubmit={handleSubmit}>
-                <Form.Label><h5>Course</h5></Form.Label>
-                <Typeahead
-                    id='course'
-                    labelKey="code"
-                    onChange={setCourse}
-                    selected={course}
-                    options={allcourses}
-                    placeholder="Choose a course..."
-                />
-                <Form.Label><h5>Professor</h5></Form.Label>
-                <Form.Control as="select" onChange={(e) => setProfessor(e.target.value)}>
-                    {prof}
-                </Form.Control>
-
+                {professorAndCourseForm}
                 <Row>
                     <Col>
                         <Form.Group controlId="score0">
                             <Form.Label><h5>Overall Quality</h5></Form.Label>
-                            <Form.Control as="select" onChange={(e) => setScore0(e.target.value)}>
-                                {scorelist0}
+                            <Form.Control as="select" onChange={(e) => setPreference(e.target.value)}>
+                                {preferencelist}
                             </Form.Control>
                             <Form.Text>
                                 Overall recommendation for this course.
@@ -116,8 +138,8 @@ function ReviewForm() {
                     <Col>
                         <Form.Group controlId="score1">
                             <Form.Label><h5>Professor</h5></Form.Label>
-                            <Form.Control as="select" onChange={(e) => setScore1(e.target.value)}>
-                                {scorelist0}
+                            <Form.Control as="select" onChange={(e) => setProf(e.target.value)}>
+                                {preferencelist}
                             </Form.Control>
                             <Form.Text>
                                 Overall recommendation for this professor.
@@ -130,8 +152,8 @@ function ReviewForm() {
                     <Col>
                         <Form.Group controlId="score2">
                             <Form.Label><h5>Course Difficulty</h5></Form.Label>
-                            <Form.Control as="select" onChange={(e) => setScore2(e.target.value)}>
-                                {scorelist1}
+                            <Form.Control as="select" onChange={(e) => setDifficulty(e.target.value)}>
+                                {difficultylist}
                             </Form.Control>
                             <Form.Text>
                                 Difficulty ratings for classes, assignments and exams.
@@ -142,8 +164,8 @@ function ReviewForm() {
                     <Col>
                         <Form.Group controlId="score3">
                             <Form.Label><h5>Future Help</h5></Form.Label>
-                            <Form.Control as="select" onChange={(e) => setScore3(e.target.value)}>
-                                {scorelist2}
+                            <Form.Control as="select" onChange={(e) => setHelpfulness(e.target.value)}>
+                                {helpfulnesslist}
                             </Form.Control>
                             <Form.Text>
                                 How much it will help you in your future academic study and career.

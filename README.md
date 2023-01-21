@@ -9,7 +9,8 @@ Frontend:
 - [ ] comment 时间戳
 - [ ] course 四个分
 - [ ] reviewform_second.js submit 把本人锁定
-
+- [ ] logic error in Review Form: professor no use,multiple course can have same course code.
+- [ ] success or error do not have feedback
 Deploy
 - [ ] 购买域名、部署服务器
 - [ ] 内部测试
