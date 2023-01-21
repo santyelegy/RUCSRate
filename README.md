@@ -13,6 +13,9 @@ Frontend:
 - [ ] reviewform_second.js submit 把本人锁定
 
 - [ ] Login 美化
+- [ ] logic error in Review Form: professor no use,multiple course can have same course code.
+- [ ] success or error do not have feedback
+
 
 Deploy
 - [ ] 购买域名、部署服务器

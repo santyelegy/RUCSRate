@@ -1,5 +1,5 @@
 import SingleReview from '../Components/reviewform/SingleReview.js'
-import ReviewForm_second from '../Components/reviewform/ReviewForm_second.js'
+import ReviewForm from '../Components/reviewform/ReviewForm.js'
 import CustomToggle from '../Components/CustomToggle.js'
 import { useParams } from 'react-router-dom';
 import { Accordion, Card, Row, Col } from 'react-bootstrap';
@@ -112,7 +112,7 @@ function Course() {
                             </Card.Header>
                             <Accordion.Collapse eventKey="1">
                                 <Card.Body>
-                                    <ReviewForm_second />
+                                    <ReviewForm course={course} courseId={id}/>
                                 </Card.Body>
                             </Accordion.Collapse>
                         </Card>
