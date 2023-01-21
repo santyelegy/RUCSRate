@@ -24,6 +24,7 @@ public class ProfessorServiceImp implements ProfessorService{
         ObjectMapper mapper = new ObjectMapper();
         Professor target = professorRepository.findByName(ProfessorName);
         ObjectNode returnObject = mapper.createObjectNode();
+        returnObject.put("_id", target.get_id());
         returnObject.put("name",target.getName());
         returnObject.put("email",target.getEmail());
         returnObject.put("score",target.getScore());
@@ -53,7 +54,7 @@ public class ProfessorServiceImp implements ProfessorService{
         returnObject.put("score",target.getScore());
         List<Review> reviews = reviewRepository.findAllByProfessor(target.getName());
         ArrayNode arrayNode = returnObject.putArray("review");
-        for(Review review:reviews){
+        for (Review review:reviews){
             ObjectNode jsonReview = mapper.createObjectNode();
             jsonReview.put("course",review.getCourse());
             jsonReview.put("professor",review.getProfessor());

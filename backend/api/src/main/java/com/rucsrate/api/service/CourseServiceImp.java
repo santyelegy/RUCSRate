@@ -11,7 +11,6 @@ import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,6 +21,8 @@ public class CourseServiceImp implements CourseService {
     private CourseRepository courseRepository;
     @Autowired
     private ReviewRepository reviewRepository;
+    @Autowired
+    private ProfessorService professorService;
     @Override
     public ObjectNode findCourseById(String CourseId){
         ObjectMapper mapper = new ObjectMapper();
@@ -80,6 +81,9 @@ public class CourseServiceImp implements CourseService {
             jsonCourse.put("course_id", course.get_id());
             arrayNode.add(jsonCourse);
         }
+        returnObject.put("pid",
+                String.valueOf(professorService.
+                        findProfessorByName(ProfessorName).get("_id")));
         return returnObject;
     }
 }
