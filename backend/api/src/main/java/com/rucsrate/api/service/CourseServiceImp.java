@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.rucsrate.api.model.Course;
 import com.rucsrate.api.model.Review;
 import com.rucsrate.api.repository.CourseRepository;
+import com.rucsrate.api.repository.ProfessorRepository;
 import com.rucsrate.api.repository.ReviewRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ public class CourseServiceImp implements CourseService {
     @Autowired
     private ReviewRepository reviewRepository;
     @Autowired
-    private ProfessorService professorService;
+    private ProfessorRepository professorRepository;
     @Override
     public ObjectNode findCourseById(String CourseId){
         ObjectMapper mapper = new ObjectMapper();
@@ -82,8 +83,7 @@ public class CourseServiceImp implements CourseService {
             arrayNode.add(jsonCourse);
         }
         returnObject.put("pid",
-                String.valueOf(professorService.
-                        findProfessorByName(ProfessorName).get("_id")));
+                String.valueOf(professorRepository.findByName(ProfessorName).get_id()));
         return returnObject;
     }
 }

@@ -12,6 +12,7 @@ import com.rucsrate.api.repository.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 @Service
 public class ProfessorServiceImp implements ProfessorService{
@@ -19,6 +20,8 @@ public class ProfessorServiceImp implements ProfessorService{
     private ProfessorRepository professorRepository;
     @Autowired
     private ReviewRepository reviewRepository;
+    @Autowired CourseService courseService;
+
     @Override
     public ObjectNode findProfessorByName(String ProfessorName) {
         ObjectMapper mapper = new ObjectMapper();
@@ -69,8 +72,13 @@ public class ProfessorServiceImp implements ProfessorService{
     }
 
     @Override
-    public List<Course> findAll() {
-        return null;
+    public List<ObjectNode> findAll() {
+        List<Professor> all_professor = professorRepository.findAll();
+        List<ObjectNode> all_professor_with_course = new ArrayList<>();
+        for (Professor professor:all_professor){
+            all_professor_with_course.add(courseService.findCourseByProf(professor.getName()));
+        }
+        return all_professor_with_course;
     }
 
     @Override

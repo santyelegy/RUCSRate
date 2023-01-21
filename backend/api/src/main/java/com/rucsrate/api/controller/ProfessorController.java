@@ -1,7 +1,6 @@
 package com.rucsrate.api.controller;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.rucsrate.api.model.Professor;
 import com.rucsrate.api.repository.ProfessorRepository;
 import com.rucsrate.api.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +18,8 @@ public class ProfessorController {
     private ProfessorRepository professorRepository;
 
     @GetMapping(value = "/all")
-    public List<Professor> getAllProfessor(){
-        return professorRepository.findAll();
+    public List<ObjectNode> getAllProfessor(){
+        return professorService.findAll();
     }
 
     @GetMapping(value = "/findname/{professorname}")

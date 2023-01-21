@@ -9,7 +9,7 @@ public interface ProfessorService {
     ObjectNode findProfessorByName(String ProfessorName);
 
     ObjectNode findProfessorById(String ProfessorId);
-    List<Course> findAll();
+    List<ObjectNode> findAll();
 
     ObjectNode findProfessorPerformance(String professorId);
 }
