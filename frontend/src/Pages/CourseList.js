@@ -1,12 +1,12 @@
 import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, ListGroup, Row, Col } from 'react-bootstrap';
 
 function CourseList() {
     const { department_id } = useParams();
     const [allcourses, setAllCourses] = useState([]);
     const [search, setSearch] = useState("");
-    const [dept_course,setDPT]=useState([])
+    const [dept_course, setDPT] = useState([])
     const [department, setDepartment] = useState([true, true, true]);
     //default filter
     useEffect(() => {
@@ -24,34 +24,51 @@ function CourseList() {
         let data = await response.json()
         setDPT(data)
     }
-    useEffect(()=>{
+    useEffect(() => {
         getAllCourse();
-    },[])
+    }, [])
     //clean data by filter
     useEffect(() => {
         let subarray = []
         for (let i = 0; i < dept_course.length; i++) {
             // shitty code, remember to refactor
-            if((dept_course[i].department==="Computer Science"&&department[0])||
-               (dept_course[i].department==="Electrical and Computer Engineering"&&department[1])||
-               (dept_course[i].department==="Data Science"&&department[2])){
+            if ((dept_course[i].department === "Computer Science" && department[0]) ||
+                (dept_course[i].department === "Electrical and Computer Engineering" && department[1]) ||
+                (dept_course[i].department === "Data Science" && department[2])) {
                 subarray.push(dept_course[i]);
             }
         }
         setAllCourses(subarray);
-    }, [JSON.stringify(department),dept_course])
+    }, [JSON.stringify(department), dept_course])
     // course list JSX
-    const courses = allcourses.length===0?<></>:allcourses.map((course, index) => {
+    const courses = allcourses.length === 0 ? <></> : allcourses.map((course, index) => {
         let show = true;
         if (!course.code.toLowerCase().startsWith(search.toLowerCase()) &&
             !course.name.toLowerCase().startsWith(search.toLowerCase())) {
             show = false;
         }
 
-        return show ? (<div index={index}>
-            <Link to={"/courselist/course/".concat(course._id)}>{course.code.concat(" ", course.name)}</Link>
-            <br />
-        </div>) : <div index={index}></div>;
+        return show ? (
+
+            <ListGroup.Item as="a" href={"/courselist/course/" + course._id} style={{ textDecoration: 'none' }}>
+
+                <div index={index}>
+                    <Row>
+                        <Col>
+                            {course.code.concat(" ", course.name)}
+                            <br />
+                        </Col>
+                        <Col className="col-3">
+                            <div align="left">
+                                {course.prof}
+                            </div>
+                        </Col>
+                    </Row>
+
+                </div>
+            </ListGroup.Item>
+
+        ) : <div index={index}></div>;
     })
 
     function handleBoxChange(event, index) {
@@ -92,7 +109,11 @@ function CourseList() {
                         onChange={(e) => handleBoxChange(e, 2)}
                     />
                 </Form>
-                {courses}
+
+                <ListGroup  >
+                    {courses}
+                </ListGroup>
+
             </div>
         </>
     );

@@ -3,12 +3,16 @@
 Backend:
 
 Frontend:
-- [ ] 通知太素
-- [ ] link 太素
+- [x] 通知太素
+- [x] link 太素
 - [ ] course post 调一下
 - [ ] comment 时间戳
-- [ ] course 四个分
+- [x] course 四个分
+
+不太想做了
 - [ ] reviewform_second.js submit 把本人锁定
+
+- [ ] Login 美化
 
 Deploy
 - [ ] 购买域名、部署服务器

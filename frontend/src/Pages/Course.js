@@ -3,31 +3,53 @@ import ReviewForm_second from '../Components/reviewform/ReviewForm_second.js'
 import CustomToggle from '../Components/CustomToggle.js'
 import { useParams } from 'react-router-dom';
 import { Accordion, Card, Row, Col } from 'react-bootstrap';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Course() {
     const { id } = useParams();
-    const [course,setCourse]=useState([]);
+    const [course, setCourse] = useState([]);
+    const [score, setScore] = useState([]);
     //fetch data
-    let getCourse = async () => {
-        if(id===null){
+    let getScore = async () => {
+        if (id === null) {
             return;
         }
-        let response = await fetch('http://127.0.0.1:8080/course/findid/'+id)
+
+        let response = await fetch('http://localhost:8080/review/getByCourse/' + id + '/average_score')
+        console.log(response)
+        let data = await response.json()
+        console.log("data", data)
+        setScore(data)
+
+    }
+    let getCourse = async () => {
+        if (id === null) {
+            return;
+        }
+        let response = await fetch('http://127.0.0.1:8080/course/findid/' + id)
         let data = await response.json()
         setCourse(data)
     }
-    useEffect(()=>{
+
+
+    useEffect(() => {
+        getScore();
+    }, [id])
+    useEffect(() => {
         getCourse();
-    },[id])
-    let reviewList=<></>;
-    if(course.length!==0){
-        if(course.review.length!==0){
-            reviewList=course.review.map((reviewcontent,index)=>{
-                return <SingleReview key={index} review={reviewcontent}/>;
+    }, [id])
+
+
+
+    let reviewList = <></>;
+    if (course.length !== 0) {
+        if (course.review.length !== 0) {
+            reviewList = course.review.map((reviewcontent, index) => {
+                return <SingleReview key={index} review={reviewcontent} />;
             });
         }
     }
+
     return (
         <>
             <Card style={{ width: '72rem' }}>
@@ -38,6 +60,29 @@ function Course() {
                         <h4>Course Name: {course.name}</h4>
                         <h4>Professor: {course.prof}</h4>
                     </div>
+
+                    <Row>
+                        <Col>
+                            <h5>
+                                Overall Quality: {score.avg_preference}
+                            </h5>
+                        </Col>
+                        <Col>
+                            <h5>
+                                Professor: {score.avg_prof}
+                            </h5>
+                        </Col>
+                        <Col>
+                            <h5>
+                                Course Difficulty: {score.avg_difficulty}
+                            </h5>
+                        </Col>
+                        <Col>
+                            <h5>
+                                Future Help: {score.avg_helpfulness}
+                            </h5>
+                        </Col>
+                    </Row>
 
                     <Accordion defaultActiveKey="0">
                         <Card>

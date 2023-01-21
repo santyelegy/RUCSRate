@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, React } from "react"
+import { Card } from 'react-bootstrap';
 
 function Home() {
 
@@ -21,8 +22,17 @@ function Home() {
         return (
 
             <div>
-                <h4>{announcement.title}</h4>
-                <div>{announcement.content}</div>
+                <Card style={{ width: '66rem' }}>
+                    <Card.Header><h4>{announcement.title}</h4></Card.Header>
+                    <Card.Body>
+                        <blockquote className="blockquote mb-0">
+                            <p>
+                                {announcement.content}
+                            </p>
+                        </blockquote>
+                    </Card.Body>
+                </Card>
+                <br></br>
             </div>
         );
     });
@@ -31,8 +41,13 @@ function Home() {
         return (
             <>
                 <div>
-                    <h1>Announcement</h1>
-                    {content}
+                    <Card style={{ width: '72rem' }}>
+                        <h1>
+                            &nbsp;&nbsp;Announcement
+                        </h1>
+                        {content}
+                    </Card>
+
                     {
                         /*
                                             <h1><br></br>Menu for developer</h1>

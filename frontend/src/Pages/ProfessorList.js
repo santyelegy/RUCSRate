@@ -1,4 +1,4 @@
-import professorlist from "../sample_data/ProfessorList.json"
+
 import { Link } from "react-router-dom";
 import { useState, useEffect, React } from "react";
 
@@ -24,7 +24,7 @@ function ProfessorList() {
         const coursegroup = professor.course.map((course, i) => {
             return (
                 <>
-                    <Link to={"/courselist/course/".concat(course[0].course_id)} index={i}>{course[0].course_code}</Link>
+                    <Link to={"/courselist/course/".concat(course.course_id)} index={i}>{course.course_code} </Link>
                     <br />
                 </>
             );
@@ -33,11 +33,11 @@ function ProfessorList() {
         return (
             <Accordion.Item eventKey={index}>
                 <Accordion.Header>
-                    {professor.name.concat('  Score:', professor.score)}
+                    {professor.name}
                 </Accordion.Header>
                 <Accordion.Body>
                     <h3>
-                        {<Link to={"/professor/".concat(professor.pid)}>{professor.name}</Link>}<br />
+                        {<Link to={"/professor/".concat(professor.pid)} style={{ textDecoration: 'none' }}>{professor.name}</Link>}<br />
                     </h3>
                     Courses:<br />
                     {coursegroup}
@@ -46,7 +46,7 @@ function ProfessorList() {
         );
     }
 
-    const all_professor = professorlist.map((professor, index) => {
+    const all_professor = professors.map((professor, index) => {
         return professor.name.toLowerCase().startsWith(search.toLowerCase()) ? (subaccordion(professor, index)) : <></>;
     })
 

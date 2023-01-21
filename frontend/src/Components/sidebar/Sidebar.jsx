@@ -107,7 +107,7 @@ const Sidebar = () => {
             ></div>
             {
                 sidebarNavItems.map((item, index) => (
-                    <Link to={item.to} key={index}>
+                    <Link to={item.to} key={index} style={{ textDecoration: 'none' }}>
                         <div className={`sidebar__menu__item ${activeIndex === index ? 'active' : ''}`}>
                             <div className="sidebar__menu__item__icon">
                                 {item.icon}
@@ -134,9 +134,7 @@ const Sidebar = () => {
                 </ListGroupItem>
             </ListGroup>
 
-
         </div>
-
     </div>;
 
 };

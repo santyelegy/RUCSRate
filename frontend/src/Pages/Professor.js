@@ -1,4 +1,3 @@
-import professor from '../sample_data/Professor.json'
 import SingleReview from '../Components/reviewform/SingleReview.js'
 import ReviewForm from '../Components/reviewform/ReviewForm.js'
 import CustomToggle from '../Components/CustomToggle.js'
@@ -12,16 +11,27 @@ function Professor() {
 
     const { pid } = useParams();
     const [prof, setProf] = useState([])
-    const web = "http://127.0.0.1:8080/findname/" + pid
+    const [score, setScore] = useState([])
+    const web = "http://127.0.0.1:8080/professor/findId/" + pid
     const fetchData = async () => {
         const response = await fetch(web)
         const data = await response.json()
         setProf(data)
     }
 
+    const web2 = "http://127.0.0.1:8080/professor/findId/" + pid + "/average_score"
+    const fetchData2 = async () => {
+        const response = await fetch(web2)
+        console.log(response)
+        const data = await response.json()
+        console.log("D", data)
+        setScore(data)
+    }
+
     useEffect(() => {
         fetchData()
-    }, [])
+        fetchData2()
+    }, [pid])
 
     let reviewList = <></>;
     if (prof.length !== 0) {
@@ -38,7 +48,7 @@ function Professor() {
                 <Card.Body>
                     <div>
                         <h4>Professor: {prof.name}</h4>
-                        <h4>Overall Score: {prof.score}</h4>
+                        <h4>Overall Score: {score.avg_prof}</h4>
                     </div>
 
                     <Accordion defaultActiveKey="0">
