@@ -7,7 +7,6 @@ function ReviewForm(props) {
 
     //fetch data
     const [courseList, setCourseList] = useState([]);
-    const [professorList, setProfessorList] = useState([]);
     //form data
     const [content, setContent] = useState("");
     //four scores
@@ -17,8 +16,11 @@ function ReviewForm(props) {
     const [prof, setProf] = useState('');
     const [helpfulness, setHelpfulness] = useState('');
     //course and professor
+    //list of length 0-1 of course Code
+    // need to satisfy the requirement of react-typehead
     const [course, setCourse] = useState([]);
-    const [professor, setProfessor] = useState("");
+    //object contain courseId and professor name
+    const [professor, setProfessor] = useState({});
     //popout modal
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -35,8 +37,8 @@ function ReviewForm(props) {
     useEffect(() => {
         if (fixedCourse) {
             //set Course and Professor
-            setProfessor(props.course.prof);
             setCourse([{ "_id": props.courseId, "code": props.course.code }]);
+            setProfessor({ "_id": props.courseId, "code": props.course.code });
         } else {
             //fetch data 
             let getCourseList = async () => {
@@ -44,27 +46,41 @@ function ReviewForm(props) {
                 let data = await response.json();
                 setCourseList(data);
             }
-            let getProfessorList = async () => {
-                const response = await fetch("http://127.0.0.1:8080/professor/all");
-                const data = await response.json();
-                setProfessorList(data);
-            }
             getCourseList();
-            getProfessorList();
         }
     }, [fixedCourse, props])
-
+    //key: course code value:[course,course]
+    let coursemap = {};
+    for (const subcourse of courseList) {
+        if (subcourse.code in coursemap) {
+            coursemap[subcourse.code].push(subcourse);
+        } else {
+            coursemap[subcourse.code] = [subcourse];
+        }
+    }
+    let professorFiltered = [];
     //filter professor by course
-    const professorFiltered = professorList.length === 0 ? <></> : professorList.map((subprofessor, index) => {
-        let find = false;
-        for (const professorCourse of subprofessor.course) {
-            if (course.length > 0 && professorCourse["course_code"] === course[0]["code"]) {
-                find = true;
+    let counter = 0;
+    if (coursemap) {
+        let firstProfessor = null;
+        for (const courseCode of Object.keys(coursemap)) {
+            if (courseCode === course[0]) {
+                if (!firstProfessor) {
+                    firstProfessor = coursemap[courseCode][0];
+                }
+                for (let i = 0; i < coursemap[courseCode].length; i++) {
+                    const subcourse = coursemap[courseCode][i];
+                    counter++;
+                    // value can only be a string in html
+                    professorFiltered.push(<option value={courseCode + "&" + i} key={counter}>{subcourse.prof}</option>);
+                }
             }
         }
-        return find ? (<option value={subprofessor} key={index}>{subprofessor.name}</option>) : <></>
-    })
-
+        if(Object.keys(professor).length === 0&&firstProfessor){
+            setProfessor(firstProfessor);
+        }
+        
+    }
     const preferencelist = ["", "5 (Strongly Recommended)", "4 (Recommended)", "3 (Good)", "2 (Below Average)", "1 (Awful Feeling)"].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
     })
@@ -74,7 +90,6 @@ function ReviewForm(props) {
     const helpfulnesslist = ["", "5 (Very Helpful)", "4 (Helpful)", "3 (Good)", "2 (Limited)", "1 (Useless)"].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
     })
-
     //post form data to backend
     let postData = async () => {
 
@@ -82,7 +97,7 @@ function ReviewForm(props) {
         let difficultyScore = parseInt(difficulty.substring(0, 1));
         let profScore = parseInt(prof.substring(0, 1));
         let helpfulnessScore = parseInt(helpfulness.substring(0, 1));
-        const returnObject = { 'content': content, 'courseId': course[0]._id, 'preference': preferenceScore, 'difficulty': difficultyScore, 'prof': profScore, 'helpfulness': helpfulnessScore }
+        const returnObject = { 'content': content, 'courseId': professor._id, 'preference': preferenceScore, 'difficulty': difficultyScore, 'prof': profScore, 'helpfulness': helpfulnessScore }
         fetch(`http://127.0.0.1:8080/review/save`, {
             method: "POST",
             headers: {
@@ -106,7 +121,7 @@ function ReviewForm(props) {
     function handleSubmit(event) {
         event.preventDefault();
 
-        if (course.length < 1 || preference.length < 1 || difficulty.length < 1 || prof.length < 1 || helpfulness.length < 1) {
+        if (course.length===0 || Object.keys(professor).length === 0 || preference.length < 1 || difficulty.length < 1 || prof.length < 1 || helpfulness.length < 1) {
             handleShow();
         } else {
             postData();
@@ -119,14 +134,18 @@ function ReviewForm(props) {
             <Form.Label><h5>Course</h5></Form.Label>
             <Typeahead
                 id='course'
-                labelKey="code"
                 onChange={setCourse}
                 selected={course}
-                options={courseList}
+                options={Object.keys(coursemap)}
                 placeholder="Choose a course..."
             />
             <Form.Label><h5>Professor</h5></Form.Label>
-            <Form.Control as="select" onChange={(e) => setProfessor(e.target.value)}>
+            <Form.Control as="select" onChange={(e) => {
+                let arr = e.target.value.split('&');
+                setProfessor(coursemap[arr[0]][parseInt(arr[1])]);
+                console.log("set prof",professor);
+            }
+            }>
                 {professorFiltered}
             </Form.Control>
         </Form.Group>
