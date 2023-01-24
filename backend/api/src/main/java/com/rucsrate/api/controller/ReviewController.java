@@ -33,7 +33,7 @@ public class ReviewController {
 
     @GetMapping(value = "getByCourse/{courseid}")
     public List<Review> getAllByCourseId(@PathVariable("courseid") String courseId){
-        return reviewRepository.findAllByCourseId(new ObjectId(courseId));
+        return reviewRepository.findAllByCourseId(courseId);
     }
 
     @GetMapping(value = "getByCourse/{courseid}/average_score")

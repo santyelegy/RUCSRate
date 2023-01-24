@@ -21,6 +21,9 @@ function ReviewForm(props) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    //same IP modal
+    const [show1, setShow1] = useState(false);
+    const handleClose1 = () => setShow1(false);
 
     //do not allow course and professor select when enter from course page
     //fetch data if no course and professor selected
@@ -45,7 +48,7 @@ function ReviewForm(props) {
             getCourseList();
             getProfessorList();
         }
-    }, [fixedCourse,props])
+    }, [fixedCourse, props])
 
     //filter professor by course
     const professorFiltered = professorList.length === 0 ? <></> : professorList.map((subprofessor, index) => {
@@ -86,6 +89,9 @@ function ReviewForm(props) {
             return response.json();
         }).then(jsonResponse => {
             console.log(jsonResponse);
+            if (jsonResponse === false) {
+                setShow1(true)
+            }
         }).catch(error => {
             console.log(error);
         })
@@ -93,7 +99,7 @@ function ReviewForm(props) {
     function handleSubmit(event) {
         event.preventDefault();
 
-        if (course.length<1||preference.length < 1 || difficulty.length < 1 || prof.length < 1 || helpfulness.length < 1) {
+        if (course.length < 1 || preference.length < 1 || difficulty.length < 1 || prof.length < 1 || helpfulness.length < 1) {
             handleShow();
         } else {
             postData();
@@ -200,6 +206,18 @@ function ReviewForm(props) {
                 <Modal.Body>No empty input admitted.</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+            <Modal show={show1} onHide={handleClose1}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Too frequently!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Please don't submit the review too frequently.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose1}>
                         Close
                     </Button>
                 </Modal.Footer>

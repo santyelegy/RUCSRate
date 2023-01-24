@@ -50,7 +50,7 @@ public class ReviewServiceImp implements ReviewService{
     public ObjectNode findCourseScore(String courseId) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode returnObject = mapper.createObjectNode();
-        List<Review> reviews = reviewRepository.findAllByCourseId(new ObjectId(courseId));
+        List<Review> reviews = reviewRepository.findAllByCourseId(courseId);
         returnObject.put("courseId", courseId);
         double avg_preference = 0;
         double avg_difficulty = 0;
