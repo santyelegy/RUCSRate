@@ -3,6 +3,15 @@ import { Card, ListGroup, Row, Col } from 'react-bootstrap';
 
 function SingleReview(props) {
     const review = props.review;
+
+    var stringtime, time;
+    time = "Post time: "
+    if (review.time != null) {
+        stringtime = review.time;
+        time += stringtime.substring(2, 9) + " " + stringtime.substring(11, 16);
+    }
+
+
     return (
         <>
             <Card style={{ width: '48rem' }}>
@@ -34,6 +43,11 @@ function SingleReview(props) {
                     <Card.Text>
                         <br></br>
                         {review.content}
+                        <br></br>
+                        <div align="right">
+                            {time}
+                        </div>
+
                     </Card.Text>
 
                 </Card.Body>

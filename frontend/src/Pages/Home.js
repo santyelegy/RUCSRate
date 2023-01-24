@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useState, useEffect, React } from "react"
 import { Card } from 'react-bootstrap';
 
@@ -40,6 +40,9 @@ function Home() {
     if (announcements.length > 0) {
         return (
             <>
+
+
+
                 <div>
                     <Card style={{ width: '72rem' }}>
                         <h1>

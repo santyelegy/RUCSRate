@@ -36,10 +36,18 @@ function Professor() {
     let reviewList = <></>;
     if (prof.length !== 0) {
         if (prof.review.length !== 0) {
+            console.log(prof.review);
             reviewList = prof.review.map((reviewcontent, index) => {
+
                 return <SingleReview key={index} review={reviewcontent} />;
             });
         }
+    }
+
+    var score0 = "None", score1 = "None", score2 = "None", score3 = "None";
+    if (score.avg_prof != null) {
+        score2 = score.avg_prof.toString()
+        score2 = score2.substring(0, 4)
     }
 
     return (
@@ -48,7 +56,7 @@ function Professor() {
                 <Card.Body>
                     <div>
                         <h4>Professor: {prof.name}</h4>
-                        <h4>Overall Score: {score.avg_prof}</h4>
+                        <h4>Overall Score: {score2}</h4>
                     </div>
 
                     <Accordion defaultActiveKey="0">

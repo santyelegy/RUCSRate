@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { Navigate, useParams } from 'react-router-dom'
 import { Typeahead } from 'react-bootstrap-typeahead';
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
 
 function ReviewForm(props) {
+
     //fetch data
     const [courseList, setCourseList] = useState([]);
     const [professorList, setProfessorList] = useState([]);
@@ -24,6 +26,8 @@ function ReviewForm(props) {
     //same IP modal
     const [show1, setShow1] = useState(false);
     const handleClose1 = () => setShow1(false);
+    //Navigate
+    const [submit, setSubmit] = useState(false);
 
     //do not allow course and professor select when enter from course page
     //fetch data if no course and professor selected
@@ -91,11 +95,14 @@ function ReviewForm(props) {
             console.log(jsonResponse);
             if (jsonResponse === false) {
                 setShow1(true)
+            } else {
+                setSubmit(true);
             }
         }).catch(error => {
             console.log(error);
         })
     }
+
     function handleSubmit(event) {
         event.preventDefault();
 
@@ -106,6 +113,7 @@ function ReviewForm(props) {
         }
     }
     // show / not show data base on entry point
+
     const professorAndCourseForm = fixedCourse ? <></> : (
         <Form.Group controlId='course&prof'>
             <Form.Label><h5>Course</h5></Form.Label>
@@ -128,6 +136,7 @@ function ReviewForm(props) {
         <>
             <Form onSubmit={handleSubmit}>
                 {professorAndCourseForm}
+
                 <Row>
                     <Col>
                         <Form.Group controlId="score0">
@@ -197,6 +206,12 @@ function ReviewForm(props) {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
+
+                {
+                    submit && (
+                        <Navigate to={"/courselist"} />
+                    )
+                }
             </Form>
 
             <Modal show={show} onHide={handleClose}>

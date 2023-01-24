@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.rucsrate.api.model.Course;
 import com.rucsrate.api.model.Professor;
 import com.rucsrate.api.model.Review;
+import com.rucsrate.api.repository.CourseRepository;
 import com.rucsrate.api.repository.ProfessorRepository;
 import com.rucsrate.api.repository.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,8 @@ public class ProfessorServiceImp implements ProfessorService{
     private ProfessorRepository professorRepository;
     @Autowired
     private ReviewRepository reviewRepository;
+    @Autowired
+    private CourseRepository courseRepository;
     @Autowired CourseService courseService;
 
     @Override
@@ -55,7 +58,11 @@ public class ProfessorServiceImp implements ProfessorService{
         returnObject.put("name",target.getName());
         returnObject.put("email",target.getEmail());
         returnObject.put("score",target.getScore());
-        List<Review> reviews = reviewRepository.findAllByProfessor(target.getName());
+        List<Course> courses= courseRepository.findAllByProf(target.getName());
+        List<Review> reviews=new ArrayList<>();
+        for(Course course:courses) {
+            reviews.addAll(reviewRepository.findAllByCourseId(course.get_id()));
+        }
         ArrayNode arrayNode = returnObject.putArray("review");
         for (Review review:reviews){
             ObjectNode jsonReview = mapper.createObjectNode();
@@ -66,6 +73,9 @@ public class ProfessorServiceImp implements ProfessorService{
             jsonReview.put("prof",review.getProf());
             jsonReview.put("helpfulness",review.getHelpfulness());
             jsonReview.put("content",review.getContent());
+            if(review.getTime()!=null){
+                jsonReview.put("time",review.getTime().toString());
+            }
             arrayNode.add(jsonReview);
         }
         return returnObject;

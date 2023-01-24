@@ -16,9 +16,9 @@ function Course() {
         }
 
         let response = await fetch('http://localhost:8080/review/getByCourse/' + id + '/average_score')
-        console.log(response)
+        //console.log(response)
         let data = await response.json()
-        console.log("data", data)
+        //console.log("data", data)
         setScore(data)
 
     }
@@ -50,6 +50,19 @@ function Course() {
         }
     }
 
+    var score0 = "None", score1 = "None", score2 = "None", score3 = "None";
+    if (score.avg_preference != null || score.avg_difficulty != null || score.avg_prof != null || score.avg_helpfulness != null) {
+        score0 = score.avg_preference.toString()
+        score0 = score0.substring(0, 4)
+        score1 = score.avg_difficulty.toString()
+        score1 = score1.substring(0, 4)
+        score2 = score.avg_prof.toString()
+        score2 = score2.substring(0, 4)
+        score3 = score.avg_helpfulness.toString()
+        score3 = score3.substring(0, 4)
+    }
+
+
     return (
         <>
             <Card style={{ width: '72rem' }}>
@@ -64,22 +77,22 @@ function Course() {
                     <Row>
                         <Col>
                             <h5>
-                                Overall Quality: {score.avg_preference}
+                                Overall Quality: {score0}
                             </h5>
                         </Col>
                         <Col>
                             <h5>
-                                Professor: {score.avg_prof}
+                                Professor: {score1}
                             </h5>
                         </Col>
                         <Col>
                             <h5>
-                                Course Difficulty: {score.avg_difficulty}
+                                Course Difficulty: {score2}
                             </h5>
                         </Col>
                         <Col>
                             <h5>
-                                Future Help: {score.avg_helpfulness}
+                                Future Help: {score3}
                             </h5>
                         </Col>
                     </Row>
@@ -112,7 +125,7 @@ function Course() {
                             </Card.Header>
                             <Accordion.Collapse eventKey="1">
                                 <Card.Body>
-                                    <ReviewForm course={course} courseId={id}/>
+                                    <ReviewForm course={course} courseId={id} />
                                 </Card.Body>
                             </Accordion.Collapse>
                         </Card>

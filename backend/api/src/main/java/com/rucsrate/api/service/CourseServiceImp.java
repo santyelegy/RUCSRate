@@ -42,6 +42,10 @@ public class CourseServiceImp implements CourseService {
             jsonReview.put("difficulty",review.getDifficulty());
             jsonReview.put("prof",review.getProf());
             jsonReview.put("helpfulness",review.getHelpfulness());
+            if(review.getTime()!=null){
+                jsonReview.put("time",review.getTime().toString());
+            }
+
             arrayNode.add(jsonReview);
         }
         return returnObject;

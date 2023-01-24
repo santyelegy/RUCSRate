@@ -5,17 +5,15 @@ Backend:
 Frontend:
 - [x] 通知太素
 - [x] link 太素
-- [ ] course post 调一下
-- [ ] comment 时间戳
+- [x] course post 调一下
+- [x] comment 时间戳   分数
 - [x] course 四个分
+- [x] logic error in Review Form: professor no use, multiple course can have same course code.
 
-不太想做了
-- [ ] reviewform_second.js submit 把本人锁定
 
+
+- [x] success or error do not have feedback
 - [ ] Login 美化
-- [ ] logic error in Review Form: professor no use,multiple course can have same course code.
-- [ ] success or error do not have feedback
-
 
 Deploy
 - [ ] 购买域名、部署服务器
