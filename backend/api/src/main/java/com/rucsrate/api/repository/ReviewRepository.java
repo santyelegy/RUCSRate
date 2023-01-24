@@ -12,7 +12,7 @@ public interface ReviewRepository extends MongoRepository<Review, String> {
     @Override
     List<Review> findAll();
 
-    List<Review> findAllByCourseId(ObjectId courseId);
+    List<Review> findAllByCourseId(String courseId);
 
     List<Review> findAllByProfessor(String Professor);
 

@@ -33,7 +33,7 @@ public class CourseServiceImp implements CourseService {
         returnObject.put("name",target.getName());
         returnObject.put("prof",target.getProf());
         returnObject.put("score",target.getScore());
-        List<Review> reviews = reviewRepository.findAllByCourseId(new ObjectId(CourseId));
+        List<Review> reviews = reviewRepository.findAllByCourseId(CourseId);
         ArrayNode arrayNode = returnObject.putArray("review");
         for(Review review:reviews){
             ObjectNode jsonReview = mapper.createObjectNode();
