@@ -9,11 +9,10 @@ Frontend:
 - [x] comment 时间戳   分数
 - [x] course 四个分
 - [x] logic error in Review Form: professor no use, multiple course can have same course code.
-
-
-
 - [x] success or error do not have feedback
+
 - [ ] Login 美化
+- [ ] Refresh or Navigate?
 
 Deploy
 - [ ] 购买域名、部署服务器

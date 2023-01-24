@@ -38,8 +38,9 @@ public class ProfessorServiceImp implements ProfessorService{
         ArrayNode arrayNode = returnObject.putArray("review");
         for(Review review:reviews){
             ObjectNode jsonReview = mapper.createObjectNode();
-            jsonReview.put("course",review.getCourse());
-            jsonReview.put("professor",review.getProfessor());
+            Course course= courseRepository.findBy_id(review.getCourseId());
+            jsonReview.put("course",course.getName());
+            jsonReview.put("professor",course.getProf());
             jsonReview.put("preference",review.getPreference());
             jsonReview.put("difficulty",review.getDifficulty());
             jsonReview.put("prof",review.getProf());
@@ -66,8 +67,9 @@ public class ProfessorServiceImp implements ProfessorService{
         ArrayNode arrayNode = returnObject.putArray("review");
         for (Review review:reviews){
             ObjectNode jsonReview = mapper.createObjectNode();
-            jsonReview.put("course",review.getCourse());
-            jsonReview.put("professor",review.getProfessor());
+            Course course= courseRepository.findBy_id(review.getCourseId());
+            jsonReview.put("course",course.getCode());
+            jsonReview.put("professor",course.getProf());
             jsonReview.put("preference",review.getPreference());
             jsonReview.put("difficulty",review.getDifficulty());
             jsonReview.put("prof",review.getProf());
