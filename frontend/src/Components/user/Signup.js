@@ -18,7 +18,7 @@ function Signup() {
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title align='center'>
                         <h2>
-                            We don't need everyone to sign up for RUCS right now.
+                            We don't need everyone to sign up for RU Ratings right now.
                         </h2>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
@@ -26,7 +26,7 @@ function Signup() {
                     <p>
                         Considering that registering an account will make the process of commenting more troublesome, anonymization can also ensure that comments are more objective.
                         <br></br>
-                        We are prohibiting IP addresses from repeatedly commenting on courses to prevent malicious comments and ensure the validity of comments.
+                        We are prohibiting IP addresses who use to repeatedly comment on courses in order to prevent malicious comments and ensure the validity of comments.
                     </p>
                     <Form>
                         <fieldset disabled>

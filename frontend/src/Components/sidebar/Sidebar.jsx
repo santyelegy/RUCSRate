@@ -95,7 +95,7 @@ const Sidebar = () => {
 
     return <div className='sidebar'>
         <div className="sidebar__logo">
-            RU Rate
+            RU Ratings
         </div>
         <div ref={sidebarRef} className="sidebar__menu">
             <div
@@ -123,13 +123,13 @@ const Sidebar = () => {
 
         <div className='sidebar__user'>
             <ListGroup>
-                <ListGroupItem align='center' style={{ backgroundColor: "#F08080", borderColor: "#F08080", color: '#0b5ed7' }}>
+                <ListGroupItem align='center' style={{ backgroundColor: 'rgb(92, 146, 255)', borderColor: 'rgb(92, 146, 255)', color: 'rgb(200, 16, 46)' }}>
                     Visitor
                 </ListGroupItem>
-                <ListGroupItem align='center' style={{ backgroundColor: "#F08080", borderColor: "#F08080", color: '#555555' }}>
+                <ListGroupItem align='center' style={{ backgroundColor: 'rgb(92, 146, 255)', borderColor: 'rgb(92, 146, 255)', color: '#484848' }}>
                     <Signup />
                 </ListGroupItem>
-                <ListGroupItem align='center' style={{ backgroundColor: "#F08080", borderColor: "#F08080", color: '#555555' }}>
+                <ListGroupItem align='center' style={{ backgroundColor: 'rgb(92, 146, 255)', borderColor: 'rgb(92, 146, 255)', color: ' #484848' }}>
                     <Login />
                 </ListGroupItem>
             </ListGroup>

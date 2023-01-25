@@ -27,15 +27,15 @@ function Login() {
                         Wanna add your department? Wanna correct information in this site?
                     </h4>
                     <p>
-                        Free free to send your feedback and request! <a href="mailto:@gamail.com">Send Email</a>
+                        Feel free to send your feedback and request! <a href="mailto:@gamail.com">Send Email</a>
                     </p>
 
                     <h4>
                         Please respect RU community values in your comments.
                     </h4>
                     <p>
-                        Any insults and personal attacks to RU faculty and Scarlet Knights are not acceptable.
-                        RUCSRATE Website may block the toxic review and IP of particular users.
+                        Any insults and personal attacks to RU Ratings faculty and Scarlet Knights are not acceptable.
+                        RU Ratings may block the toxic review and IP of particular users.
                         <br></br>
                         If you have problem about the content of your review, feel free to contact us <a href="mailto:@gamail.com">Send Email</a>
                     </p>

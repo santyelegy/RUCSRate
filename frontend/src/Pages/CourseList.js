@@ -20,7 +20,7 @@ function CourseList() {
     }, [department_id])
     //fetch data
     let getAllCourse = async () => {
-        let response = await fetch('http://127.0.0.1:8080/course/all')
+        let response = await fetch('http://127.0.0.1:8080/course/all/sort')
         let data = await response.json()
         setDPT(data)
     }

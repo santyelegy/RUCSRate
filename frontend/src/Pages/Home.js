@@ -16,7 +16,6 @@ function Home() {
         fetchData()
     }, [])
 
-
     const content = announcements.map((announcement, index) => {
 
         return (

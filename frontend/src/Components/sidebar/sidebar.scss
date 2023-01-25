@@ -4,16 +4,18 @@
     left: 0;
     height: 100vh;
     width: 280px;
-    background-color: #F08080;
+    background-color: rgb(92, 146, 255);
 
     &__logo {
         display: grid;
         place-items: center;
         height: 120px;
-        font-size: 2rem;
+        font-size: 2.75rem;
         font-weight: 700;
-        font-family: 'Mochiy Pop P one', sans-serif;
-        color: #BF0000;
+        font-family: Garamond, serif;
+        //font-family: 'Mochiy Pp P one', sans-serif;
+
+        color: rgb(200, 16, 46);
     }
 
     &__menu {
@@ -26,7 +28,7 @@
             padding: 1rem 3rem;
             font-size: 1.25rem;
             font-weight: 500;
-            color: #555555;
+            color: #404040;
             transition: color 0.3s ease-in-out;
 
             &.active {
@@ -48,7 +50,7 @@
             left: 50%;
             width: calc(100% - 40px);
             border-radius: 100px;
-            background-color: #FF2400;
+            background-color: rgb(8, 64, 149);
             z-index: -1;
             transform: translateX(-50%);
             transition: 0.3s ease-in-out;
