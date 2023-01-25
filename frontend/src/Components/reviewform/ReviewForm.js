@@ -28,6 +28,9 @@ function ReviewForm(props) {
     //same IP modal
     const [show1, setShow1] = useState(false);
     const handleClose1 = () => setShow1(false);
+    //Success modal
+    const [show2, setShow2] = useState(false);
+    const handleClose2 = () => setShow2(false);
     //Navigate
     const [submit, setSubmit] = useState(false);
 
@@ -76,10 +79,10 @@ function ReviewForm(props) {
                 }
             }
         }
-        if(Object.keys(professor).length === 0&&firstProfessor){
+        if (Object.keys(professor).length === 0 && firstProfessor) {
             setProfessor(firstProfessor);
         }
-        
+
     }
     const preferencelist = ["", "5 (Strongly Recommended)", "4 (Recommended)", "3 (Good)", "2 (Below Average)", "1 (Awful Feeling)"].map((val, index) => {
         return (<option value={val} key={index}>{val}</option>);
@@ -111,7 +114,7 @@ function ReviewForm(props) {
             if (jsonResponse === false) {
                 setShow1(true)
             } else {
-                setSubmit(true);
+                setShow2(true);
             }
         }).catch(error => {
             console.log(error);
@@ -121,7 +124,7 @@ function ReviewForm(props) {
     function handleSubmit(event) {
         event.preventDefault();
 
-        if (course.length===0 || Object.keys(professor).length === 0 || preference.length < 1 || difficulty.length < 1 || prof.length < 1 || helpfulness.length < 1) {
+        if (course.length === 0 || Object.keys(professor).length === 0 || preference.length < 1 || difficulty.length < 1 || prof.length < 1 || helpfulness.length < 1) {
             handleShow();
         } else {
             postData();
@@ -143,7 +146,7 @@ function ReviewForm(props) {
             <Form.Control as="select" onChange={(e) => {
                 let arr = e.target.value.split('&');
                 setProfessor(coursemap[arr[0]][parseInt(arr[1])]);
-                console.log("set prof",professor);
+                console.log("set prof", professor);
             }
             }>
                 {professorFiltered}
@@ -225,12 +228,6 @@ function ReviewForm(props) {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
-
-                {
-                    submit && (
-                        <Navigate to={"/courselist"} />
-                    )
-                }
             </Form>
 
             <Modal show={show} onHide={handleClose}>
@@ -253,6 +250,23 @@ function ReviewForm(props) {
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose1}>
                         Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+            <Modal show={show2} onHide={handleClose2}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Thank you for your review!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Your review help Scarlet Knights!</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={setSubmit}>
+                        Finish
+                        {
+                            submit && (
+                                <Navigate to={"/courselist"} />
+                            )
+                        }
                     </Button>
                 </Modal.Footer>
             </Modal>

@@ -21,8 +21,8 @@ function Home() {
 
         return (
 
-            <div>
-                <Card style={{ width: '66rem' }}>
+            <div padding='10px'>
+                <Card style={{ width: '66vw' }}>
                     <Card.Header><h4>{announcement.title}</h4></Card.Header>
                     <Card.Body>
                         <blockquote className="blockquote mb-0">
@@ -44,7 +44,7 @@ function Home() {
 
 
                 <div>
-                    <Card style={{ width: '72rem' }}>
+                    <Card style={{ width: '72vw' }}>
                         <h1>
                             &nbsp;&nbsp;Announcement
                         </h1>
