@@ -221,7 +221,7 @@ function ReviewForm(props) {
                         style={{ height: '100px' }} />
                     <Form.Text>
                         Please respect RU community values in your comments.<br />
-                        Insults and personal attacks are not acceptable.
+                        Insults and personal attacks on RU faculty and Scarlet Knights are unacceptable.
                     </Form.Text>
                 </Form.Group>
                 <br></br>

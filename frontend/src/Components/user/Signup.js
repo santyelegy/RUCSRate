@@ -24,9 +24,8 @@ function Signup() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <p>
-                        Considering that registering an account will make the process of commenting more troublesome, anonymization can also ensure that comments are more objective.
-                        <br></br>
-                        We are prohibiting IP addresses who use to repeatedly comment on courses in order to prevent malicious comments and ensure the validity of comments.
+                        Since registering an account will make commenting more troublesome, anonymization can also ensure that comments are more objective.
+                        <br></br>We are prohibiting IP addresses that repeatedly comment on courses to prevent malicious comments and ensure the validity of comments.
                     </p>
                     <Form>
                         <fieldset disabled>
