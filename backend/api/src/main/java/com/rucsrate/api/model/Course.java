@@ -3,7 +3,7 @@ package com.rucsrate.api.model;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("Courses")
-public class Course {
+public class Course implements Comparable<Course>{
     private String _id;
     private String Department;
     private String code;
@@ -82,5 +82,10 @@ public class Course {
 
     public void setSeason(String season) {
         this.Season = season;
+    }
+
+    @Override
+    public int compareTo(Course o) {
+        return this.code.compareTo(o.code);
     }
 }
