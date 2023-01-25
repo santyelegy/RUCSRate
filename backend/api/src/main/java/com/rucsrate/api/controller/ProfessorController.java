@@ -1,11 +1,13 @@
 package com.rucsrate.api.controller;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.rucsrate.api.model.Professor;
 import com.rucsrate.api.repository.ProfessorRepository;
 import com.rucsrate.api.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -35,5 +37,12 @@ public class ProfessorController {
     @GetMapping(value = "/findId/{professorId}/average_score")
     public ObjectNode getProfessorPerformance(@PathVariable("professorId") String professorId){
         return professorService.findProfessorPerformance(professorId);
+    }
+
+    @GetMapping(value = "/all/sort")
+    public List<Professor> sortCourse(){
+        List<Professor> all_prof = professorRepository.findAll();
+        Collections.sort(all_prof);
+        return all_prof;
     }
 }

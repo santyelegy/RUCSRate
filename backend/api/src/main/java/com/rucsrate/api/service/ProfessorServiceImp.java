@@ -23,7 +23,8 @@ public class ProfessorServiceImp implements ProfessorService{
     private ReviewRepository reviewRepository;
     @Autowired
     private CourseRepository courseRepository;
-    @Autowired CourseService courseService;
+    @Autowired
+    CourseService courseService;
 
     @Override
     public ObjectNode findProfessorByName(String ProfessorName) {

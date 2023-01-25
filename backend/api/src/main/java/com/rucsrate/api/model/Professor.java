@@ -4,7 +4,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document("Professor")
-public class Professor {
+public class Professor implements Comparable<Professor>{
     @Field("Name")
     String name;
     String Email;
@@ -42,5 +42,10 @@ public class Professor {
 
     public void set_id(String _id) {
         this._id = _id;
+    }
+
+    @Override
+    public int compareTo(Professor o) {
+        return this.name.compareTo(o.name);
     }
 }
