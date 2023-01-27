@@ -3,14 +3,14 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: 280px;
+    width: 18vw;
     background-color: rgb(92, 146, 255);
 
     &__logo {
         display: grid;
         place-items: center;
-        height: 120px;
-        font-size: 2.75rem;
+
+        font-size: 2.75vw;
         font-weight: 700;
         font-family: Garamond, serif;
         //font-family: 'Mochiy Pp P one', sans-serif;
@@ -36,7 +36,7 @@
             }
 
             &__icon {
-                margin-right: 1rem;
+                margin-right: 1vw;
 
                 i {
                     font-size: 1.75rem;
@@ -62,13 +62,14 @@
         position: absolute;
         place-items: center;
         //{height: 120px;}
-        font-size: 1rem;
+        font-size: 1vw;
         font-weight: 400;
         font-family: 'Mochiy Pop P one', sans-serif;
         color: #555555;
 
-        left: 7.5vh;
-        bottom: 7.5vh;
+        left: 4vw;
+        bottom: 5vh;
+        width: 10vw;
 
     }
 
