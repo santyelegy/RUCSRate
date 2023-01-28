@@ -81,8 +81,9 @@ const Sidebar = () => {
     useEffect(() => {
         setTimeout(() => {
             const sidebarItem = sidebarRef.current.querySelector('.sidebar__menu__item');
-            indicatorRef.current.style.height = `${sidebarItem.clientHeight}px`;
-            setStepHeight(sidebarItem.clientHeight);
+            indicatorRef.current.style.height = `${(sidebarItem.clientHeight / window.innerWidth) * 100}vw`;
+            //console.log((sidebarItem.clientHeight / window.innerWidth) * 100)
+            setStepHeight((sidebarItem.clientHeight / window.innerWidth) * 100);
         }, 50);
     }, []);
 
@@ -93,16 +94,17 @@ const Sidebar = () => {
         setActiveIndex(curPath.length === 0 ? 0 : activeItem);
     }, [location]);
 
+    //console.log(activeIndex, stepHeight, activeIndex * stepHeight)
     return <div className='sidebar'>
         <div className="sidebar__logo">
-            RU Ratings
+            RU Rating
         </div>
         <div ref={sidebarRef} className="sidebar__menu">
             <div
                 ref={indicatorRef}
                 className="sidebar__menu__indicator"
                 style={{
-                    transform: `translateX(-50%) translateY(${activeIndex * stepHeight}px)`
+                    transform: `translateX(-50%) translateY(${activeIndex * stepHeight}vw)`
                 }}
             ></div>
             {

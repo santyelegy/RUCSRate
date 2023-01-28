@@ -18,7 +18,7 @@ function Signup() {
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title align='center'>
                         <h2>
-                            We don't need everyone to sign up for RU Ratings right now.
+                            We don't need everyone to sign up for RU Rating right now.
                         </h2>
                     </Offcanvas.Title>
                 </Offcanvas.Header>

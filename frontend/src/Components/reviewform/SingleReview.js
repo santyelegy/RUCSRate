@@ -4,11 +4,14 @@ import { Card, ListGroup, Row, Col } from 'react-bootstrap';
 function SingleReview(props) {
     const review = props.review;
 
-    var stringtime, time;
+    var stringtime, time, day, min_1, min_2;
     time = "Post time: "
     if (review.time != null) {
         stringtime = review.time;
-        time += stringtime.substring(2, 9) + " " + stringtime.substring(11, 16);
+        day = stringtime.substring(2, 10);
+        min_1 = parseInt(stringtime.substring(11, 13));
+        min_2 = parseInt(stringtime.substring(14, 16));
+        time += day + " " + min_1 + ":" + min_2;
     }
 
 
