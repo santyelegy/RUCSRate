@@ -48,9 +48,10 @@ public class ReviewController {
             throw new IllegalArgumentException("No input");
         }
         //System.out.println(request.getRemoteAddr());
-        boolean success=reviewService.save(paramMap,request.getRemoteAddr());
+        String ipAddress = request.getHeader("X-FORWARDED-FOR");
+        boolean success=reviewService.save(paramMap,ipAddress);
         if(success){
-            ipService.save(String.valueOf(paramMap.get("courseId")),request.getRemoteAddr());
+            ipService.save(String.valueOf(paramMap.get("courseId")),ipAddress);
         }
         return success;
     }
